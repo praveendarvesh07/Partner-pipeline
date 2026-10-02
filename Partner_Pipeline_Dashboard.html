@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Global Partner Pipeline · Reseller opportunities · Stage 3–5 focus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+--navy:#081D4D; --royal:#1565C0; --white:#FFFFFF;
+--robins:#5FD6FF; --pistachio:#96EAAA; --lilac:#B5A4FC; --midnight:#1C1F2A;
+--neutral:#D9D9D6; --axis:#141414; --crossline:#707070;
+--row-odd:rgba(217,217,214,0.5);
+--heat-1:#3A9EE0; --heat-2:#1565C0; --heat-3:#0F4187; --heat-4:#081D4D;
+--font:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+--radius:10px; --hair:1px solid var(--neutral);
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--white);color:var(--midnight);font-family:var(--font);font-size:14px;line-height:1.5}
+button,input,select,textarea{font-family:inherit;font-size:inherit;color:inherit}
+button{cursor:pointer}
+h1,h2,h3{margin:0;color:var(--navy);font-weight:400}
+h1{font-size:31px;line-height:1.2}
+h2{font-size:20px;font-weight:500}
+h3{font-size:16px;font-weight:600}
+.eyebrow{font-size:12px;font-weight:600;text-transform:none;letter-spacing:.02em}
+.muted{color:var(--crossline)}
+.num{font-variant-numeric:tabular-nums}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.topbar{background:var(--navy);color:var(--white);padding:22px 28px 20px}
+.topbar-inner{max-width:1480px;margin:0 auto;display:flex;flex-wrap:wrap;gap:16px 24px;align-items:flex-end;justify-content:space-between}
+.topbar h1{color:var(--white)}
+.topbar .eyebrow{color:var(--robins)}
+.topbar .meta{font-size:12px;opacity:.9;margin-top:6px}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn{border:1px solid var(--white);background:transparent;color:var(--white);border-radius:999px;padding:7px 14px;font-size:13px;line-height:1.2}
+.btn:hover{background:var(--white);color:var(--navy)}
+.btn.primary{background:var(--royal);border-color:var(--royal);color:var(--white)}
+.btn.primary:hover{background:var(--white);color:var(--royal)}
+.btn-light{border:1px solid var(--royal);background:var(--white);color:var(--royal);border-radius:999px;padding:5px 12px;font-size:13px;line-height:1.2}
+.btn-light:hover,.btn-light[aria-pressed="true"]{background:var(--royal);color:var(--white)}
+.btn-light.small{padding:3px 10px;font-size:12px}
+.save-state{font-size:12px;opacity:.85;min-width:150px;text-align:right}
+main{max-width:1480px;margin:0 auto;padding:18px 28px 40px}
+.filters{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;padding:14px 16px;border:var(--hair);border-radius:var(--radius);background:var(--white)}
+.filters .group{display:flex;align-items:center;gap:6px}
+.filters label{font-size:12px;font-weight:600;color:var(--navy);white-space:nowrap}
+.filters select,.filters input[type=search]{border:1px solid var(--neutral);border-radius:8px;padding:6px 9px;background:var(--white);min-width:150px;max-width:260px}
+.filters input[type=search]{min-width:200px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border:1px solid var(--neutral);background:var(--white);color:var(--navy);border-radius:999px;padding:5px 10px 5px 12px;font-size:12.5px;display:inline-flex;align-items:center;gap:7px;line-height:1.2}
+.chip:hover{border-color:var(--royal)}
+.chip[aria-pressed="true"]{background:var(--royal);border-color:var(--royal);color:var(--white)}
+.chip .cnt{font-variant-numeric:tabular-nums;font-size:11px;padding:1px 7px;border-radius:999px;background:var(--white);color:var(--navy);border:1px solid var(--neutral)}
+.chip[aria-pressed="true"] .cnt{border-color:var(--white)}
+.chip .sn{font-weight:600}
+.check{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--navy)}
+.spacer{flex:1}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:14px 0}
+.tile{border:var(--hair);border-radius:var(--radius);padding:14px 16px 12px}
+.tile .label{font-size:12.5px;color:var(--crossline)}
+.tile .value{font-size:30px;font-weight:600;color:var(--navy);line-height:1.15;margin-top:2px}
+.tile .sub{font-size:12px;color:var(--crossline);margin-top:2px}
+.tile.hero{background:var(--royal);border-color:var(--royal)}
+.tile.hero .label,.tile.hero .value,.tile.hero .sub{color:var(--white)}
+.card{border:var(--hair);border-radius:var(--radius);padding:16px 18px 14px;background:var(--white)}
+.card-head{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;margin-bottom:10px}
+.card-head .sub{font-size:12.5px;color:var(--crossline);margin-top:2px}
+.seg{display:inline-flex;border:1px solid var(--royal);border-radius:999px;overflow:hidden}
+.seg button{border:0;background:var(--white);color:var(--royal);padding:4px 12px;font-size:12.5px}
+.seg button[aria-pressed="true"]{background:var(--royal);color:var(--white)}
+.grid2{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(300px,1fr);gap:14px;margin-bottom:14px;align-items:start}
+@media (max-width:1100px){.grid2{grid-template-columns:1fr}}
+.heat-wrap{overflow:auto}
+table.heat{border-collapse:separate;border-spacing:2px 2px;width:100%;font-size:13px}
+table.heat th{font-weight:600;color:var(--navy);text-align:left;padding:6px 8px;vertical-align:bottom;font-size:12px}
+table.heat th.stg{text-align:center;min-width:92px;line-height:1.25}
+table.heat th.stg .no{display:block;font-size:15px}
+table.heat th.tot{text-align:right;min-width:120px}
+table.heat td{padding:0;height:38px}
+table.heat td.pname{padding:0 8px;min-width:200px;max-width:340px}
+table.heat td.pname button{all:unset;cursor:pointer;display:block;width:100%;line-height:1.2;padding:4px 0}
+table.heat td.pname button:hover .p,table.heat td.pname button:focus-visible .p{text-decoration:underline}
+table.heat td.pname .p{font-weight:500;color:var(--navy);display:inline;line-height:1.25}
+table.heat td.pname .r{font-size:11px;color:var(--crossline);display:block}
+table.heat td.pname .note{display:inline-block;margin-left:6px;font-size:10.5px;font-weight:600;color:var(--navy);background:var(--lilac);border-radius:999px;padding:0 6px;vertical-align:1px}
+table.heat td.tot{text-align:right;padding:0 8px;white-space:nowrap}
+table.heat td.tot .c{font-weight:600;color:var(--navy)}
+table.heat td.tot .a{font-size:11.5px;color:var(--crossline);display:block}
+.cell{all:unset;display:flex;align-items:center;justify-content:center;width:100%;height:38px;border-radius:4px;font-variant-numeric:tabular-nums;font-size:13px;cursor:pointer;border:1px solid transparent}
+.cell.z{background:var(--white);border-color:var(--neutral);color:var(--neutral);cursor:default}
+.cell.b1{background:var(--heat-1);color:var(--navy);font-weight:500}
+.cell.b2{background:var(--heat-2);color:var(--white);font-weight:500}
+.cell.b3{background:var(--heat-3);color:var(--white);font-weight:500}
+.cell.b4{background:var(--heat-4);color:var(--white);font-weight:600}
+.cell:not(.z):hover,.cell:not(.z):focus-visible{outline:2px solid var(--navy);outline-offset:1px}
+.cell.sel{outline:3px solid var(--robins);outline-offset:1px}
+tr.selrow td.pname .p{text-decoration:underline;text-decoration-color:var(--royal)}
+tr.selrow td.pname{box-shadow:inset 3px 0 0 var(--royal)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-top:10px;font-size:12px;color:var(--crossline)}
+.legend .sw{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-2px;margin-right:5px;border:1px solid transparent}
+.legend .sw.z{border-color:var(--neutral)}
+.bars{display:grid;grid-template-columns:max-content 1fr;gap:10px 12px;align-items:center;margin-top:6px}
+.bars .lab{font-size:12.5px;color:var(--navy);white-space:nowrap;line-height:1.2}
+.bars .lab .no{font-weight:600}
+.bars .lab .c{display:block;font-size:11px;color:var(--crossline)}
+.bars .track{position:relative;height:22px;padding-right:64px}
+.bars .inner{position:relative;height:100%}
+.bars .bar{position:absolute;left:0;top:2px;height:18px;background:var(--royal);border-radius:0 4px 4px 0;min-width:2px}
+.bars .val{left:100%}
+.bars .val{position:absolute;top:0;line-height:22px;font-size:12px;color:var(--midnight);font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:6px}
+.bars .track:hover .bar,.bars .track:focus-within .bar{background:var(--navy)}
+.bars .off .bar{background:var(--neutral)}
+.bars .off .lab{color:var(--crossline)}
+.sa-split{margin-top:18px;border-top:var(--hair);padding-top:12px}
+.sa-split h3{font-size:13.5px;margin-bottom:6px}
+.plist{display:grid;grid-template-columns:1fr max-content max-content;gap:3px 12px;font-size:12.5px;align-items:center}
+.plist .n{color:var(--midnight)}
+.plist button.n{all:unset;cursor:pointer;color:var(--navy)}
+.plist button.n:hover,.plist button.n:focus-visible{text-decoration:underline}
+.plist button.n[aria-pressed="true"]{font-weight:600;text-decoration:underline;text-decoration-color:var(--royal)}
+.plist .c,.plist .a{color:var(--crossline);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.plist .more{grid-column:1/-1;color:var(--crossline);font-size:12px}
+.meter{height:14px;border-radius:4px;background:var(--neutral);overflow:hidden;display:flex}
+.meter .fill{background:var(--royal);height:100%}
+.meter-lab{display:flex;justify-content:space-between;font-size:12px;color:var(--crossline);margin-top:4px}
+.meter-lab b{color:var(--navy);font-weight:600}
+.partner{margin-bottom:14px;border-left:4px solid var(--royal)}
+.partner[hidden]{display:none}
+.pgrid{display:grid;grid-template-columns:minmax(260px,1.1fr) minmax(300px,1.6fr);gap:14px 22px}
+@media (max-width:900px){.pgrid{grid-template-columns:1fr}}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:5px 14px;font-size:13px;margin-top:8px}
+.kv dt{color:var(--crossline)}
+.kv dd{margin:0;color:var(--midnight)}
+.kv dd .num{font-weight:500;color:var(--navy)}
+.region-edit{display:flex;align-items:center;gap:8px;margin-top:8px}
+.region-edit input{border:1px solid var(--neutral);border-radius:8px;padding:6px 9px;min-width:180px}
+.region-edit input:focus,textarea:focus,select:focus,input:focus{outline:2px solid var(--royal);outline-offset:1px}
+textarea.actions{width:100%;min-height:96px;border:1px solid var(--neutral);border-radius:8px;padding:8px 10px;resize:vertical;line-height:1.45}
+.hint{font-size:12px;color:var(--crossline);margin-top:4px}
+.pill{display:inline-block;font-size:11px;font-weight:600;border-radius:999px;padding:1px 8px;line-height:1.5;white-space:nowrap}
+.pill.nosa{background:var(--lilac);color:var(--navy)}
+.pill.dup{background:var(--white);color:var(--navy);border:1px solid var(--navy)}
+.pill.st{border:1px solid var(--neutral);color:var(--navy);background:var(--white)}
+.pill.st.progress{background:var(--robins);border-color:var(--robins)}
+.pill.st.done{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.pill.st.waiting{background:var(--lilac);border-color:var(--lilac)}
+.selbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:13px}
+.pill.pr{background:var(--navy);color:var(--white);border:1px solid var(--navy);min-width:30px;text-align:center;font-variant-numeric:tabular-nums}
+.pill.pr.sug{background:var(--white);color:var(--navy)}
+.pill.pr.later{background:var(--white);color:var(--crossline);border-color:var(--neutral)}
+.pill.due{background:var(--lilac);color:var(--navy)}
+.pill.ok{background:var(--navy);color:var(--white)}
+table.heat td.pname .pr{margin-right:6px;vertical-align:1px}
+.plan{margin-bottom:14px}
+.tbl-wrap.plan-wrap{max-height:none}
+table.opps.plan{min-width:1320px;table-layout:fixed}
+table.opps.plan col.p-rk{width:36px}table.opps.plan col.p-pn{width:180px}table.opps.plan col.p-sug{width:250px}table.opps.plan col.p-prio{width:172px}table.opps.plan col.p-date{width:232px}table.opps.plan col.p-n1{width:100px}table.opps.plan col.p-n2{width:60px}table.opps.plan col.p-n3{width:96px}table.opps.plan col.p-n4{width:72px}table.opps.plan col.p-act{width:auto}
+table.opps.plan td{vertical-align:middle}
+table.opps.plan td.rk{color:var(--crossline);font-variant-numeric:tabular-nums;text-align:right}
+table.opps.plan select{max-width:100%}
+table.opps.plan td.dt{white-space:nowrap}
+table.plan td.pn button{all:unset;cursor:pointer;color:var(--navy);font-weight:500;line-height:1.25}
+table.plan td.pn button:hover,table.plan td.pn button:focus-visible{text-decoration:underline}
+table.plan td.pn .sm{display:block;font-size:11.5px;color:var(--crossline)}
+table.plan td.sug .why{display:block;font-size:11.5px;color:var(--crossline);margin-top:2px;max-width:280px}
+table.plan select,table.plan input[type=date]{border:1px solid var(--neutral);border-radius:6px;padding:4px 6px;background:var(--white);font-size:12.5px}
+table.plan input[type=date]{max-width:150px}
+table.plan label.chk{display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--navy);white-space:nowrap;margin-left:6px}
+table.plan td.acts{max-width:260px;font-size:12px;color:var(--midnight)}
+table.plan td.acts .none{color:var(--crossline)}
+table.plan tbody tr.tier-1 td.pn{box-shadow:inset 3px 0 0 var(--royal)}
+.planning{margin:4px 0 14px;padding-bottom:12px;border-bottom:var(--hair)}
+.planning .row{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-top:8px}
+.planning label{font-size:12.5px;font-weight:600;color:var(--navy);display:inline-flex;align-items:center;gap:6px}
+.planning select,.planning input[type=date]{border:1px solid var(--neutral);border-radius:8px;padding:6px 9px;background:var(--white);font-size:13px;font-weight:400}
+.planning .sugline{font-size:12.5px;color:var(--midnight);margin-top:6px}
+.planning .sugline .pr{margin-right:4px}
+.selbar .tag{background:var(--navy);color:var(--white);border-radius:999px;padding:3px 10px;font-size:12px}
+.tbl-wrap{overflow:auto;max-height:70vh;border:var(--hair);border-radius:8px}
+table.opps{border-collapse:separate;border-spacing:0;width:100%;font-size:13px;min-width:1240px;table-layout:fixed}
+table.opps col.c-partner{width:170px}table.opps col.c-stage{width:118px}table.opps col.c-acct{width:240px}table.opps col.c-owner{width:130px}table.opps col.c-sa{width:130px}table.opps col.c-region{width:92px}table.opps col.c-close{width:118px}table.opps col.c-acv{width:96px}table.opps col.c-act{width:auto}
+table.opps td{overflow-wrap:anywhere}
+table.opps thead th{position:sticky;top:0;background:var(--royal);color:var(--white);font-weight:700;text-align:left;padding:9px 10px;white-space:normal;line-height:1.25;z-index:2;border-bottom:2px solid var(--white);vertical-align:bottom}
+table.opps thead th button{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:5px;color:var(--white)}
+table.opps thead th button .dir{font-size:10px;opacity:.85}
+table.opps thead th.r,table.opps td.r{text-align:right}
+table.opps tbody tr:nth-child(odd) td{background:var(--row-odd)}
+table.opps tbody tr:nth-child(even) td{background:var(--white)}
+table.opps td{padding:7px 10px;vertical-align:top;color:var(--midnight);border-bottom:1px solid var(--white)}
+table.opps td.act{padding:6px 8px;min-width:260px}
+table.opps td .p{font-weight:500;color:var(--navy)}
+table.opps td .sm{display:block;font-size:11.5px;color:var(--crossline)}
+table.opps td.stage .no{display:inline-block;width:20px;height:20px;line-height:20px;border-radius:50%;background:var(--navy);color:var(--white);text-align:center;font-size:11.5px;font-weight:600;margin-right:6px}
+table.opps td.stage{white-space:normal}
+table.opps td.stage .no{float:left;margin-top:1px}
+table.opps td.stage .sl{display:block;padding-left:26px;line-height:1.3}
+.act-wrap{display:flex;flex-direction:column;gap:6px}
+.act-item{display:flex;gap:5px;align-items:flex-start}
+.act-item textarea{flex:1;min-width:0;min-height:30px;max-height:160px;border:1px solid var(--neutral);border-radius:6px;padding:5px 7px;resize:none;line-height:1.35;background:var(--white);overflow:hidden;font-size:12.5px}
+.act-item textarea::placeholder{color:#9a9a97}
+.act-item select{border:1px solid var(--neutral);border-radius:6px;padding:4px 5px;background:var(--white);font-size:11.5px;max-width:92px;flex:none}
+.act-item .del{all:unset;cursor:pointer;color:var(--crossline);font-size:14px;line-height:1;padding:4px 2px;flex:none}
+.act-item .del:hover{color:var(--navy)}
+.act-meta{font-size:10.5px;color:var(--crossline);white-space:nowrap;margin-top:-2px;padding-left:1px}
+.act-add{display:flex;gap:5px;align-items:center}
+.act-add input{flex:1;min-width:0;border:1px solid var(--neutral);border-radius:6px;padding:5px 7px;font-size:12.5px;background:var(--white)}
+.act-add input::placeholder{color:#9a9a97}
+.act-add button{all:unset;cursor:pointer;border:1px solid var(--royal);color:var(--royal);border-radius:6px;padding:4px 9px;font-size:11.5px;flex:none;text-align:center}
+.act-add button:hover{background:var(--royal);color:var(--white)}
+.act-hist{margin-top:1px}
+.act-hist summary{font-size:11.5px;color:var(--crossline);cursor:pointer;list-style:none}
+.act-hist summary::-webkit-details-marker{display:none}
+.act-hist summary::before{content:'▸ ';font-size:10px}
+.act-hist[open] summary::before{content:'▾ '}
+.act-hist ul{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:5px}
+.act-hist li{display:flex;gap:6px;align-items:flex-start;padding:4px 6px;background:rgba(217,217,214,0.5);border-radius:6px}
+.act-hist .ht{flex:1;min-width:0;font-size:12px;color:var(--midnight);text-decoration:line-through;text-decoration-color:var(--crossline);word-break:break-word}
+.act-hist .hm{font-size:10.5px;color:var(--crossline);white-space:nowrap;flex:none}
+.act-hist .reopen{all:unset;cursor:pointer;font-size:10.5px;color:var(--royal);white-space:nowrap;flex:none}
+.act-hist .reopen:hover{text-decoration:underline}
+.act-count{font-size:11px;color:var(--crossline)}
+.pill.rg{background:var(--white);color:var(--navy);border:1px solid var(--neutral);font-weight:500}
+table.heat td.pname .rg{margin-left:6px;vertical-align:1px}
+table.opps.plan tr.grp td{background:var(--navy) !important;color:var(--white);font-weight:600;padding:7px 10px;font-size:12.5px}
+table.opps.plan tr.grp td .sub{font-weight:400;opacity:.85;margin-left:8px}
+a.sf{color:var(--royal);text-decoration:none;font-size:11.5px;white-space:nowrap}
+a.sf:hover{text-decoration:underline}
+table.opps td .loc{display:block;font-size:11px;color:var(--crossline);font-variant-numeric:tabular-nums}
+.empty{padding:24px;text-align:center;color:var(--crossline)}
+.rowcount{font-size:12.5px;color:var(--crossline)}
+.tip{position:fixed;z-index:50;pointer-events:none;background:var(--navy);color:var(--white);border-radius:8px;padding:8px 11px;font-size:12.5px;max-width:320px;box-shadow:0 4px 14px rgba(8,29,77,.25);display:none;line-height:1.4}
+.tip.on{display:block}
+.tip .t{font-weight:600;margin-bottom:2px}
+.tip .v{font-weight:600;font-size:15px}
+.tip .k{opacity:.85}
+.tip .ln{margin-top:4px;padding-top:4px;border-top:1px solid rgba(255,255,255,.25)}
+.notes{margin-top:18px;font-size:12.5px;color:var(--crossline);line-height:1.6}
+.notes h3{font-size:13px;color:var(--navy);margin-bottom:4px}
+.notes code{font-family:inherit;color:var(--navy)}
+details summary{cursor:pointer;color:var(--navy);font-weight:500}
+@media print{.topbar .toolbar,.filters,.tbl-wrap{max-height:none}.tip{display:none}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div>
+      <div class="eyebrow">Global Partner Pipeline · Reseller Opportunities</div>
+      <h1>Partner opportunity dashboard</h1>
+      <div class="meta" id="meta"></div>
+    </div>
+    <div class="toolbar" role="group" aria-label="Notes and export">
+      <span class="save-state" id="saveState" aria-live="polite"></span>
+      <button class="btn" id="btnExportNotes" title="Download all partner and opportunity action items as a JSON file">Export notes</button>
+      <button class="btn" id="btnImportNotes" title="Load a previously exported notes file (merges into the current notes)">Import notes</button>
+      <input type="file" id="fileImport" accept="application/json,.json" class="sr-only" aria-hidden="true" tabindex="-1">
+      <button class="btn primary" id="btnExportCsv" title="Download the currently filtered opportunities incl. region, owner, SA and action items">Export view (CSV)</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="filters" aria-label="Filters">
+    <div class="group">
+      <label>Stage</label>
+      <div class="chips" id="stageChips" role="group" aria-label="Stage filter"></div>
+      <button class="btn-light small" id="preset35" title="Stages 3, 4 and 5 only">3–5</button>
+      <button class="btn-light small" id="presetAll" title="All stages">All</button>
+    </div>
+    <div class="group">
+      <label>Region</label>
+      <div class="chips" id="regionChips" role="group" aria-label="Region filter"></div>
+      <button class="btn-light small" id="presetRegionsAll" title="All regions">All</button>
+    </div>
+    <div class="group"><label for="fPartner">Partner</label><select id="fPartner"></select></div>
+    <div class="group"><label for="fType">Type</label><select id="fType"></select></div>
+    <div class="group"><label for="fPrio">Priority</label>
+      <select id="fPrio" title="Your contact priority; where you have not set one, the suggested priority is used">
+        <option value="">All priorities</option>
+        <option value="1">Prio 1</option>
+        <option value="2">Prio 2</option>
+        <option value="3">Prio 3</option>
+        <option value="4">Prio 4</option>
+        <option value="5">Prio 5</option>
+        <option value="later">Later</option>
+        <option value="__unset__">Not set by me yet</option>
+      </select>
+    </div>
+    <div class="group"><label for="fOwner">Owner</label><select id="fOwner"></select></div>
+    <div class="group"><label for="fSa">Primary SA</label>
+      <select id="fSa">
+        <option value="">All</option>
+        <option value="yes">Attached</option>
+        <option value="no">Not attached</option>
+      </select>
+    </div>
+    <div class="group"><label for="fQ" class="sr-only">Search</label><input type="search" id="fQ" placeholder="Search account, opportunity, partner, owner, SA…"></div>
+    <span class="spacer"></span>
+    <button class="btn-light small" id="btnReset">Reset filters</button>
+  </section>
+
+  <section class="kpis" id="kpis" aria-label="Key figures"></section>
+
+  <section class="grid2">
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <h2>Partner × stage heatmap</h2>
+          <div class="sub" id="heatSub"></div>
+        </div>
+        <div class="toolbar">
+          <div class="seg" role="group" aria-label="Cell value">
+            <button id="modeCount" aria-pressed="true">Count</button>
+            <button id="modeAcv" aria-pressed="false">ACV</button>
+          </div>
+          <div class="seg" role="group" aria-label="Sort partners by">
+            <button id="sortAcv" aria-pressed="true">By ACV</button>
+            <button id="sortCount" aria-pressed="false">By count</button>
+            <button id="sortName" aria-pressed="false">A–Z</button>
+          </div>
+        </div>
+      </div>
+      <div class="heat-wrap" id="heat"></div>
+      <div class="legend" id="legend"></div>
+      <div class="hint">Rows are partner × region. Click a partner name to open its details and action items; click a cell to narrow the opportunity list to that partner and stage.</div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <h2>Pipeline by stage</h2>
+          <div class="sub">ACV in USD (converted), opportunities in view · all stages shown, unselected stages greyed</div>
+        </div>
+      </div>
+      <div class="bars" id="stageBars"></div>
+      <div class="sa-split">
+        <h3>Primary SA coverage (in view)</h3>
+        <div class="meter" id="saMeter" role="img"></div>
+        <div class="meter-lab" id="saMeterLab"></div>
+      </div>
+      <div class="sa-split people">
+        <h3>Opportunity owners (in view)</h3>
+        <div class="hint" style="margin:-2px 0 6px">Click a name to filter the dashboard to that owner.</div>
+        <div id="ownerList" class="plist"></div>
+      </div>
+      <div class="sa-split people">
+        <h3>Primary SAs (in view)</h3>
+        <div id="saList" class="plist"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card plan" id="planCard">
+    <div class="card-head">
+      <div>
+        <h2>Partner contact plan – priority list per region</h2>
+        <div class="sub" id="planSub"></div>
+      </div>
+      <div class="toolbar">
+        <div class="seg" role="group" aria-label="Sort contact plan by">
+          <button id="planSortPrio" aria-pressed="true">By priority</button>
+          <button id="planSortDate" aria-pressed="false">By contact date</button>
+          <button id="planSortRank" aria-pressed="false">By suggestion</button>
+        </div>
+        <button class="btn-light small" id="btnApplySuggest" title="Fills the priority dropdown for every partner where you have not set one, and a contact-by date wherever one is missing (based on the priority)">Apply suggestions to unset partners</button>
+        <button class="btn-light small" id="btnClearPrio" title="Removes all priorities, contact dates and contacted marks (action items are kept)">Clear priorities &amp; dates</button>
+        <button class="btn-light small" id="btnExportPlan">Export plan (CSV)</button>
+      </div>
+    </div>
+    <div class="tbl-wrap plan-wrap"><table class="opps plan" id="planTable"><colgroup><col class="p-rk"><col class="p-pn"><col class="p-sug"><col class="p-prio"><col class="p-date"><col class="p-n1"><col class="p-n2"><col class="p-n3"><col class="p-n4"><col class="p-act"></colgroup><thead></thead><tbody></tbody></table></div>
+    <div class="hint" id="planHint"></div>
+  </section>
+
+  <section class="card partner" id="partnerPanel" hidden aria-live="polite"></section>
+
+  <section class="card">
+    <div class="card-head">
+      <div>
+        <h2>Opportunities</h2>
+        <div class="selbar" id="selbar"></div>
+      </div>
+      <div class="rowcount" id="rowcount"></div>
+    </div>
+    <div class="tbl-wrap"><table class="opps" id="oppTable"><colgroup><col class="c-partner"><col class="c-stage"><col class="c-acct"><col class="c-owner"><col class="c-sa"><col class="c-region"><col class="c-close"><col class="c-acv"><col class="c-act"></colgroup><thead></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="notes" id="dataNotes"></section>
+</main>
+
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script>
+const RAW = {"version":2,"source":{"system":"Salesforce (read-only SOQL via the Coupa connector)","queriedAt":"2026-10-01T11:10:58Z","soql":"SELECT Id, Name, StageName, CloseDate, CreatedDate, LastModifiedDate, Type, Opportunity_Type_Detail__c, LeadSource, CurrencyIsoCode, Amount_SteelBrick__c, ACV_Converted__c, Opp_Supra_Segment__c, Opportunity_Segment__c, Opportunity_Sub_Segment__c, Account.Name, Account.Coupa_Industry__c, Owner.Name, Primary_SC__r.Name, PartnerAccount.Name, partnerRole_prm__c, NextStep, Partner_Action_Items__c, Days_in_Current_Stage__c FROM Opportunity WHERE Business_Type__c = 'Reseller' AND IsClosed = false","filters":["Business Type = Reseller","Opportunity not closed (IsClosed = false; excludes Closed Won and Closed Lost)","All supra segments / regions"],"instance":"https://coupa.lightning.force.com","acvField":"ACV Converted (ACV_Converted__c, USD)"},"stages":[{"no":1,"label":"1. Qualify Pain/Need"},{"no":2,"label":"2. Define the Problem"},{"no":3,"label":"3. Agree on Outcomes"},{"no":4,"label":"4. Drive Consensus"},{"no":5,"label":"5. Agree on Solution"},{"no":6,"label":"6. Negotiate & Contract"}],"regions":[{"key":"NA","label":"North America"},{"key":"LATAM","label":"LATAM"},{"key":"EMEA","label":"EMEA"},{"key":"APAC","label":"APAC"},{"key":"JAPAN","label":"Japan"},{"key":"UNASSIGNED","label":"No region set"}],"partners":[{"name":"Accenture - Europe","regions":["EMEA"]},{"name":"Accenture - Growth Markets","regions":["APAC","JAPAN"]},{"name":"Accenture - LATAM","regions":["LATAM"]},{"name":"Accenture - North America","regions":["NA"]},{"name":"Acquis Consulting Group LLC","regions":["NA","UNASSIGNED"]},{"name":"Altron Middle East Technologies LLC","regions":["EMEA"]},{"name":"ANDURAR - Ghana","regions":["EMEA"]},{"name":"Aneon Solutions GmbH","regions":["EMEA"]},{"name":"Bahwan Cybertek","regions":["EMEA","APAC"]},{"name":"Barkers Commercial Services Limited - United Kingdom","regions":["EMEA"]},{"name":"BOSC - Business of Supply Chain Consulting, Lda","regions":["NA","EMEA"]},{"name":"CarahSoft Technology Corporation","regions":["NA"]},{"name":"Centric Limited","regions":["EMEA"]},{"name":"Cogni Ltd","regions":["APAC"]},{"name":"Cogniviti Labs Pte Ltd","regions":["EMEA","APAC"]},{"name":"Conexus Supply, Lda","regions":["EMEA"]},{"name":"Core Process","regions":["EMEA"]},{"name":"CrossCountry Consulting LLC","regions":["NA"]},{"name":"DataMap LLC","regions":["NA"]},{"name":"Deloitte - Finland","regions":["EMEA"]},{"name":"Deloitte LLP - Australia","regions":["APAC"]},{"name":"Deloitte LLP - New Zealand","regions":["APAC"]},{"name":"Deloitte LLP - United States","regions":["NA"]},{"name":"Detaysoft","regions":["EMEA"]},{"name":"Digital Procurement Now","regions":["EMEA"]},{"name":"Dynatos B.V.","regions":["EMEA"]},{"name":"FourPL P/L","regions":["APAC"]},{"name":"Future Purchasing","regions":["EMEA"]},{"name":"Hipus Co Ltd","regions":["JAPAN"]},{"name":"iCE Consulting","regions":["APAC"]},{"name":"Jabil Procurement Service, Inc","regions":["NA"]},{"name":"KPMG LLP - Greece","regions":["EMEA"]},{"name":"KPMG LLP - Thailand","regions":["APAC"]},{"name":"LKS NEXT","regions":["EMEA"]},{"name":"LUTECH - Italy","regions":["EMEA"]},{"name":"MFEC PUBLIC COMPANY LIMITED","regions":["APAC"]},{"name":"Moneyball CPH","regions":["EMEA"]},{"name":"Nomura Research Institute","regions":["JAPAN"]},{"name":"PARAMETA S.A.S.","regions":["EMEA"]},{"name":"Procurement Garage","regions":["LATAM","EMEA"]},{"name":"Procurion GmbH","regions":["EMEA","UNASSIGNED"]},{"name":"PT Multipolar Technology Tbk","regions":["APAC"]},{"name":"PT NTT Data Indonesia Technology","regions":["APAC"]},{"name":"PT PLATINUMETRIX GLOBAL INOVASI (PGI Data)","regions":["APAC"]},{"name":"PT. YUTAMA KREASINDO","regions":["APAC"]},{"name":"RAYBURN CONSULTING ME FZ LLC - UAE","regions":["EMEA"]},{"name":"RSM US LLP - Partner Account","regions":["NA"]},{"name":"Siyaya Phambili Technology Solutions","regions":["EMEA"]},{"name":"Smukeliso","regions":["EMEA"]},{"name":"StratArya","regions":["EMEA"]},{"name":"STRATESYS TECNOLOGIAS DA INFORMACAO LTDA","regions":["LATAM"]},{"name":"Supply Chain Partner","regions":["EMEA"]},{"name":"SUPPLY CHAIN TALKS","regions":["EMEA"]},{"name":"Tata Consultancy Services Pvt Ltd","regions":["APAC"]},{"name":"TECH MAHINDRA Pvt Ltd","regions":["EMEA"]},{"name":"The Hackett Group GmbH","regions":["EMEA"]},{"name":"Valtatech","regions":["APAC"]},{"name":"VALUEWEAVER - United Kingdom","regions":["EMEA","APAC"]},{"name":"Zanovoy LLC","regions":["NA"]}],"enc":{"cols":["id","region","subSegment","partner","partnerRole","stageNo","account","owner","sa","name","type","typeDetail","source","close","created","acv","acvLocal","currency","daysInStage","legacyId"],"dicts":{"region":["UNASSIGNED","NA","EMEA","APAC","LATAM","JAPAN"],"subSegment":["","NA ENE","NA CNC","NA CSC","NA ESE","NA WSW","NA WSC","NA W","NA C","NA CANADA","EMEA EU C Dach","EMEA EU S Iberia","EMEA EU C Benelux","EMEA MEA Middle East","EMEA MEA Africa","EMEA EU S FRA-IT","EMEA EU N UKI","EMEA EU N Nordic","EMEA EU N North","EMEA EU C Central","APAC ANZ","APAC SE Asia","LATAM South America","LATAM Brazil","JAPAN"],"partner":["Acquis Consulting Group LLC","Procurion GmbH","","Accenture - North America","BOSC - Business of Supply Chain Consulting, Lda","CarahSoft Technology Corporation","CrossCountry Consulting LLC","DataMap LLC","Deloitte LLP - United States","Jabil Procurement Service, Inc","RSM US LLP - Partner Account","Zanovoy LLC","Accenture - Europe","Altron Middle East Technologies LLC","ANDURAR - Ghana","Aneon Solutions GmbH","Bahwan Cybertek","Barkers Commercial Services Limited - United Kingdom","Centric Limited","Cogniviti Labs Pte Ltd","Conexus Supply, Lda","Core Process","Deloitte - Finland","Detaysoft","Digital Procurement Now","Dynatos B.V.","Future Purchasing","KPMG LLP - Greece","LKS NEXT","LUTECH - Italy","Moneyball CPH","PARAMETA S.A.S.","Procurement Garage","RAYBURN CONSULTING ME FZ LLC - UAE","Siyaya Phambili Technology Solutions","Smukeliso","StratArya","Supply Chain Partner","SUPPLY CHAIN TALKS","TECH MAHINDRA Pvt Ltd","The Hackett Group GmbH","VALUEWEAVER - United Kingdom","Accenture - Growth Markets","Cogni Ltd","Deloitte LLP - Australia","Deloitte LLP - New Zealand","FourPL P/L","iCE Consulting","KPMG LLP - Thailand","MFEC PUBLIC COMPANY LIMITED","PT Multipolar Technology Tbk","PT NTT Data Indonesia Technology","PT PLATINUMETRIX GLOBAL INOVASI (PGI Data)","PT. YUTAMA KREASINDO","Tata Consultancy Services Pvt Ltd","Valtatech","Accenture - LATAM","STRATESYS TECNOLOGIAS DA INFORMACAO LTDA","Hipus Co Ltd","Nomura Research Institute"],"partnerRole":["Reseller","","Referral","Co-sell"],"owner":["Daniel Overd","Tobin Willms","Taylor Ellis","Emily Taylor","Ashley Hronek","Renewal Desk Americas","Hunter Herr","Samantha Carangelo","Todd Press","Mary Moss","Rex Myers","Rich Bargewell","Dillon Rohrich","Sam Ahlgrim","Avery Adams","Travis Eckhardt","Jason Crawford","Jamie McCarthy","Luke Spiegel","Charly Moretto","Kerrin O'Leary","Christian Cabrera","Jack Ploucha","Judd Jackson","Samantha Freed","Dillon Dresser","Michael Bernabei","Abby Krantz","Aaron Hernandez","Aaron Madsen","Clipp McKeen","Jeff Cooper","Caitlyn Bilbrey","Patrick Cochran","Louis Dube","Shannon Daniel","Katie Algyre","Daniel Hammoud","Kaitlin Whitney","Tom Beno","Mark Hodge","Yami Alonso-Suchocki","Tom Hostetler","Tony Hennen","Lindsay MacLean","Data Ops User","Sam Boudrot","Jack Leary","Fabian Levin Kuhn","Laura Sottosanti","Erik Visser","Isabel Munoz Alonso","Kiri Christensen","Cristina Rodriguez","John Bryceland","Reitumetse Bolata","Ryan George","Ariana Moscaritolo-Rodriguez","Reda Chaoui","Rayan Salame","Conor Delaney","Joao Batista","Terrence Brown","Natalia del Aguila","Thomas Lewis","Anders Wannberg","Jens Jacobsen","Diya Nasereddin","Alessio Matrone","Jessica Boda","Max Brinkman","Alexander Fattoruso","Sarah Kingdom-Evans","Stefania Ershadi","Vivek Raj","Giuseppe Elia","Christoph Friedl","Bupe Chapeshamano","Mustafa Eskin","Aya Mansour","Chris Roche","Emma Rigby","Stephen Dodgson","Benedict Pang","Avishrant Gaur","James Chinsoponsub","Marcelly Suhali","Valentina Kitanovic","David Barton","Dave Jenkins","Nasir Khan","Guillaume Pasquet","Ida Leung","Arun John","Felipe Ospina","Gabriel Nascimento","Laura Guzman","Yasmim Chang Lee","Rodrigo Azevedo","Andrea Romero","Ciça Cidral","Kosuke Ishida","Masahiro Suzuki","Yuta Maeda","Masaya Ito","Ryuta Nakajima"],"sa":["","Sue Fay","Sean Seidler","Tony Tripp","Mugdha Walawalkar","Matt Goshgarian","Andrew Stern","Chris Radding","Andres Arias","Lenushka Parannath","Raneem El Banna","Ranju Gowda","Bharat Vegad","Livia Theophilo","Chris Breedveld","Leonard Peters","Fabio Giacomini","Antoine De Dainville","Lucy Day","Paul Fletcher","Fernando Juliyanto","Warwick Jackson","Muhammad Akif Amran","Luis Nieto","Santiago Bravo","Daniela Corumba","Jose Yabuki","Eduardo Rodrigues","Taka Uchiura","Yukari Yamada"],"type":["New Business","Renewal","Amendment","Trial"],"typeDetail":["","Add-On","Amendment"],"source":["Reseller: Partner","Referral: Partner","","Import","Web Form","Web Content","Consensus","Live Demo","Paid Search","Field Event","Tradeshow","Third Party Webinar","Corporate Event"],"currency":["USD","EUR","CHF","GBP","AUD","BRL","JPY"]},"rows":[["006Pm00000pyLp4IAE",0,0,0,0,3,"Botswana Savings Bank",0,0,"Resell - Botswana Savings Bank P2P - Acquis",0,0,0,"2026-12-31","2025-10-16",60000,60000,0,321,"o0f8b57d940"],["006Pm00001LrteTIAR",0,0,1,1,1,"Agenic GmbH",1,0,"Resell-Agenic GmbH-P2P - Procurion",0,0,1,"2027-02-18","2026-08-19",30000,30000,0,44,"o9ec03e16ff"],["006Pm00001DClXpIAL",1,1,2,1,1,"Zima International Inc",2,0,"Resell - Acquis - Dandy P2P - Renewal - 2029",1,0,2,"2029-05-28","2026-05-30",175000,175000,0,125,"ocf5cd3173b"],["006Pm00000rRkrRIAS",1,1,2,1,1,"Radius Health",3,0,"Radius Health - Renewal - 2030",1,0,2,"2030-10-29","2025-10-30",60026,60026,0,321,"o5631966859"],["006Pm00000zfgMjIAI",1,2,2,1,1,"Universal Forest Products, Inc.",4,0,"Reseller - UFP Industries - S2P Renewal - Acquis Consulting",1,0,2,"2029-01-30","2026-01-31",432000,432000,0,244,"o166464fe07"],["006Pm00000ZfR3JIAV",1,1,2,1,1,"Disc Medicine",5,0,"Disc Medicine-Renewal-2028",1,0,2,"2028-04-03","2025-04-09",149457,149457,0,321,"o43918fd7f9"],["006Pm00000iCPpKIAW",1,3,2,0,1,"Sentinel Midstream",6,0,"Reseller - Zanovoy - Sentinel Midstream- P2P",0,0,0,"2027-05-21","2025-07-21",50000,50000,0,321,"o1f42d65ffe"],["006Pm00000ogCuPIAU",1,4,2,1,1,"Tanner Pharma Group",7,0,"Reseller - Tanner Pharma - CCC",0,0,3,"2028-07-14","2025-10-02",50000,50000,0,365,"odf546cdbaa"],["0064X00001vVzbxQAC",1,3,2,1,1,"CenterPoint Energy Inc.",8,0,"CenterPoint Energy Inc.- Renewal - 2027",1,0,2,"2027-12-31","2022-06-28",2474570,2474570,0,321,"o39b6b35e2c"],["006Pm00001CfQqMIAV",1,5,2,1,1,"Foster Farms Inc.",9,0,"Foster Farms Inc - Renewal - 2031",1,0,2,"2031-06-14","2026-05-26",467008,467008,0,129,"of01b3a028e"],["006Pm00000g9g33IAA",1,6,2,0,1,"Cardinal Midstream",6,0,"Reseller - Zanovoy - Cardinal Midstream Partners P2P",0,0,0,"2027-07-09","2025-06-26",100000,100000,0,321,"oce7f9dda01"],["006Pm00001D3F2XIAV",1,1,2,0,1,"Open Society Institute",10,0,"Referral - DataMap - Open Society Foundations - S2P",0,0,0,"2027-02-18","2026-05-28",250000,250000,0,127,"obbabbae628"],["006Pm00000eju8fIAA",1,4,2,0,1,"Summit Ridge Energy, LLC",11,0,"Reseller - Summit Ridge Energy - CCC",0,0,0,"2028-03-24","2025-06-10",50000,50000,0,321,"of950ad1021"],["006Pm00000vIxs5IAC",1,4,2,1,1,"ID8 Global",3,0,"Reseller - Jabil Circuit - ID8 Global LLC Pay Renewal - 2029",1,0,2,"2029-01-29","2025-12-12",72840,72840,0,294,"o9b3ceeab6d"],["006Pm00000vwG0MIAU",1,3,2,0,1,"Student Mobiliation",12,0,"Reseller - CCC - Student Mobilization- P2P",0,0,0,"2027-02-12","2025-12-19",70000,70000,0,287,"oea8693aedc"],["006Pm00000zMkdmIAC",1,4,2,1,1,"EdgeConneX",11,0,"Referral - EdgeConneX - Renewal - 2029",1,0,2,"2029-01-29","2026-01-28",312899,312899,0,247,"o4975baee80"],["006Pm00000zT8FBIA0",1,1,2,1,1,"Tubulis",13,0,"Reseller - CCC - Tubulis - P2P - Renewal - 2029",1,0,2,"2029-01-29","2026-01-29",93847,93847,0,246,"o37f9ab8eb7"],["006Pm00000XCeRhIAL",1,7,2,0,2,"City of Santa Clara",14,0,"Reseller-CCC-City of Santa Clara",0,0,0,"2027-08-20","2025-03-07",160000,160000,0,321,"o2aca5eea94"],["006Pm00000rUz18IAC",1,1,2,1,2,"Azenta",13,0,"Renewal-Reseller - RSM - Azenta P2P-2030",1,0,2,"2030-10-29","2025-10-30",140982,140982,0,85,"o927a3986ea"],["006Pm0000175jmLIAQ",1,1,3,0,3,"The Brink's Company",15,0,"Brinks - Expense",2,0,3,"2027-02-26","2026-04-03",383000,383000,0,149,"oc52023e6be"],["006Pm000010FuNxIAK",1,5,0,0,1,"Creyon Bio, Inc.",16,0,"Reseller- Acquis - Creyon Bio - P2P",0,0,0,"2027-07-16","2026-02-05",100000,100000,0,239,"od79b65cffa"],["006Pm00001LnkLGIAZ",1,4,0,0,1,"The Bancorp Bank",11,0,"Resell - Acquis - The Bancorp Bank - P2P",0,0,0,"2027-05-20","2026-08-18",0,0,0,45,"o6e89f70e40"],["006Pm00001LkDIbIAN",1,4,0,0,1,"Unanet, Inc.",11,0,"Resell - Acquis - Unanet - S2P",0,0,0,"2027-05-20","2026-08-18",100000,100000,0,45,"oe33163083d"],["006Pm00001Ms8jPIAR",1,4,0,0,1,"Availity",17,0,"Resell - Acquis Consulting - Availity P2P",0,0,0,"2027-04-16","2026-08-28",150000,150000,0,35,"oc6a322171d"],["006Pm00000ZjCfBIAV",1,5,0,0,2,"Youth Enrichment Brands (YEB)",16,0,"Acquis_Youth Enrichment Brands",0,0,0,"2027-02-19","2025-04-09",60000,60000,0,321,"obd4cb65066"],["006Pm00001COThOIAX",1,5,0,0,2,"Salt Dental Collective, LLC",18,0,"Resell - Acquis - SALT Dental Partners - P2P",0,0,0,"2027-02-18","2026-05-22",200000,200000,0,49,"o901ce1c076"],["006Pm000019spcXIAQ",1,8,0,0,4,"Rush Street Interactive, Inc.",19,1,"Rush Street Interactive - P2P 2026",0,0,3,"2026-10-27","2026-04-30",200000,200000,0,18,"o526b7b02ed"],["006Pm00000sYVLdIAO",1,3,0,0,5,"Phillips Infrastructure Corp",20,2,"Reseller - Acquis - Phillips Infrastructure - P2P, SIM, Rossum, Expenses, OBN, vCards",0,0,4,"2026-12-11","2025-11-11",280000,280000,0,200,"o73b0b89891"],["006Pm00001GuhNBIAZ",1,3,4,0,3,"Euronet Worldwide Inc.",21,0,"NB_ES_INDIRECT_Euronet - P2P_Resell",3,0,5,"2027-01-18","2026-07-03",71109,60000,1,85,"o00725400cc"],["006Pm00001MmcQnIAJ",1,5,5,0,3,"Jackson County, Oregon",22,1,"Jackson County, Oregon - P2P + SIM",0,0,3,"2026-11-20","2026-08-27",150000,150000,0,36,"odb46c14503"],["006Pm00001OlP7tIAF",1,8,6,0,1,"Core Laboratories",23,0,"Reseller - CCC- Core Lab P2P",0,0,0,"2026-12-16","2026-09-15",200000,200000,0,17,"o4c3dc2cbea"],["006Pm00000fErT7IAK",1,1,6,0,1,"Affini-T Therapeutics, Inc.",24,0,"Reseller - CCC - Affini-T Therapeutics P2P",0,0,0,"2027-09-24","2025-06-16",50000,50000,0,321,"oa38cc4fa63"],["006Pm00001GrctSIAR",1,2,6,0,1,"Niron Magnetics",12,0,"Reseller - CropssCountry -Niron Magnetics - Controls",0,0,0,"2027-05-13","2026-07-02",120000,120000,0,92,"ocd4abed502"],["006Pm00001DB83tIAD",1,1,6,0,1,"ProFound Therapeutics",25,0,"Resell - CrossCountry - Profound Tx - S2P",0,0,0,"2027-05-21","2026-05-29",100000,100000,0,126,"o27207b7c4e"],["006Pm00001I0PDFIA3",1,1,6,0,1,"Sail Biomedicines",26,0,"Resell - CrossCountry - Sail Bio - Analytics",2,0,0,"2027-05-13","2026-07-14",30000,30000,0,80,"o3fcb2bf599"],["006Pm00000vE7IaIAK",1,5,6,0,1,"Disqo, Inc.",27,0,"Reseller - CCC - Disqo - P2P",0,0,0,"2027-04-16","2025-12-11",100000,100000,0,295,"oe041105bed"],["006Pm00001IBKqBIAX",1,3,6,0,1,"High Level",6,0,"Resell - CrossCountry - HighLevel - P2P",0,0,0,"2027-05-20","2026-07-15",150000,150000,0,79,"obaa975b75d"],["006Pm00001AclXVIAZ",1,5,6,0,1,"Benitec Biopharma",28,0,"Resell - CrossCountry - Benitec Biopharma - P2P",0,0,0,"2027-02-18","2026-05-07",80000,80000,0,148,"oabe2d1af7b"],["006Pm00001AcUgLIAV",1,7,6,0,1,"Office of Hawaiian Affairs",22,0,"Resell - CrossCountry - Office of Hawaiian Affairs - P2P",0,0,0,"2027-02-26","2026-05-07",125000,125000,0,148,"o1b9a206dbe"],["006Pm00001KfPpeIAF",1,5,6,0,1,"Astrolabs",27,0,"Resell - CrossCountry - Astrolabs - P2P",0,0,0,"2027-02-26","2026-08-07",150000,150000,0,56,"o07390c865e"],["006Pm00000aFyK6IAK",1,5,6,0,1,"Stackline / Fuelcomm Inc.",16,0,"Reseller - CCC - Stackline P2P",0,0,0,"2027-08-20","2025-04-16",150000,150000,0,321,"o4c8170465a"],["006Pm00000ebfV0IAI",1,1,6,0,1,"auxilius",29,0,"Reseller - Auxilius - CCC",0,0,0,"2027-06-18","2025-06-09",40000,40000,0,321,"ob8f7a4b7d1"],["006Pm000019B3UjIAK",1,5,6,0,1,"Viant Inc.",30,0,"Resell - CrossCountry - Viant Technology - CNM",0,0,0,"2027-08-18","2026-04-23",100000,100000,0,162,"o547383947f"],["006Pm00000aFxStIAK",1,5,6,0,1,"Mozart Therapeutics, Inc.",16,0,"Reseller - CCC- Mozart Therapeutics P2P",0,0,0,"2027-06-18","2025-04-16",100000,100000,0,321,"o839b4be8a8"],["006Pm00000kBW3iIAG",1,4,6,0,1,"NTT DATA Americas, Inc.",31,0,"Reseller - CCC - NTT Data Americas-P2P + Pay",0,0,0,"2027-07-23","2025-08-11",200000,200000,0,321,"o53ab9b443e"],["006Pm00000is9BSIAY",1,5,6,0,1,"Altpep Corporation",16,0,"Reseller - CrossCountry Consulting- AltPep- P2P",0,0,0,"2027-06-11","2025-07-28",100000,100000,0,321,"o64b1484b30"],["006Pm00000iy8qzIAA",1,3,6,0,1,"Cristcot",32,0,"Reseller - CrossCountry -Cristcot-P2P",0,0,0,"2027-05-21","2025-07-29",75000,75000,0,321,"o9405a5157b"],["006Pm00000aFsWRIA0",1,3,6,0,1,"Charles and Lynn Schusterman Family Philanthropies",12,0,"Reseller - CCC - Charles and Lynn Schusterman Family Philanthropies P2P",0,0,0,"2027-06-18","2025-04-16",200000,200000,0,321,"o292211a49f"],["006Pm00001J2cSMIAZ",1,1,6,0,1,"United Talent Agency",27,0,"Resell - Cross Country - United Talent Agency - Rossum",0,0,0,"2027-05-20","2026-07-23",0,0,0,71,"obe56f45d8b"],["006Pm00001FCfsfIAD",1,5,6,0,1,"Greenwaste Recovery, LLC",33,0,"Resell - CrossCountry - Greenwaste - Rossum for Implementation",0,0,0,"2027-05-20","2026-06-17",50000,50000,0,107,"o653c0a87f0"],["006Pm00001Jm1pZIAR",1,2,6,1,1,"Forgent Power",12,0,"Forgent Power - Renewal - 2031",1,0,2,"2031-07-28","2026-07-30",505411,505411,0,64,"o88b26859cc"],["006Pm00000jn98HIAQ",1,5,6,0,1,"Modern Animal, Inc.",16,0,"Reseller - CCC- Modern Animal-P2P",0,0,0,"2027-06-25","2025-08-06",150000,150000,0,321,"oe85a92341c"],["006Pm00000aG6uLIAS",1,5,6,0,2,"Faraday Pharmaceuticals",16,0,"Reseller - CCC - Faraday Pharma P2P",0,0,0,"2027-09-24","2025-04-16",70000,70000,0,321,"o6107c75cb2"],["006Pm000019ktOoIAI",1,5,6,0,2,"Foster Farms Inc.",9,0,"Foster Farms - Sourcing",2,0,4,"2027-06-04","2026-04-29",150000,150000,0,156,"o5213905f27"],["006Pm00000ZHh7eIAD",1,1,6,0,2,"Ventus Therapeutics U.S., Inc.",13,0,"Resell - CCC - Ventus Tx",0,0,0,"2027-08-20","2025-04-03",100000,100000,0,321,"o433e10cf93"],["006Pm0000116EqPIAU",1,5,6,0,3,"Medical Teams International",22,0,"Reseller - CCC - Medical Teams International - P2P",0,0,0,"2027-02-26","2026-02-13",100000,100000,0,148,"oc816a99d36"],["006Pm00000edM1gIAE",1,5,6,0,3,"Blossomhill Therapeutics, Inc.",16,0,"Reseller - CCC - Blossom Hill Therapeutics",0,0,0,"2027-08-20","2025-06-09",50000,50000,0,321,"o505c6650ac"],["006Pm00000xNjlfIAC",1,7,6,0,4,"Tract",34,3,"Reseller - CCC - Tract- P2P",0,0,0,"2026-12-16","2026-01-08",232536,232536,0,260,"o8dcdaf90a9"],["006Pm00000s5n10IAA",1,5,6,0,5,"Southern California University of Health Sciences",27,0,"Reseller - CCC - Southern California University of Health Sciences- P2P + Pay",0,0,0,"2027-03-24","2025-11-06",55000,55000,0,193,"obad6827323"],["006Pm00001I2QgIIAV",1,5,7,0,1,"Grand Targhee Resort",34,0,"Resell - DataMap - Grand Targhee Resort - P2P",0,0,0,"2027-05-20","2026-07-14",250000,250000,0,80,"oa83e32eebc"],["006Pm00001DweEpIAJ",1,4,7,0,1,"Bojangles' Restaurants Inc.",35,0,"Resell - DataMap - Bojangles - Analytics",2,0,0,"2027-05-20","2026-06-05",19000,19000,0,119,"o84f70c9197"],["006Pm00001LnhjxIAB",1,8,7,0,1,"Justrite Safety Group",36,0,"Resell - DataMap - Justrite Safety Group - Microsoft Offering",0,0,0,"2027-01-28","2026-08-18",150000,150000,0,45,"odcae405bdc"],["006Pm00001Dy96rIAB",1,6,7,0,1,"EastWest Hospitality",34,0,"Resell - DataMap - East West Hospitality - P2P",0,0,0,"2027-05-20","2026-06-05",250000,250000,0,119,"obec9c7afb6"],["006Pm00000r6rpVIAQ",1,8,7,0,1,"AscentistHealthcare",12,0,"Reseller - DataMap - Ascentist Healthcare- P2P",0,0,0,"2027-03-19","2025-10-27",100000,100000,0,321,"o51b0f731c2"],["006Pm00000p5MgsIAE",1,4,7,0,1,"Magnera Corporation",31,0,"Reseller - DataMap- Magnera Corporation- S2P",0,0,0,"2028-04-28","2025-10-07",250000,250000,0,321,"o9d749a3de5"],["006Pm00001E0MXqIAN",1,8,7,0,3,"Venture Metals International",37,0,"Resell - DataMap - Venture Metals - Analytics",2,0,0,"2027-01-29","2026-06-05",30000,30000,0,51,"oa14df09774"],["006Pm00000onrT0IAI",1,2,8,0,2,"United States Transportation Command",38,0,"TRANSCOM - TPPS RFP: Invoicing, Analytics, OBN, FedRAMP",0,0,2,"2027-02-19","2025-10-03",100000,100000,0,364,"o4c4b90c6ac"],["006Pm00000PZSpUIAX",1,5,8,0,4,"Envista",39,4,"Envista Holdings, Corp. (P2P)",0,0,1,"2027-03-29","2024-11-13",250000,250000,0,189,"o0da4f8dd81"],["006Pm00001IHKvWIAX",1,1,9,0,1,"ABACUS AUTOMATION",13,0,"Resell - Jabil - ABACUS AUTOMATION - P2P",0,0,0,"2027-05-20","2026-07-16",100000,100000,0,78,"o2e1c705630"],["006Pm00001I2J25IAF",1,2,9,0,1,"Dukane",36,0,"Resell - Jabil - DUKANE IAS - P2P",0,0,0,"2027-02-24","2026-07-14",150000,150000,0,80,"o5293f74369"],["006Pm00001I4HiXIAV",1,4,9,0,1,"Memphis Light Gas & Water Division",40,0,"Resell - Jabil - MEMPHIS LIGHT, GAS AND WATER - P2P",0,0,0,"2027-04-22","2026-07-14",100000,100000,0,80,"o308cefcb4c"],["006Pm00001IAy1pIAD",1,8,9,0,1,"CSI Leasing, Inc.",12,0,"Resell - Jabil - CSI LEASING - P2P",0,0,0,"2027-04-22","2026-07-15",100000,100000,0,79,"ob611b031bb"],["006Pm00001IBMYbIAP",1,1,9,0,1,"Air Products & Chemicals Inc.",41,0,"Resell - Jabil - AIR PRODUCTS AND CHEMICALS - P2P",0,0,0,"2027-04-15","2026-07-15",100000,100000,0,79,"o342ee70fb4"],["006Pm00001IBfjKIAT",1,3,9,0,1,"Pala Interstate LLC",12,0,"Resell - Jabil - PALA - P2P",0,0,0,"2027-05-20","2026-07-15",100000,100000,0,79,"o8512b2e6bc"],["006Pm00001IC8F4IAL",1,2,9,0,1,"Productivity Inc",12,0,"Resell - Jabil - PRODUCTIVITY - P2P",0,0,0,"2027-05-20","2026-07-15",100000,100000,0,79,"o019f38a1b6"],["006Pm00001IGLDhIAP",1,5,9,0,1,"Data I/O",22,0,"Resell - Jabil - DATA I/O - P2P",0,0,0,"2027-05-20","2026-07-16",100000,100000,0,78,"o66a210a48a"],["006Pm00001IH8j4IAD",1,2,9,0,1,"BIO GREEN PRODUCTS",19,0,"Resell - Jabil - BIO GREEN PRODUCTS - P2P",0,0,0,"2027-05-13","2026-07-16",100000,100000,0,78,"o26887717b4"],["006Pm00001IHEV8IAP",1,6,9,0,1,"Kramer Audio Visual",32,0,"Resell - Jabil - Kramer Audio Visual - P2P",0,0,0,"2027-05-20","2026-07-16",100000,100000,0,78,"o1e512733e5"],["006Pm00001IHqAbIAL",1,5,9,0,1,"ADVANCED MRO SOLUTIONS",18,0,"Resell - Jabil - ADVANCED MRO SOLUTIONS - P2P",0,0,0,"2027-05-20","2026-07-16",100000,100000,0,78,"o33ba5a2f3c"],["006Pm00001IRNFOIA5",1,1,9,0,1,"Ethicon Inc.",42,0,"Resell - Zanovot - ETHICON - P2P",0,0,0,"2027-04-22","2026-07-17",100000,100000,0,76,"o02d0d00935"],["006Pm00001KIfK1IAL",1,3,9,0,1,"Averitt Express Incorporated",40,0,"Reseller - Jabil - AVERITT EXPRESS - P2P",0,0,0,"2027-05-20","2026-08-04",0,0,0,59,"o5238c97e6c"],["006Pm00001IBHU6IAP",1,2,9,0,2,"Fastenal Co",43,0,"Resell - Jabil - FASTENAL - P2P",0,0,0,"2027-04-15","2026-07-15",250000,250000,0,10,"oacd29916c4"],["006Pm0000182RYUIA2",1,5,9,0,5,"NEO Tech",39,5,"NEOtech (Core Sourcing)",0,0,0,"2026-12-18","2026-04-13",55000,55000,0,4,"o4d92d4ab6e"],["006Pm00000JeVF3IAN",1,1,10,1,1,"Rapport Therapeutics, Inc.",3,0,"Reseller - RSM - Rapport Therapeutics Securities Corporation- Renewal-2027",1,0,2,"2027-08-30","2024-08-02",113447,113447,0,321,"ofb359a814a"],["006Pm00001QU30zIAD",1,1,10,1,1,"Quotient Therapeutics",13,0,"Quotient Therapeutics - Renewal - 2029",1,0,2,"2029-09-29","2026-09-30",102226,102226,0,1,"o969e26988c"],["006Pm00000S5bEvIAJ",1,1,10,1,1,"Kailera Therapeutics, Inc.",3,0,"Reseller - RSM - Kailera Therapeutics, Inc.- Renewal - 2028",1,0,2,"2028-01-19","2024-12-23",109487,109487,0,321,"ob2c920952c"],["006Pm00001G6gKbIAJ",1,6,10,0,1,"Alfasigma USA",12,0,"Resell - RSM - Alfasigma USA, Inc. - AP Automation",0,0,0,"2027-05-13","2026-06-25",100000,100000,0,99,"ob699ee1622"],["006Pm000014ypMfIAI",1,9,10,0,1,"On Side Restoration",44,0,"Resell - RSM - On Side Restoration - P2P",0,0,0,"2027-09-16","2026-03-18",100000,100000,0,198,"oa5bcbf336a"],["006Pm00000Z5bveIAB",1,4,10,0,1,"Telamon Corporation",45,0,"Reseller - RSM - Telamon Corporation-Renewal-2028",1,0,2,"2028-03-27","2025-04-01",78120,78120,0,321,"ob3b5f19527"],["006Pm00001I9AVAIA3",1,1,10,0,1,"Urogen Pharma",46,0,"Resell - RSM - UroGen Pharma - P2P",0,0,0,"2027-05-20","2026-07-15",100000,100000,0,79,"o5fb7851104"],["006Pm00000iq2pEIAQ",1,1,10,1,1,"Imprivata Inc.",13,0,"Reseller - RSM - Imprivata Inc.- Renewal-2028",1,0,2,"2028-07-13","2025-07-28",177052,177052,0,321,"o49cceb6bb2"],["006Pm00000llk5xIAA",1,6,10,2,2,"EOS Fitness",16,0,"Reseller - RSM - EOS Fitness - P2P",0,0,1,"2027-02-26","2025-08-29",110000,110000,0,321,"o0f9a3d80d2"],["006Pm00001FG4ksIAD",1,1,10,0,2,"Goodwill Industries",11,0,"Resell - RSM - Goodwill Industries International - P2P",0,0,0,"2027-05-13","2026-06-17",100000,100000,0,77,"o7fc4d2d0c3"],["006Pm00001G7CU9IAN",1,2,10,0,3,"Caravel Autism Health",12,0,"Resell - RSM - Caravel Autism Health - AP Automation",0,0,0,"2027-05-13","2026-06-25",250000,250000,0,98,"o058b1bd04a"],["006Pm00000ZBARKIA5",1,3,10,0,4,"Catalyst Health Network",6,6,"Reseller - RSM - Catalyst Health Group P2P",0,0,0,"2027-01-22","2025-04-02",190000,190000,0,321,"o8636f83e38"],["006Pm00000iCTksIAG",1,6,11,0,1,"Easton Energy LLC",23,0,"Reseller - Zanovoy - Easton Energy-P2P",0,0,0,"2027-05-21","2025-07-21",50000,50000,0,321,"o70af8e01ed"],["006Pm00000eGwAlIAK",1,7,11,0,1,"L.A. Arena Company, LLC",16,0,"Reseller - Zanovoy - Crypto.com Arena P2P",0,0,0,"2027-07-23","2025-06-05",100000,100000,0,321,"o0e705a2175"],["006Pm00001I1aL7IAJ",1,5,11,0,1,"ECG Management Consultants",18,0,"Resell - Zanovoy - ECG Management Consultants - AP Automation",0,0,0,"2027-05-20","2026-07-14",90000,90000,0,80,"o52e0e49e0b"],["006Pm00000seHr3IAE",1,3,11,0,1,"3L Energy Solutions",23,0,"Reseller - Zanovoy - 3L Energy Solutions- P2P",0,0,0,"2027-05-21","2025-11-12",100000,100000,0,321,"o176e782449"],["006Pm00000seP0cIAE",1,5,11,0,1,"Union Station Homeless Services",16,0,"Reseller - Zanovoy - Union Station Homeless Services- P2P",0,0,0,"2028-01-13","2025-11-12",75000,75000,0,321,"of52ca0cfa5"],["006Pm00000g9GmwIAE",1,5,11,0,1,"Mirvie, Inc.",16,0,"Reseller - Zanovoy - Mirvie P2P",0,0,0,"2027-07-23","2025-06-26",50000,50000,0,321,"oe81728cb2a"],["006Pm00000gQQTNIA4",1,5,11,0,1,"Green Planet 21",16,0,"Reseller - Zanovoy - Green Planet 21 P2P",0,0,0,"2027-07-16","2025-06-30",100000,100000,0,321,"oe2657245dc"],["006Pm00001IQZAZIA5",1,1,11,0,1,"Aspire Living & Learning",13,0,"Reseller - Zanovoy - Aspire Living - P2P",0,0,0,"2027-05-20","2026-07-17",95000,95000,0,77,"oda54e0ad55"],["006Pm00001IQsTKIA1",1,1,11,0,1,"Jade Biosciences",13,0,"Resell - Zanovoy - Jade Biosciences - Boston Red Sox event",0,0,0,"2027-05-20","2026-07-17",90000,90000,0,77,"oe30fa8cce8"],["006Pm00000hKQiMIAW",1,5,11,0,1,"Anglepoint",16,0,"Reseller - Zanovoy - Anglepoint P2P",0,0,1,"2027-07-16","2025-07-10",75000,75000,0,321,"o69eacfdb4e"],["006Pm00000iCptSIAS",1,1,11,0,1,"Clarapath",29,0,"Reseller- Zanovoy - Clarapath-P2P",0,0,0,"2027-05-21","2025-07-21",50000,50000,0,321,"of0f4228fa3"],["006Pm00000iEjn8IAC",1,5,11,0,1,"Solairus Aviation",16,0,"Reseller - Zanovoy -Solairus Aviation-P2P",0,0,0,"2027-07-16","2025-07-21",100000,100000,0,321,"o22c12e0cda"],["006Pm00001G52CMIAZ",1,4,11,0,3,"CTS Engines",47,7,"Resell - Zanovoy - CTS Engines - S2P",0,0,0,"2027-03-19","2026-06-25",150000,150000,0,58,"o70ee7e2be6"],["006Pm00000jUvmyIAC",1,5,11,0,4,"Bedrock Robotics",14,8,"Reseller - Zanovoy - Bedrock Robotics-P2P",0,0,0,"2027-02-26","2025-08-04",51983,51983,0,248,"ocfbf6b0d53"],["006Pm00000YgNskIAF",2,10,2,1,1,"Firstcolo Datacenters GmbH",48,0,"Reseller - Inway eProcurement - firstcolo GmbH - Renewal - 2030",1,0,2,"2030-03-30","2025-03-27",80946,68300,1,321,"oa65c53f2f6"],["006Pm00001PdK81IAF",2,11,2,1,1,"Metlen Energy & Metals S.A.",49,0,"Metlen Energy & Metals S.A - Renewal - 2031",1,0,2,"2031-09-10","2026-09-23",30471,25711,1,9,"o0eda3367f3"],["006Pm000015UhzJIAS",2,12,2,1,1,"Telix Pharmaceuticals Belgium",50,0,"Resell - Dynatos - Telix Pharmaceuticals Belgium Renewal - 2029",1,0,2,"2029-03-30","2026-03-23",349165,294617,1,193,"o827e18a82c"],["006Pm00001PvK4jIAF",2,10,2,1,1,"Kernkraftwerk Gösgen-Däniken",48,0,"Kernkraftwerk Gösgen-Däniken-Renewal-2029",1,0,2,"2029-09-30","2026-09-25",114628,96720,1,7,"o5821adc6a3"],["006Pm00000rTuGPIA0",2,11,2,1,1,"CIKAUTXO S.COOP",51,0,"CIKAUTXO S.COOP-Renewal-2031",1,0,2,"2031-01-30","2025-10-30",59236,49982,1,321,"o6ff38a9306"],["006Pm000019jtHDIAY",2,10,2,1,1,"Gutenberg Rechenzentrum GmbH & Co. KG",48,0,"Gutenberg Rechenzentrum GmbH & Co. KG - Renewal - 2031",1,0,2,"2031-05-13","2026-04-29",80590,68000,1,156,"o1e3e1aa2a9"],["006Pm00000uaDrSIAU",2,12,2,1,1,"Total Care",52,0,"Total Care - Renewal - 2030",1,0,2,"2030-12-03","2025-12-04",119700,101000,1,302,"o095b46ff97"],["006Pm00001PMPQjIAP",2,11,2,1,3,"Intraplas Packaging Solutions Inc",53,0,"PT_NB_Intraplas.Packaging.Solutions_S2P",0,0,4,"2027-01-19","2026-09-21",49383,49383,0,4,"o75b6fd80b4"],["006Pm00001Nc3dSIAR",2,13,2,1,6,"Big Ticket",54,0,"BIG Ticket- Trail Period - To coincide with the NB OF",3,0,0,"2026-10-15","2026-09-04",0,0,0,28,"obba3545c1b"],["006Pm00001CyBMAIA3",2,11,12,2,3,"REAL FEDERACION ESPAÑOLA DE FUTBOL (RFEF)",51,0,"Resell Accenture - Referral-REAL FEDERACION ESPAÑOLA DE FUTBOL - P2P",0,0,1,"2027-02-26","2026-05-28",94812,80000,1,24,"o26d37114dd"],["006Pm00001MiFO0IAN",2,14,12,0,3,"Eskom Holdings SOC Ltd",55,0,"Resell - Accenture - Eskom Holdings P2P",0,0,0,"2027-06-22","2026-08-27",0,0,0,29,"o0d12a8e040"],["006Pm00000gagmxIAA",2,13,13,0,2,"Miral Experiences LLC",54,0,"Resell - Miral Experiences LLC S2P - Altron",0,0,0,"2027-03-12","2025-07-02",200000,200000,0,321,"o300b60526c"],["006Pm00000p5FkDIAU",2,14,14,0,5,"GCB Bank",56,9,"Resell - GCB Bank S2P RFP - ANDURAR Ghana",0,0,0,"2026-10-30","2025-10-07",150000,150000,0,73,"o5d78e7d0ec"],["006Pm00001Lb1VDIAZ",2,10,15,1,1,"LEM International SA",48,0,"LEM International SA - Renewal - 2029",1,0,2,"2029-08-31","2026-08-17",81455,63000,2,46,"oe3b2a18860"],["006Pm00001Il4DOIAZ",2,10,15,0,1,"EBRO ARMATUREN Gebr. Bröer GmbH",57,0,"Resell - Aneon Solutions GmbH - EBRO Armaturen Gebr. Bröer GmbH - P2P",0,0,0,"2027-03-25","2026-07-21",100000,100000,0,73,"obbcf9569d6"],["006Pm00000vu7M9IAI",2,10,15,0,2,"Regnology Group GmbH",57,0,"Resell - Regnology Germany GmbH - S2O - Aneon",0,0,4,"2027-03-31","2025-12-19",82960,70000,1,254,"o4bbc547ecf"],["006Pm00000fbSDtIAM",2,13,15,0,3,"Royal Air Maroc",58,0,"Resell - Royal Air Maroc - P2P + InvoiceSmash",0,0,3,"2027-09-28","2025-06-20",155255,131000,1,321,"o2e8856e15f"],["006Pm00001GBu5BIAT",2,10,15,0,3,"Aumann AG",57,0,"Resell - Aumann AG - Sourcing (P2O) - Aneon",0,0,4,"2027-03-29","2026-06-26",23703,20000,1,80,"o28fa65aac9"],["006Pm00000fziCcIAI",2,15,15,0,3,"CMAI HOLDING",58,0,"Resell - GROUPE CMAI - P2O",0,0,4,"2027-02-26","2025-06-25",53332,45000,1,321,"ob4a9c15e9e"],["006Pm00000ajoglIAA",2,15,15,0,3,"AROMA ZONE",58,0,"Resell - Aroma Zone - S2C + RPMS + Analytics",0,0,4,"2027-09-28","2025-04-23",59258,50000,1,321,"od978c5725d"],["006Pm00000fbKwFIAU",2,15,15,0,3,"COMPAGNIE LEBON",58,0,"Resell - Compagnie Lebon - P2O + Inventory + SIM + Sourcing",0,0,4,"2027-09-27","2025-06-20",46221,39000,1,321,"o94dc2400fc"],["006Pm00000ugv1fIAA",2,10,15,2,4,"Proxima Fusion GmbH",57,0,"Resell - Proxima Fusion - Inventory & Sourcing - Aneon",2,1,3,"2027-04-22","2025-12-05",31999,27000,1,227,"o3f57f19e6f"],["006Pm00001FR9ZAIA1",2,13,16,0,1,"Almana Group of Hospitals",54,0,"Resell- Bahwan Cybertek -Almana Group P2P",0,0,0,"2027-03-18","2026-06-19",75000,75000,0,105,"o6e96e27ce3"],["006Pm00001FRXbRIAX",2,13,16,0,1,"QATAR DISTRICT COOLING COMPANY",59,0,"QA_NB_Resell BCT_Qatar Cool_TBC",0,0,0,"2027-03-18","2026-06-19",75000,75000,0,105,"o331730cc14"],["006Pm00001FRTmMIAX",2,13,16,0,1,"Marafeq Qatar",54,0,"Resell- Bahwan Cybertek -Marafeq Qatar P2P",0,0,0,"2027-03-18","2026-06-19",75000,75000,0,105,"oc508187689"],["006Pm00001FR5k8IAD",2,13,16,0,2,"Commercial Bank",54,0,"Resell - Bahwan Cybertek - Commerical Bank of Qatar P2P",0,0,0,"2027-03-18","2026-06-19",150000,150000,0,82,"o9c2d256964"],["006Pm000014j8BVIAY",2,13,16,0,3,"QATAR PRIMARY MATERIALS CO",59,0,"QA_NB_Resell BCT_QPMC-P2P",0,0,0,"2026-12-14","2026-03-17",100000,100000,0,141,"o4fa4799a9a"],["006Pm000014irkJIAQ",2,13,16,0,5,"GASAL Q.S.C",59,10,"QA_NB_Resell_BCT_GASAL_S2P",0,0,0,"2026-10-15","2026-03-17",85000,85000,0,67,"obe50ef8e58"],["006Pm00001QPzlZIAT",2,16,17,1,1,"Sense International",60,0,"Sense International - Usage Based Pricing Renewal - 2031",1,0,2,"2031-09-29","2026-09-30",136911,100045,3,2,"o554a267e05"],["006Pm00001BqJqkIAF",2,16,17,0,2,"Redbull Powertrains",60,0,"Resell (Barkers) - Redbull Powertrains - P2P",0,0,4,"2027-04-14","2026-05-19",60000,60000,0,126,"o25ec22215d"],["006Pm00001MbF9RIAV",2,16,17,0,2,"DE MONTFORT FINE ART LIMITED",60,0,"Resell (Barkers) - DeMontfort Fine Art - P2P",0,0,4,"2027-04-14","2026-08-26",90000,90000,0,37,"ofe466188b8"],["006Pm00001NcBeEIAV",2,16,17,0,2,"MACRO GROUP LIMITED",60,0,"Resell - (Barkers) - Macro Group - S2P",0,0,3,"2027-10-20","2026-09-04",136849,100000,3,28,"o9f31a7d513"],["006Pm00001DDDM7IAP",2,16,17,0,2,"Signature Care Homes",60,0,"Resell (Barkers) - Signature Senior Lifestyle - S2O",0,0,6,"2027-04-21","2026-05-30",90000,90000,0,35,"o5de396dbc1"],["006Pm00001NNiyfIAD",2,16,17,0,2,"Rezolve",60,11,"Resell (Barkers) - Rezolve AI - P2P",0,0,4,"2027-10-14","2026-09-02",130000,130000,0,9,"o6b7357798c"],["006Pm00001K6KxhIAF",2,16,17,0,3,"Royal Hospital for Neuro-disability",60,11,"Resell (Barkers) - RHND - S2P",0,0,4,"2027-03-24","2026-08-03",90000,90000,0,53,"odf9d719f93"],["006Pm00001G371dIAB",2,16,17,0,3,"Medical Aid for Palestinians",60,11,"Resell (Barkers) - Medical Aid for Palestinians - S2P",0,0,4,"2027-01-15","2026-06-25",100000,100000,0,58,"o9d3d35d5f5"],["006Pm00001IOOHdIAP",2,16,17,0,4,"Blue Light Card",60,12,"Resell (Barkers) - Blue Light Card - RPMA + CLMA",0,0,7,"2026-10-28","2026-07-17",70000,70000,0,17,"ofe4bf78e1b"],["006Pm00001PVPL1IAP",2,11,4,0,1,"ANA",53,0,"Resell-BOSC - Business of Supply Chain Consulting-ANA-P2P",0,0,0,"2027-06-24","2026-09-22",20000,20000,0,10,"oda1d5de541"],["006Pm000019TLY2IAO",2,11,4,0,1,"MANUEL CHAMPALIMAUD - SERVIÇOS",53,0,"Reseller-BOSC-Grupo Manuel Champalimaud-P2P",0,0,0,"2027-11-30","2026-04-27",30000,30000,0,158,"o7bf2404357"],["006Pm000019TiMXIA0",2,11,4,0,1,"HOVIONE FARMACIÊNCIA, S.A.",53,0,"Reseller-BOSC-Hovione-P2P",0,0,0,"2027-06-29","2026-04-27",50000,50000,0,158,"o9f5b5468fe"],["006Pm000014HHphIAG",2,11,4,0,1,"NOS",61,0,"Reseller-BOSC-NOS-P2P",0,0,0,"2027-05-01","2026-03-13",400000,400000,0,203,"oc85b3bf47d"],["006Pm000014j129IAA",2,11,4,0,1,"MEO - SERVIOS DE COMUNICAES E MULTIMDIA, S.A.",61,0,"Reseller-BOSC-MEO-P2P",0,0,0,"2027-05-01","2026-03-17",250000,250000,0,199,"o089dbb996c"],["006Pm000014tBxsIAE",2,11,4,0,1,"visabeira",53,0,"Reseller-BOSC-Grupo Visabeira-P2P",0,0,0,"2027-11-30","2026-03-18",50000,50000,0,198,"od6f77e0bd2"],["006Pm00001BDpVkIAL",2,11,4,0,1,"Sport Lisboa e Benfica",61,0,"Resell-BOSC-Sport Lisboa e Benfica-P2P",0,0,0,"2027-02-18","2026-05-13",75000,75000,0,142,"oadd6eae368"],["006Pm000015DvjsIAC",2,11,4,0,1,"Galp Energia",61,0,"Reseller-BOSC-GALP-P2P",0,0,0,"2027-05-01","2026-03-20",500000,500000,0,196,"o6969320c3c"],["006Pm000015EH0qIAG",2,11,4,0,1,"SECURITAS DIRECT ESPAÑA SAU",53,0,"Reseller-Bosc-Securitas Direct-P2P",0,0,0,"2027-12-01","2026-03-20",50000,50000,0,196,"o5840184535"],["006Pm000019pHHHIA2",2,11,4,0,1,"DTS SGPS",53,0,"RESELLER-BOSC-DTS SGPS-P2P",0,0,0,"2027-10-27","2026-04-30",50000,50000,0,155,"o5cd7b0f47e"],["006Pm00001DW110IAD",2,16,4,0,1,"Nscale Global Holdings Limited",53,0,"Resell - Nscale Global Holdings Limited - BOSC P2P",0,0,0,"2027-10-26","2026-06-02",50000,50000,0,122,"o721d36cd01"],["006Pm000017zJPNIA2",2,11,4,0,1,"WORTEN",61,0,"Reseller-BOSC-Worten-P2P",0,0,0,"2027-05-01","2026-04-13",250000,250000,0,172,"o3acf96e0be"],["006Pm000016skuqIAA",2,11,4,0,2,"Lusosider",53,0,"Reseller-BOSC-Lusosider-P2P",0,0,0,"2027-03-30","2026-04-02",50000,50000,0,101,"ob25ef31e42"],["006Pm00001AjFO1IAN",2,11,4,0,2,"Petrotec Group",53,13,"Reseller-BOSC-Petrotec Group-P2P",0,0,0,"2027-03-30","2026-05-08",60000,60000,0,101,"od341c887ea"],["006Pm000019pLvyIAE",2,11,4,0,3,"Indie Campers",53,13,"Reseller-BOSC-Indie Campers-P2P",0,0,0,"2027-03-30","2026-04-30",45000,45000,0,46,"ob30615e9a1"],["006Pm000014t8S6IAI",2,11,4,0,3,"Futebol Clube do Porto S.A.D",53,13,"Reseller-Futebol Clube-BOSC-P2P",0,0,0,"2027-02-28","2026-03-18",40000,40000,0,144,"o2a0e286a11"],["006Pm00001AjGojIAF",2,11,4,0,4,"BANCO ATLÂNTICO EUROPA, S.A.",53,13,"PT_NB_Banco Atlantico_P2P_Resell_BOSC",0,0,3,"2026-10-27","2026-05-08",52000,52000,0,81,"o48edc47389"],["006Pm000019pLvzIAE",2,11,4,0,4,"Delta Cafés",53,0,"PT_NB_Reseller-Delta Cafés-P2P",0,0,0,"2027-04-27","2026-04-30",77000,77000,0,115,"o30c080a904"],["006Pm000014jDWCIA2",2,11,4,0,4,"SIMOLDES - PLÁSTICOS, S.A.",53,13,"Reseller-BOSC-Simoldes-P2P",0,0,0,"2026-11-24","2026-03-17",80000,80000,0,190,"oc947fb6b55"],["006Pm000018Npj5IAC",2,11,4,0,4,"Start Campus",53,13,"PT_NB_Start Campus_RPM & CLM_Reseller_BOSC",0,0,5,"2026-10-21","2026-04-16",75000,75000,0,96,"o04b428b65f"],["006Pm000014iq6tIAA",2,11,4,0,5,"TEIXEIRA DUARTE - ENGENHARIA E CONSTRUÇÕES, S.A.",53,13,"PT_NB_Resell_BOSC_Teixeira_P2P",0,0,0,"2026-12-22","2026-03-17",65000,65000,0,96,"o8240e43631"],["006Pm00001H6HruIAF",2,11,4,0,6,"SERVINFORM SA",53,13,"SP_NB_Servinform_P2P_Resell",0,0,3,"2026-10-15","2026-07-06",42712,36039,1,4,"o20208402c6"],["006Pm00001D6jLqIAJ",2,14,18,0,3,"Kenya Power",62,0,"ZA_NB_RESELL_KENYA POWER & CENTRIC RFP_S2O",0,0,0,"2027-02-26","2026-05-29",120000,120000,0,86,"o1aac5be155"],["006Pm00001OyfYpIAJ",2,14,19,0,2,"The Courier Guy",63,0,"SA_NB_The Courier Guy_CLM",0,0,3,"2027-03-12","2026-09-17",11059,11059,0,4,"oc5a8560041"],["006Pm00001IrCPxIAN",2,14,19,0,2,"Vumatel (Pty) Ltd",63,0,"SA_NB_Vumatel_S2P",0,0,3,"2027-03-25","2026-07-22",70000,70000,0,72,"od148c082a0"],["006Pm00001HG82ZIAT",2,14,19,0,3,"THE BIOLOGICALS AND VACCINES INSTITUTE OF SOUTHERN AFRICA (PTY) LTD",63,0,"SA_NB_BIOVAC_S2P",0,0,7,"2026-12-04","2026-07-07",80000,80000,0,78,"o86f5ac7dba"],["006Pm00001NLBVlIAP",2,14,19,0,4,"Beachcomber",62,0,"ZA_NB_Reseller - Cogniviti Labs_Beachcomber_P2P",0,0,0,"2026-12-03","2026-09-02",40000,40000,0,30,"o2a4cc88342"],["006Pm00001C9pNKIAZ",2,11,20,0,1,"LUSIAVES - INDÚSTRIA E COMÉRCIO AGRO-ALIMENTAR, S.A.",53,0,"Resell-Conexus Supply-Lusiaves-P2P",0,0,0,"2027-02-18","2026-05-21",140000,140000,0,134,"oc937652db1"],["006Pm00001OdDFCIA3",2,11,20,0,1,"Fidelidade",53,0,"Resell-Conexus Supply-Fidelidade-P2P",0,0,0,"2027-03-23","2026-09-14",75000,75000,0,18,"o29508c5e7d"],["006Pm000014stRvIAI",2,11,20,0,1,"PROEF EURICO FERREIRA PORTUGAL, S.A.",53,0,"Reseller-Conexus-PROEF EURICO-P2P",0,0,0,"2027-04-27","2026-03-18",20000,20000,0,198,"o226eaa3b54"],["006Pm00001OF829IAD",2,11,20,0,1,"SUMOL+COMPAL - MARCAS, S.A.",53,0,"Resell-Conexus Supply Lda-Sumol+Compal-P2P",0,0,0,"2027-06-17","2026-09-10",75000,75000,0,22,"o1c969d079c"],["006Pm00001AiyNDIAZ",2,11,20,0,1,"Ba Vidro SA",53,0,"Reseller-Conexus Supply-BA Glass-P2P",0,0,0,"2027-09-29","2026-05-08",30000,30000,0,147,"ob4a9e5653a"],["006Pm00001B69PyIAJ",2,11,20,0,1,"Carglass Portugal",53,0,"Reseller-Conexus Supply-Carglass Portugal-P2P",0,0,0,"2027-05-26","2026-05-12",40000,40000,0,143,"ob9408992bb"],["006Pm00001B6GJQIA3",2,11,20,0,1,"BIAL - PORTELA & CA., S.A.",53,0,"Resell-Conexus Supply-Bial-P2P",0,0,0,"2027-08-31","2026-05-12",140000,140000,0,143,"o911dad6a14"],["006Pm00001B6HtnIAF",2,11,20,0,1,"WORTEN",61,0,"Reseller-Conexus Supply-Worten-P2P",0,0,0,"2027-02-18","2026-05-12",175000,175000,0,143,"o2a30482b59"],["006Pm00001B6NJIIA3",2,11,20,0,1,"SBM",53,0,"Reseller-Conexus Supply, Lda-SBM-P2P",0,0,0,"2027-02-18","2026-05-12",70000,70000,0,143,"o2c69d6e819"],["006Pm00001B6UZFIA3",2,11,20,0,1,"CTT",61,0,"Reseller-Conexus Supply-CTT-P2P",0,0,0,"2027-02-25","2026-05-12",350000,350000,0,143,"o6e37852028"],["006Pm00001CKsJNIA1",2,11,20,0,1,"NORS",61,0,"Resell-Conexus Supply-NORS-P2P",0,0,0,"2027-02-25","2026-05-22",100000,100000,0,133,"o2008e08704"],["006Pm00001CBrw2IAD",2,11,20,0,1,"Frulact",53,0,"Resell-Conexus Supply-Frulact-P2P",0,0,0,"2027-06-28","2026-05-21",20000,20000,0,134,"ofbd7dab8f8"],["006Pm00001CBJ37IAH",2,11,20,0,1,"Colep Packaging",53,0,"Resell-Conexus Supply-Colep Packaging-P2P",0,0,0,"2027-12-29","2026-05-21",20000,20000,0,134,"od5ffb3a3d6"],["006Pm00001J0PUQIA3",2,16,21,0,3,"Capital Drilling",64,0,"Capital Drilling - TMS - CoreProcess Resell",0,0,4,"2027-01-31","2026-07-23",50000,50000,0,36,"of5de087949"],["006Pm00000gzbfDIAQ",2,17,21,1,5,"Eduviva Group AB",65,0,"Eduviva Group AB - TMS",0,0,2,"2027-06-17","2025-07-07",29036,24500,1,360,"ob09b1ca2b4"],["006Pm00000O18SLIAZ",2,18,22,0,6,"VR Group",66,14,"VR Group - S2P (2000) - resell",0,0,4,"2026-10-19","2024-10-18",567687,479000,1,16,"od951b1712b"],["006Pm000016CPwQIAW",2,13,23,0,5,"Hayat Kimya",67,10,"ME_NB_Resell_Hayat Kimya_S2C_CSO_SCC",0,0,1,"2027-01-21","2026-03-27",399000,399000,0,85,"o12d39aacbd"],["006Pm00001HOGxNIAX",2,10,24,0,1,"Assura S.A.",1,0,"Resell-Digital Procurement Now-Assura-P2P",0,0,0,"2027-02-26","2026-07-08",59258,50000,1,86,"oe7fd6228ce"],["006Pm00001LapCKIAZ",2,16,24,0,1,"Vilgain LTD",60,0,"Resell (DPNow) - Vilgain - P2P",0,0,3,"2027-09-01","2026-08-17",54740,40000,3,46,"ob4eec96d02"],["006Pm00001M7DkvIAF",2,10,24,0,1,"Sécheron",1,0,"Resell-Sécheron-P2P-DPNow",0,0,0,"2027-05-01","2026-08-21",70000,70000,0,42,"o15b41e1b30"],["006Pm00001JixvNIAR",2,10,24,0,2,"SHL Medical",57,0,"Resell-Digital Procurement Now-SHL Medical-P2P",0,0,0,"2027-04-22","2026-07-30",100000,100000,0,58,"o5fe81b1bb0"],["006Pm00000sNSpKIAW",2,10,24,0,2,"KoRo Drogerie",57,0,"KoRo Drogerie - P2O - DPNow",0,0,8,"2027-03-31","2025-11-10",82960,70000,1,321,"ocaab309732"],["006Pm00001MN8anIAD",2,15,24,0,3,"Fatec group",58,0,"Resell (DPNOw) - Fatec Group - S2P",0,0,2,"2026-12-15","2026-08-24",71109,60000,1,39,"o485e744d54"],["006Pm00001Jj8HJIAZ",2,15,24,0,3,"BSP PHARMACEUTICALS SPA",68,0,"IT_NB_BSP PHARMACEUTICALS SPA - PO Collaboration + Invoicing",0,0,4,"2026-12-15","2026-07-30",52044,43913,1,50,"oc7217a38e7"],["006Pm00001CyCwYIAV",2,15,24,0,4,"HONDA FRANCE MANUFACTURING",58,0,"Resell (DPNOw) - Honda France Manufacturing - Sourcing",0,0,4,"2026-10-29","2026-05-28",37332,31500,1,58,"o3c1fa947f7"],["006Pm00000kiulcIAA",2,15,24,0,4,"Fives",58,0,"Resell Fives - Invoicing, InvoiceSmash and Spendguard",0,0,4,"2027-03-31","2025-08-18",12444,10500,1,163,"o0710369888"],["006Pm00000ceM8oIAE",2,15,24,0,4,"Groupe LIP",58,0,"Resell (DPNow) - Groupe LIP - P2P + Sourcing + RPM + Invoicing + invoice smash",0,0,4,"2027-01-22","2025-05-16",182467,153961,1,2,"o3dbc8e3b1c"],["006Pm00001JU19jIAD",2,12,25,0,1,"Stichting Carint-Reggeland Groep",69,0,"Carintreggeland - S2P",0,0,3,"2027-08-01","2026-07-28",150000,150000,0,66,"o85865c452d"],["006Pm00001OOpavIAD",2,12,25,0,1,"Telix Pharmaceuticals Belgium",50,0,"Telix Pharmaceuticals Belgium - Coupa Virtual Card Q3",2,2,2,"2026-10-31","2026-09-11",47891,47891,0,21,"o9e6dbc93c9"],["006Pm00000dTylWIAS",2,12,25,0,1,"Timber & Building Supplies",70,0,"Resell - Timber & Building Supplies P2P - Dynatos",0,0,0,"2027-03-18","2025-05-27",130000,130000,0,321,"oebd18f0676"],["006Pm00000s3qcWIAQ",2,11,25,0,1,"Telefónica",61,0,"Resell - TELEFONICA P2P - Dynatos",0,0,0,"2027-03-16","2025-11-06",200000,200000,0,321,"o6f23ebc0a2"],["006Pm000015UoFKIA0",2,12,25,0,1,"Sanorice Belgium NV",69,0,"Resell-Dynatos-Sanorice Holding-P2P",0,0,0,"2027-08-01","2026-03-23",100000,100000,0,193,"o8f7b63ea12"],["006Pm000015FCALIA4",2,12,25,0,3,"Dura Vermeer Groep N.V.",71,15,"Resell - Dura Vermeer P2P",0,0,0,"2027-06-25","2026-03-20",150000,150000,0,127,"ofca9fbef24"],["006Pm00000lA3HjIAK",2,12,25,0,5,"Prodrive Technologies Group B.V.",70,0,"Resell - Prodrive Technologies S2P - Dynatos",0,0,0,"2026-12-18","2025-08-22",192575,162490,1,2,"oe385d83e65"],["006Pm00001Fm6gIIAR",2,16,26,0,2,"Barratt Redrow",72,0,"Resell-Future Purchasing-Barratt Redrow-P2P",0,0,0,"2027-03-18","2026-06-23",255981,255981,0,3,"o41b77c7d40"],["006Pm00001JrWj3IAF",2,17,26,0,4,"Region Stockholm",65,0,"Resell_Future Purchasing_Region Stockholm_P2P",0,0,1,"2027-03-18","2026-07-31",160000,160000,0,25,"o94695f617f"],["006Pm000010k2XmIAI",2,11,27,0,3,"Hellenic Halyvourgia S.A.",68,0,"GR_Reseller_Hellenic Halyvourgia - Coupa Pay & AI",0,0,0,"2027-05-28","2026-02-10",30000,30000,0,163,"odb13984a11"],["006Pm00001KWAufIAH",2,11,27,0,3,"Piraeus Port Authority",49,0,"IT_NB_Piraeus Port Authority_ Rossum AI_resell",0,0,4,"2027-04-22","2026-08-06",71109,60000,1,53,"o11d26a17ca"],["006Pm00000evwD8IAI",2,11,27,0,3,"Abraserve MT Limited",68,0,"Resell_KPMG_Novibet - Treasury and Pay",2,1,3,"2027-02-19","2025-06-12",82960,70000,1,50,"o1e8bdeb981"],["006Pm00000ufCbFIAU",2,11,27,0,3,"Dixons South - East Europe (Kotsovolos)",73,0,"GR_NB_NEXT GEN RETAIL  (KOTSOVOLOS)_S2C_Resell - KPMG Greece",0,0,0,"2027-03-26","2025-12-05",30000,30000,0,219,"oa3b5b84a93"],["006Pm000012EnX4IAK",2,11,27,0,3,"Navicon SA",73,0,"GR_NB_Navicon SA_Expenses",0,0,4,"2027-03-26","2026-02-25",30000,30000,0,212,"o83d2b8bfbc"],["006Pm000011GeurIAC",2,11,27,0,4,"Groupama Asfalistiki",49,16,"GR_NB_Groupama Asfalistiki_S2C+Expenses_Resell OUTBOUND",0,0,7,"2027-02-26","2026-02-16",29629,25000,1,212,"oc7541d484a"],["006Pm00001Mr65JIAR",2,11,27,0,4,"Ciner Ship Management Limited",49,0,"GR_NB_Ciner Ship Management_P2P+Rossum AI",0,0,4,"2027-02-18","2026-08-28",65000,65000,0,9,"o367415cf1d"],["006Pm000014G45OIAS",2,11,27,0,4,"TIRESIAS S.A",49,0,"GR_NB_TIRESIAS Finance_S2P_Resell OUTBOUND",0,0,4,"2027-03-17","2026-03-13",40000,40000,0,91,"ofee658b8a5"],["006Pm000015gNxlIAE",2,11,27,0,5,"Piraeus Port Authority",49,16,"GR_NB_Resell_Piraeus Port Authority_S2P+RPMs",0,0,4,"2027-01-21","2026-03-24",74000,74000,0,29,"o80d5a2b374"],["006Pm00001DfeEPIAZ",2,11,27,0,5,"ETHNIKI, THE, HELLENIC GENERAL INSURANCE CO. S.A.",49,0,"Resell - Ethniki Hellenic General Insurance Company S.A - KPMG LLP - Greece P2P",0,0,0,"2027-03-26","2026-06-03",55000,55000,0,44,"odcbfcc7b65"],["006Pm00000zIBYCIA4",2,11,27,0,5,"Grecotel Hotels & Resorts",49,0,"GR_NB_Resell_Grecotel Hotels & Resorts_S2P+RPMs+Inventory_Reseller - KPMG",0,0,0,"2026-11-27","2026-01-27",47406,40000,1,36,"oabdfadf69c"],["006Pm000012JqfdIAC",2,11,28,0,1,"Grupo Iskaypet",74,0,"Resell - ISKAYPET",0,0,0,"2027-02-01","2026-02-26",0,0,0,218,"oce32388489"],["006Pm000017c5rvIAA",2,11,28,0,1,"Compass Group Holdings Spain",51,0,"Reseller--LKS NEXT-Compass Group Holdings-P2P",0,0,0,"2027-06-03","2026-04-09",80000,80000,0,176,"oc901a4dda5"],["006Pm000013DlyBIAS",2,11,28,0,1,"FAGOR ARRASATE S.C.",51,0,"Reseller-LKS-Fagor Arrasate P2P",0,0,0,"2027-05-31","2026-03-05",50000,50000,0,211,"o04dde0c025"],["006Pm000013DplfIAC",2,11,28,0,1,"ULMA PACKAGING SDAD COOP",51,0,"Reseller-LKS-ULMA Packaging P2P",0,0,0,"2027-05-31","2026-03-05",40000,40000,0,211,"oaa856ae35d"],["006Pm000012K4hBIAS",2,11,28,0,1,"Iberdrola",74,0,"Resell -Iberdrola",0,0,0,"2027-02-01","2026-02-26",0,0,0,218,"o8653f42b8e"],["006Pm000011vvlFIAQ",2,11,28,0,2,"OESIA NETWORKS SOCIEDAD LIMITADA",53,13,"Reseller - LKS Next - Grupo Oesia - S2P",0,0,0,"2027-06-30","2026-02-22",50000,50000,0,148,"ob32a5398f7"],["006Pm00000sTs60IAC",2,11,28,0,3,"TUBACEX S.A",51,0,"Tubacex - Sourcing, RPM, Procurement, CLM, Navi - LKS",0,0,0,"2027-02-01","2025-11-11",59258,50000,1,252,"o57dbf8aa19"],["006Pm00000etNzXIAU",2,11,28,0,3,"ANDORRA TELECOM",51,17,"Resell - ANDORRA TELECOM P2P - LKS NEXT",0,0,0,"2027-02-15","2025-06-12",87640,87640,0,321,"o40e2d16cd7"],["006Pm00000n5dVzIAI",2,11,28,0,4,"HINE Renovables",51,13,"Resell - HINE Renovables S2P - LKS Next",0,0,0,"2026-10-26","2025-09-14",77579,65459,1,24,"oe7d79933e1"],["006Pm00000lYhU5IAK",2,11,28,0,4,"Adam Foods",51,0,"Resell - Adam Foods S2P - LKS Next",0,0,0,"2027-01-15","2025-08-27",71109,60000,1,24,"o2f14dd2a9f"],["006Pm000011wcVFIAY",2,11,28,0,4,"Group Pyrénées Andorra",51,13,"Reseller - LKS Next Pyrénées S.A - P2P",0,0,9,"2027-02-26","2026-02-23",80000,80000,0,24,"o49e556d0b6"],["006Pm000011vgvuIAA",2,11,28,0,5,"Prosegur Compañía de Seguridad S.A",21,13,"ES_NB_RESELL_PROSEGUR_CLM-A",0,0,0,"2026-12-17","2026-02-22",59258,50000,1,122,"o6b734fe484"],["006Pm00001GQKflIAH",2,11,28,0,5,"MULTIVERSE COMPUTING, S.L.",53,13,"SP_NB_Multiverse Computing - P2P_Resell_LKS",0,0,4,"2027-02-28","2026-06-29",20148,17000,1,71,"ob92fec7c4d"],["006Pm000012ASe7IAG",2,11,28,0,5,"Swissport Handling, S.A",21,13,"ES_NB_RESELL_SWISSPORT_S2C",0,0,9,"2026-10-23","2026-02-24",140000,140000,0,92,"o56b5b27214"],["006Pm00001I8BTFIA3",2,11,28,0,5,"Swissport Handling, S.A",21,13,"ES_NB_RESELL_SWISSPORT_ROSSUM",0,0,9,"2026-10-23","2026-07-15",94812,80000,1,74,"o29750caf54"],["006Pm00001JaaUYIAZ",2,15,29,0,1,"Masco Group",68,0,"Resell - LUTECH - Masco Group P2P",0,0,0,"2027-04-27","2026-07-29",150000,150000,0,65,"ofa0216acec"],["006Pm00001AKQZaIAP",2,11,30,2,5,"Swift Marine Hellas",49,16,"GR_NB_Reseller_Swift Marine Hellas_CSO+RPMS+CLMs+SCC",0,0,4,"2027-01-21","2026-05-05",77035,65000,1,29,"o7df1e8b0a4"],["006Pm000013ktkCIAQ",2,11,31,0,1,"AXACTOR ESPAÑA PLATFORM SA.",51,0,"AXACTOR - S2C_Resell",0,0,4,"2027-04-20","2026-03-10",88886,75000,1,206,"o982b3040ea"],["006Pm00000vpuovIAA",2,11,31,0,4,"LYNTIA NETWORKS, S.A.",51,13,"LYNTIA SOURCE TO PROCUREMENT_Reseller",0,0,10,"2026-10-16","2025-12-18",47132,39769,1,24,"o2a1ae1ebdb"],["006Pm00000xPQWoIAO",2,11,31,0,4,"Turística Konrad",51,0,"Turística Konrad - RPM, Procurement, Invoicing, Invoices Smash, Expenses_Reseller",0,0,4,"2027-02-26","2026-01-08",65183,55000,1,24,"o2bbdbb14c4"],["006Pm00001JizkHIAR",2,11,31,0,4,"Grupo Anaya",51,0,"ES_AddOn_Direct_Grupo Anaya_Virtual Cards",2,1,7,"2026-12-28","2026-07-30",23703,20000,1,56,"o60dc85f42d"],["006Pm00000rDge1IAC",2,14,31,3,4,"Cornelder de Mo√ßambique",63,9,"SA_NB_Cornelder de Mozambique_S2P_resell",0,0,4,"2027-01-14","2025-10-28",70000,70000,0,72,"oa62f21b2e5"],["006Pm00001GY8j0IAD",2,11,31,0,4,"Grupo Planeta",51,0,"PLANETA ROSSUM-CONNECTS MADRID",2,1,3,"2026-11-30","2026-06-30",71109,60000,1,56,"oe5c7d03c67"],["006Pm00001IaF2aIAF",2,14,31,0,6,"NBS BANK PLC",56,9,"ZA_NB_Resell_NBS BANK_S2P",0,0,3,"2026-10-16","2026-07-20",123000,123000,0,30,"o766bead3f2"],["006Pm00001JqJnvIAF",2,15,32,0,1,"UniCredit SpA",75,0,"Resell - Procurement Garage - Unicredit Group P2P",0,0,0,"2027-04-22","2026-07-31",100000,100000,0,63,"odf31040422"],["006Pm00000xJhDoIAK",2,11,32,0,1,"ALAIN AFFLELOU ESPAÑA SA",51,0,"Reseller - PG - ALAIN AFFLELOU ESPAÑA SA - P2P",0,0,0,"2027-06-25","2026-01-07",50000,50000,0,268,"o3e896d029a"],["006Pm00001JqdTFIAZ",2,15,32,0,1,"Hitachi Rail",75,0,"Procurement Garage - Hitachi Rail - CCS",0,0,0,"2027-04-22","2026-07-31",100000,100000,0,63,"odbc02c16a7"],["006Pm00001JqbzJIAR",2,15,32,0,1,"Barilla Group",75,0,"Resell - Procurement Garage - Barilla CCS",2,0,0,"2027-04-22","2026-07-31",100000,100000,0,63,"o4fa68167c7"],["006Pm00001O5df8IAB",2,15,32,0,2,"TWY SRL",68,0,"IT_NB_TWY SRL - Supply Chain",0,0,4,"2027-05-28","2026-09-09",60000,60000,0,14,"o07906af4cf"],["006Pm000013k4V0IAI",2,11,32,0,2,"Fundação Calouste Gulbenkian",53,0,"Reseller-Procurement Garage-Fundação Calouste Gulbenkian-P2P",0,0,0,"2027-10-27","2026-03-10",35000,35000,0,204,"o4095550c17"],["006Pm00001MMM1VIAX",2,15,32,0,2,"Aero Service Technologies Italy srl",49,0,"IT_NB_Aero Service Technologies_P2P_Resell",0,0,5,"2027-05-30","2026-08-24",45000,45000,0,39,"o6c00cc9d25"],["006Pm000019q8WsIAI",2,15,32,0,2,"NATUZZI SPA",68,0,"IT_NB_Natuzzi - RPM, Sourcing, CLM",0,0,11,"2027-05-28","2026-04-30",70000,70000,0,155,"o2c41f6beec"],["006Pm00000y61dBIAQ",2,11,32,0,2,"ILUNION",21,0,"Reseller - Procurement Garage - ILUNION GROUP - P2P",0,0,0,"2027-04-19","2026-01-15",100000,100000,0,207,"o838be41f9e"],["006Pm00001ELi5VIAT",2,15,32,0,3,"Euro Globalservice Wind srl",49,0,"IT_NB_Euro Globalservice Wind - P2P + Inventory",0,0,4,"2027-06-23","2026-06-09",25000,25000,0,112,"o26a7f0fca2"],["006Pm000014FzvMIAS",2,11,32,0,3,"Leroy Merlin España S.L.U",21,0,"ES_NB_RESELL_LEROY MERLIN_P2P",0,0,0,"2027-01-21","2026-03-13",100000,100000,0,46,"oc0e003bec0"],["006Pm00001PNT8tIAH",2,15,32,0,3,"TRESCAL",58,0,"Reseller (PG) -  TRESCAL - S2P",0,0,4,"2027-01-21","2026-09-21",71109,60000,1,8,"o2f31a5922d"],["006Pm00001NcTZVIA3",2,15,32,0,3,"Lafert S.p.A.",68,0,"IT_NB_Lafert SpA - S2P",0,0,4,"2027-02-25","2026-09-04",35554,30000,1,7,"of11b5f4806"],["006Pm00001NeIEzIAN",2,15,32,0,3,"TE.CO. SPA",68,0,"IT_NB_Te.Co. Spa- Procurement",0,0,9,"2027-06-30","2026-09-04",13671,13671,0,2,"o118146f8e4"],["006Pm000011kWjlIAE",2,11,32,0,4,"DELAGRO",53,11,"SP_NB_Direct_DELAGRO - P2P_Resell",0,0,4,"2026-11-18","2026-02-20",65000,65000,0,81,"o8a6a6afba2"],["006Pm00000shIsIIAU",2,15,32,0,4,"TEAMSYSTEM SPA",68,16,"IT_NB_TeamSystem - Sourcing + CLM + RPM",0,0,4,"2027-02-16","2025-11-13",77035,65000,1,301,"o1b2a57029d"],["006Pm00001MqcATIAZ",2,11,32,0,4,"Sani Ikos Group",49,0,"GR_NB_Reseller_SANI/IKOS Resorts_S2C+RPMs",0,0,5,"2027-03-31","2026-08-28",47406,40000,1,16,"oc5f287bb18"],["006Pm0000181jdtIAA",2,11,32,0,4,"UNIR – Universidad Internacional de La Rioja, S.A.",51,13,"PROEDUCA  ADD ON ANALYTICS",2,1,3,"2027-03-31","2026-04-13",17185,14500,1,143,"oe0b6e9ac31"],["006Pm00001ObLbpIAF",2,11,32,0,4,"FairJourney Biologics",53,0,"PT_Fairjourney_Addon_Rossum",2,2,3,"2026-10-15","2026-09-14",71109,60000,1,17,"o609e9aff6d"],["006Pm000019rollIAA",2,15,32,0,5,"MAX STREICHER SPA",49,16,"IT_NB_Reseller OUTBOUND_Max Streicher S.p.A_S2C+P2O+RPM",0,0,10,"2026-11-27","2026-04-30",28444,24000,1,9,"of6bca33f73"],["006Pm000014iFgXIAU",2,15,32,0,5,"Sirti S.p.A.",49,16,"IT_NB_Sirti_Sourcing+SIM+AI",0,0,4,"2026-12-17","2026-03-17",34371,29001,1,9,"o1be9e149ac"],["006Pm000015bnpZIAQ",2,11,32,0,5,"BLUEPHARMA - INDÚSTRIA FARMACÊUTICA, S.A.",51,13,"BLUEPHARMA RFP PROCUREMENT Resell",0,0,3,"2026-12-11","2026-03-23",58072,49000,1,24,"o39c6b3e90a"],["006Pm00001DunkPIAR",2,11,32,0,5,"ASTARA MOBILITY SA",21,13,"ES_NB_RESELL_ASTARA_P2P",0,0,0,"2027-01-15","2026-06-05",112589,95000,1,112,"oc3322b65f2"],["006Pm0000130yc2IAA",2,15,32,0,5,"eServices srl",68,16,"IT_Resell_PG_Add-On_DeLonghi - Expenses",2,1,3,"2026-11-30","2026-03-04",41480,35000,1,157,"oc4b2d67e72"],["006Pm00001Gh0cYIAR",2,15,32,0,5,"AB Holding SpA",49,16,"NB_IT_Reseller_AB Holding SpA - I&O+ CLMA + RPMA+ Sourcing",0,0,4,"2027-01-29","2026-07-01",130367,110000,1,11,"ocacd447213"],["006Pm00000H4qRVIAZ",2,15,32,0,6,"DOLE ITALIA SRL",49,16,"IT_NB_Dole_REseller_ P2P_OBN_Advanced Analytics",0,0,6,"2026-10-02","2024-06-25",46932,39600,1,88,"o373c8b4f2d"],["006Pm00001MpsywIAB",2,10,1,0,1,"Lamilux Heinrich Strunz Gruppe",1,0,"Resell-Procurion GmbH-LAMILUX Heinrich Strunz Holding GmbH & Co. KG-P2P",0,0,0,"2027-05-20","2026-08-28",0,0,0,35,"o08be292cf1"],["006Pm00000mnRcwIAE",2,10,1,1,1,"dSPACE Group SE & Co. KG",48,0,"dSPACE Group SE & Co. KG-Renewal-2030",1,0,2,"2030-09-11","2025-09-10",113774,96000,1,321,"o523a6d203e"],["006Pm0000124fRAIAY",2,10,1,0,2,"DRK-Kreisverband Borken e.V.",57,0,"Resell - DRK Borken - P2O + RPMs - Procurion",0,0,4,"2027-02-15","2026-02-24",40000,40000,0,148,"o80d4dc4fc5"],["006Pm00000omQppIAE",2,10,1,0,2,"Eidgenössische Technische Hochschule Zürich",57,0,"Resell - Eidgenössische Technische Hochschule Zürich P2P - Procurion",0,0,0,"2027-04-15","2025-10-03",75000,75000,0,140,"odee5d885f3"],["006Pm0000148qMnIAI",2,10,1,0,2,"Adragos Pharma GmbH",57,0,"Resell - Adragos Pharma - P2O - Users tbd - Procurion",0,0,8,"2027-03-31","2026-03-12",71109,60000,1,172,"oaed6c0d463"],["006Pm00001LE64CIAT",2,10,1,0,2,"Gutenberg Rechenzentrum GmbH & Co. KG",57,0,"Add - On - Resell-Procurion GmbH-Gutenberg Rechenzentrum GmbH & Co. KG-P2P",2,1,0,"2027-02-18","2026-08-13",29629,25000,1,50,"oefeacf9247"],["006Pm0000190CbNIAU",2,10,1,0,2,"Embru-Werke AG",76,0,"Reseller-Procurion GmbH-Embru-Werke AG-P2P",0,0,0,"2027-04-29","2026-04-22",32323,25000,2,156,"o812c5d2c68"],["006Pm00001IkwpKIAR",2,10,1,0,3,"EBL Genossenschaft Elektra Baselland",1,0,"Resell-Procurion-EBL Archive",2,0,0,"2027-03-29","2026-07-21",12606,9750,2,46,"o7b98510684"],["006Pm00001CL2DtIAL",2,10,1,0,3,"HIGHCLEAN GROUP eG",57,0,"Resell - HIGHCLEAN GROUP eG - Procurion",0,0,4,"2027-02-15","2026-05-22",59258,50000,1,32,"o6a3cda0a2c"],["006Pm00001GhwILIAZ",2,10,1,0,4,"Arethia Services Germany GmbH & Co. KG",57,0,"Resell-Arethia Services - SRM - Procurion",0,0,0,"2027-01-15","2026-07-01",17777,15000,1,31,"o0dd7d00898"],["006Pm00001GhtkHIAR",2,10,1,0,5,"WiBU Pflege Plus GmbH",57,0,"Resell-WiBU PflegePlus GmbH-P2P-Procurion",0,0,0,"2026-12-21","2026-07-01",71109,60000,1,2,"of2fb217fe8"],["006Pm00000jaqz3IAA",2,10,1,0,5,"DYCONEX AG",57,0,"Resell - DYCONEX AG - P2O - 100 users - Procurion",0,0,10,"2026-10-20","2025-08-05",58665,49500,1,2,"o44134b395b"],["006Pm000014ZJ8LIAW",2,14,33,0,1,"ARC",77,9,"Reseller-RAYBURN-ARC-P2P",0,0,0,"2027-01-21","2026-03-16",50000,50000,0,200,"oe6472002b1"],["006Pm00001EHeeoIAD",2,12,33,0,1,"Flora Food Group B.V.",62,0,"ZA_NB_RESELL_FLORA FOOD GROUP_P2P",0,0,0,"2027-05-01","2026-06-09",50000,50000,0,115,"o7f55f63748"],["006Pm00000gcVgwIAE",2,14,33,0,3,"Strate",63,0,"Resell - Strate S2P - Rayburn",0,0,0,"2027-03-19","2025-07-02",70000,70000,0,86,"oe840d590f7"],["006Pm00001EILVFIA5",2,14,34,0,1,"Aspen Pharmacare Holdings",56,0,"Resell-Siyaya Phambili Technology Solutions-Aspen-P2P",0,0,0,"2027-03-18","2026-06-09",250000,250000,0,115,"ob653e6ec11"],["006Pm000017bFy1IAE",2,14,34,0,4,"Old Mutual Life Assurance Company South Africa",56,9,"Reseller-Siyaya Phambili Technology Solutions-Old Mutual-P2P",0,0,0,"2027-01-15","2026-04-09",270000,270000,0,57,"ocba53015b2"],["006Pm000019pydxIAA",2,14,35,0,1,"ArcelorMittal Liberia",55,0,"Resell-Smukeliso-ArcelorMittal Liberia-P2P",0,0,0,"2027-07-29","2026-04-30",200000,200000,0,155,"ob18ead7bbe"],["006Pm00001BjHkDIAV",2,14,35,0,2,"Zeda Limited (Avis Fleet)",63,0,"Resell-Smukeliso-Zeda Limited-P2P",0,0,0,"2027-02-19","2026-05-18",120000,120000,0,93,"o819a3b738a"],["006Pm00001I6pTDIAZ",2,14,36,0,2,"Sun International",56,9,"Resell - StratArya - Sun International P2P",0,0,0,"2027-04-13","2026-07-15",100000,100000,0,79,"od89905e99a"],["006Pm00000qk2AaIAI",2,13,37,0,1,"Tristar",59,0,"AE_NB_Resell_Tristar SCP_S2P",0,0,0,"2027-02-15","2025-10-23",50000,50000,0,321,"o83c5fa10d8"],["006Pm00001ODR0sIAH",2,16,37,0,1,"FORHOUSING LIMITED",60,0,"Reseller (SCP) - ForHousing - P2P",0,0,3,"2027-06-30","2026-09-10",80000,80000,0,22,"odba3afb113"],["006Pm00001KEE3uIAH",2,14,37,1,2,"Bombela Operating Company",63,0,"SA_NB_Bombela Operating Company- S2P_resell",0,0,4,"2027-05-31","2026-08-04",80000,80000,0,59,"oee0ac4396d"],["006Pm00001Lem7lIAB",2,16,37,0,2,"Neos Networks",60,11,"Resell (SCP) - Neos Networks - P2P",0,0,4,"2027-09-15","2026-08-17",60000,60000,0,45,"o27dbeec5bc"],["006Pm00001OFN62IAH",2,16,37,0,2,"London Fire Brigade LFB",78,0,"(Resell SCP - Unio) London Fire Brigade - S2C",0,0,4,"2027-02-28","2026-09-10",100000,100000,0,22,"oed78d67396"],["006Pm00001KdrwTIAR",2,16,37,0,2,"Carclo PLC",60,0,"Resell (SCP) - Carclo - P2P",0,0,4,"2027-05-12","2026-08-07",60000,60000,0,39,"ob83fcbb8d5"],["006Pm00001NLCq1IAH",2,14,37,0,2,"Kumba Iron Ore",55,0,"Reseller - Supply chain - Kumba Iron Ore - CCS",0,0,0,"2026-12-08","2026-09-02",100000,100000,0,30,"ocd345a1283"],["006Pm00001MrZQgIAN",2,14,37,0,3,"MUKURU SHARED SERVICES (PTY) LTD",63,0,"SA_NB_MUKURU_S2P",0,0,3,"2027-05-13","2026-08-28",60000,60000,0,22,"oebc458ff31"],["006Pm00001JrfZRIAZ",2,13,37,0,3,"Waseef Corporate",59,10,"Resell - Waseef Corporate - S2C",0,0,3,"2027-01-21","2026-07-31",150000,150000,0,17,"oc99d8f592b"],["006Pm00001IdPDOIA3",2,14,37,0,3,"aha Hotels & Lodge",63,0,"SA_NB_aha Hotels & Lodges_P2P_resell",0,0,3,"2027-05-20","2026-07-20",70000,70000,0,50,"ocabb58f731"],["006Pm00001KNYbGIAX",2,16,37,0,3,"Better Cotton Initiative",60,11,"Resell (SCP) -Better Cotton Initiative-P2P",0,0,0,"2026-11-30","2026-08-05",80000,80000,0,45,"o198cb15635"],["006Pm00001LHbPxIAL",2,16,37,0,3,"The Royal National Theatre",60,0,"Resell (SCP) - National Theatre - P2P",0,0,7,"2026-11-25","2026-08-13",70000,70000,0,22,"o05ef990b55"],["006Pm00000nYjuYIAS",2,19,37,0,3,"Milsped Group",79,0,"Resell - Milsped Group S2P - Supply Chain Partners",0,0,0,"2027-01-18","2025-09-19",50000,50000,0,321,"o8206eda55d"],["006Pm00000n5ZP9IAM",2,13,37,0,4,"Egyptian Refining Company (ERC)",67,10,"ME_NB_Reseller_ERC_S2P",0,0,0,"2026-10-16","2025-09-14",170000,170000,0,86,"o4106a1c583"],["006Pm00000n7jXNIAY",2,13,38,0,6,"Jamjoom Pharma",67,10,"ME_NB_Reseller_JamJoom Pharma_S2P",0,0,0,"2026-10-15","2025-09-15",175000,175000,0,84,"o798d309d91"],["006Pm00001K73wRIAR",2,13,39,0,1,"Dp World Plc",67,0,"Resell - Tech Mahindra -DP World P2P",0,0,0,"2027-03-03","2026-08-03",500000,500000,0,60,"odb40ffaf31"],["006Pm00000qjuuYIAQ",2,14,39,0,4,"Dangote Industries Ltd",62,9,"ZA_NB_RESELL_DANGOTE RFP_S2O",0,0,0,"2027-01-15","2025-10-23",200000,200000,0,155,"oe627e20b48"],["006Pm00001K5OTtIAN",2,10,40,0,2,"BWF Offermann, Waldenfels & Co. KG",57,0,"Resell - BWF Offermann, Waldenfels & Co. KG - S2P - Hackett",0,0,11,"2027-06-30","2026-08-03",94812,80000,1,51,"ocd2d364397"],["006Pm00001G2R5gIAF",2,10,40,0,3,"CHI Deutschland Cargo Handling GmbH",57,0,"Resell - CHI Deutschland Cargo Handling GmbH - P2O + RPMS+ Sourcing+ Clms - Hackett",0,0,4,"2027-02-26","2026-06-25",88886,75000,1,58,"o04395f7e7c"],["006Pm00000mwi9tIAA",2,16,41,0,1,"Structure Tone UK",80,0,"Resell - Structure Tone UK - ValueWeaver",0,0,0,"2027-04-30","2025-09-12",200000,200000,0,321,"o4791edd777"],["006Pm00000yfwn6IAA",2,16,41,0,2,"LMAX EXCHANGE GROUP LIMITED",78,18,"Reseller - Valueweaver - LMAX Group - P2P",0,0,0,"2027-03-04","2026-01-21",225560,225560,0,22,"oae029efdbb"],["006Pm00001PsFMXIA3",3,20,2,1,1,"The Kids Research Institute",81,0,"The Kids Research Institute - Renewal - 2031",1,0,2,"2031-10-25","2026-09-25",100152,143829,4,7,"o3004285176"],["006Pm000019tv6PIAQ",3,21,2,1,1,"PT. Kereta Api (Persero)",82,0,"PT. Kereta Api (Persero) - Renewal - 2029",1,0,2,"2029-06-14","2026-04-30",210000,210000,0,155,"o4042ded6b5"],["006Pm00000xiSJZIA2",3,21,2,1,1,"PT. Dynaplast",83,0,"Reseller - Dynaplast - Invoice Automation 75 users - Renewal - 2029",1,0,2,"2029-01-08","2026-01-12",47000,47000,0,263,"o26caceb21d"],["006Pm00000uT6t0IAC",3,21,2,0,2,"PT. Dynaplast",84,0,"Reseller_Dynaplast-P2P_Phase 2",0,0,1,"2027-09-15","2025-12-03",48000,48000,0,303,"o085a812ca8"],["006Pm00001EfeH4IAJ",3,21,2,1,2,"Daya Anagata Nusantara (Danantara Indonesia)",82,0,"Danantara Investment Management (DIM) BSM solution",0,0,3,"2027-10-15","2026-06-12",200000,200000,0,112,"o09c4950a0f"],["006Pm00001KKjeTIAT",3,20,2,1,3,"EACH",81,19,"Each - AP Automation and Expenses",0,0,5,"2027-08-18","2026-08-04",53617,77000,4,30,"o9073dd5d80"],["006Pm00001KqnbhIAB",3,21,2,1,4,"Pt. Telkom Indonesia (Persero) Tbk",82,20,"InfraNexia (Telkom Infra) AP Automation IDP",0,0,3,"2026-11-13","2026-08-10",72000,72000,0,30,"oefebb07cfb"],["006Pm00001MIdqZIAT",3,21,2,1,4,"BANGCHAK CORPORATION PUBLIC COMPANY LIMITED",85,0,"Bangchak_AI Credit",0,0,9,"2027-01-26","2026-08-24",20000,20000,0,18,"odd964ba36d"],["006Pm00000s9Hc1IAE",3,21,42,2,3,"Pt. Telkom Indonesia (Persero) Tbk",82,20,"Telkom_Group BSM Platform_X000 users",0,0,1,"2027-06-15","2025-11-07",900000,900000,0,99,"oe87ff9e5fc"],["006Pm00001F2PKYIA3",3,21,16,0,1,"Vantris Berhad",86,0,"Vantris Berhad (Resell by BCT)_S2P_(Optional Rossum)_120 users",0,0,0,"2027-04-16","2026-06-16",110000,110000,0,108,"o974b1441e4"],["006Pm00001Fds5pIAB",3,20,43,0,2,"Northpower Limited",87,19,"Northpower Rossum Add-On",2,1,4,"2027-04-07","2026-06-22",48743,70000,4,101,"o0103e9856c"],["006Pm00001J50K5IAJ",3,20,43,0,2,"The New Zealand Institute for Plant and Food Research Ltd",87,19,"NZPFR Add on - P2P license Add-On and Sourcing Add-on",2,1,3,"2027-01-19","2026-07-24",59549,85519,4,70,"o9f71bfa0aa"],["006Pm00000vIS1tIAG",3,21,19,0,2,"PT. DHARMA SATYA NUSANTARA TBK",82,0,"Reseller_PT Dharma Satya Nusantara Tbk (DSN Group) - Sourcing, SIM, RPM",0,0,9,"2027-12-15","2025-12-12",100000,100000,0,270,"o2bbf9b72ab"],["006Pm00001FlQSXIA3",3,20,19,1,3,"Holstep Health",81,19,"Holstep Health - Exp and VC - RESELLER - C-Labs",0,0,4,"2027-03-17","2026-06-23",62669,90000,4,43,"oc89f1b18f8"],["006Pm00001Li57SIAR",3,21,19,0,4,"Empyrion Digital Malaysia",86,0,"Empyrion S2P 60 users",0,0,4,"2026-12-18","2026-08-18",69862,69862,0,17,"o73cbc7faae"],["006Pm00001HbAniIAF",3,20,44,0,3,"National Australia Bank Ltd.",88,21,"NAB - Tonkean, S2P, Rossum",0,0,3,"2027-02-28","2026-07-10",1740813,2500000,4,25,"o6c8d4e3f1a"],["006Pm00000C7Q8XIAV",3,20,44,0,4,"King & Wood Mallesons",81,19,"Mallesons - S2P - Deloitte",0,0,10,"2027-01-29","2024-03-20",208201,299000,4,44,"o83d0ccdd92"],["006Pm00001HNSR7IAP",3,20,45,2,2,"MINISTRY FOR PRIMARY INDUSTRIES",81,0,"Reseller - Deloitte - New Zealand Ministry for Primary Industries Rossum",0,0,1,"2027-08-25","2026-07-08",34816,50000,4,85,"o037848d070"],["006Pm00001EQ5MrIAL",3,20,46,0,2,"Repurpose It Pty Ltd",81,0,"RepurposeIT - S2P - 4PL Reseller",0,0,7,"2027-06-23","2026-06-10",139265,200000,4,46,"oc3ade8d389"],["006Pm00001BsdggIAB",3,20,46,0,2,"WESTERN AUSTRALIAN SPORTS CENTRE TRUST",81,0,"VenuesWest - CLM and Tonkean - 4PL Reseller",0,0,0,"2027-08-25","2026-05-19",139265,200000,4,102,"o0d2a4902fe"],["006Pm0000150vB3IAI",3,20,46,1,2,"Department of Justice WA",81,19,"Department of Justice WA - AP Automation - 4PL Reseller",0,0,3,"2027-08-18","2026-03-19",197756,284000,4,191,"oaf6c6fa60e"],["006Pm00001FQSdsIAH",3,20,46,0,2,"Austin Health",81,0,"Austin Health - CLMS, RPM - 4PL Reseller",0,0,3,"2027-08-25","2026-06-19",69632,100000,4,105,"oab2c671bf4"],["006Pm00000VCJ6lIAH",3,20,46,0,3,"Downer EDI Ltd",89,21,"Downer EDI - P2P & Compose & Rossum, 10,000 users - FourPL",2,0,1,"2026-12-15","2025-02-06",549444,789062,4,464,"ocd09da6a09"],["006Pm00001HTxSDIA1",3,20,46,0,6,"Inghams Enterprises P/L",89,19,"Ingham's Enterprises - Rossum",2,1,3,"2026-10-07","2026-07-09",117625,117625,0,17,"o7972b907e7"],["006Pm00001PUb1dIAD",3,21,47,0,1,"SAPPE PUBLIC COMPANY LIMITED",85,0,"Reseller - Ice Consulting - Sappe Public Company Limited P2P",0,0,0,"2027-06-17","2026-09-22",100000,100000,0,10,"oc2ee17b6e9"],["006Pm00001LhLUQIA3",3,21,47,0,2,"AssetWise Public Company Limited",85,0,"Resell - Ice Consulting - Asset Wise -S2C",0,0,0,"2027-05-21","2026-08-18",50000,50000,0,39,"o2b2ed55077"],["006Pm00000deBr8IAE",3,21,48,0,4,"Thai Vegetable Oil Public Company Limited",85,22,"TVO_S2C_10users",0,0,4,"2026-11-30","2025-05-29",65000,65000,0,192,"o5c8a057275"],["006Pm00001IhCKpIAN",3,21,49,0,4,"SANSIRI PUBLIC COMPANY LIMITED",85,22,"Sansiri - S2C_(Reseller)",0,0,3,"2026-11-16","2026-07-21",40500,40500,0,42,"of9dbdfd20c"],["006Pm00000fBteLIAS",3,21,50,0,4,"Eka Hospital",82,0,"Reseller_Eka Hospital - Invoice Automation xx users",0,0,1,"2027-10-15","2025-06-16",80000,80000,0,321,"o1036544f38"],["006Pm00000sTCI1IAO",3,21,51,0,2,"Pt. Bank Cimb Niaga Tbk",82,0,"Reseller_CIMB_S2P xx users",0,0,1,"2027-09-15","2025-11-11",120000,120000,0,321,"o4be7784aab"],["006Pm00000miP0jIAE",3,21,52,0,2,"BPJS Ketenagakerjaan",82,0,"Reseller_BPJS - S2P - xx users",0,0,12,"2027-09-15","2025-09-10",125000,125000,0,386,"o7d77fef261"],["006Pm00000rvKebIAE",3,21,52,0,2,"PT. Bormindo Nusantara",82,0,"Reseller_PT. Bormindo Nusantara - S2C - xx users",0,0,9,"2027-10-15","2025-11-05",100000,100000,0,321,"od992dc8d1b"],["006Pm00000u0UqhIAE",3,21,53,0,1,"Nirwana Alabare Garment",82,0,"Reseller_(Referral from Yutama)_Nirwana Alabare Garment_xx users",0,0,0,"2027-09-17","2025-11-27",100000,100000,0,309,"o46cc9f1f7c"],["006Pm00000dyE4zIAE",3,21,53,2,2,"PT. BUSANAREMAJA AGRACIPTA",82,0,"Reseller_Busana Remaja - S2C xx users",0,0,1,"2027-08-15","2025-06-02",100000,100000,0,321,"ofa34065f59"],["006Pm00001FR86pIAD",3,21,53,2,2,"PT. UNITED FAMILY FOOD",82,20,"Unifam_(Resell-Yutama)_Sourcing SIM PO Collab_20 users",0,0,1,"2028-01-15","2026-06-19",40000,40000,0,88,"o6cd177ad98"],["006Pm00001FlQXNIA3",3,20,54,0,3,"Stockland Corporation Ltd",90,19,"Stockland - S2C",0,0,9,"2027-01-21","2026-06-23",156078,224146,4,4,"oebcee4321f"],["006Pm00001NvLd3IAF",3,21,55,0,1,"LT Group Inc (Lucio Tan Group Inc)",91,0,"PH_ResellerVT_LT Group Inc (Lucio Tan Group Inc) P2P",0,0,0,"2027-03-10","2026-09-08",50000,50000,0,24,"o7f250d6dff"],["006Pm00001BShZUIA1",3,21,55,0,1,"ETON PROPERTIES PHILIPPINES, INC.",92,0,"Resell - Eton Properties - Valtatech P2P",0,0,0,"2027-03-19","2026-05-15",100000,100000,0,140,"o4ea144b0f7"],["006Pm00001PicQrIAJ",3,20,55,1,1,"NAPCo",81,0,"NAPCo Australia - P2P",0,0,4,"2027-02-26","2026-09-24",70951,101893,4,8,"ob370a1ddc7"],["006Pm00001IpbicIAB",3,21,55,0,2,"Orix Metro",91,0,"PH_Orix Metro_S2C + AP Automation",0,0,4,"2027-08-21","2026-07-22",150000,150000,0,72,"o94b98d9e72"],["006Pm00001JS0RSIA1",3,21,55,0,2,"Robinsons Land Corporation",91,0,"PH_Robinsons Land Corporation_S2C",0,0,10,"2027-08-23","2026-07-28",100000,100000,0,66,"of119e6b671"],["006Pm00001PrqeIIAR",3,21,55,0,3,"MNRB HOLDINGS BERHAD",86,0,"Reseller - Valtatech - MNRB Holdings Berhad P2P",0,0,0,"2026-12-22","2026-09-25",187678,187678,0,4,"od8ac63e835"],["006Pm00000jRR3qIAG",3,21,55,0,3,"Maynilad Water Services, Inc.",91,0,"PH_Maynilad_S2P",0,0,1,"2027-07-30","2025-08-04",105000,105000,0,306,"of523c1ccd8"],["006Pm00000jYUjKIAW",3,21,55,0,3,"PT Pupuk Indonesia (Persero)",82,20,"Pupuk_NewBSM_Land",0,0,10,"2027-05-14","2025-08-05",50000,50000,0,161,"o7e745ad201"],["006Pm00000uzSbpIAE",3,21,55,0,3,"Measat Global Bhd",86,0,"Reseller_Measat_Satelite S2C",0,0,10,"2027-03-26","2025-12-09",70000,70000,0,51,"o98dfcdc2f7"],["006Pm00001Bvny1IAB",3,21,55,1,4,"Home Credit Philippines",86,20,"Home Credit Philippines - P2P, SIM- VTech",0,0,4,"2027-02-25","2026-05-19",60000,60000,0,117,"ob6b43d841f"],["006Pm00000rvQiQIAU",3,21,55,0,4,"Taylor's University",86,0,"Reseller_Taylor's University_S2O",0,0,4,"2027-02-26","2025-11-05",100000,100000,0,126,"oedc3ad15b7"],["006Pm00001Buih5IAB",3,21,55,1,4,"Personal Collection Direct Selling, Inc.",86,0,"Personal Collection Direct Selling, Inc. - S2P",0,0,4,"2027-02-19","2026-05-19",49500,49500,0,113,"o51a58b211d"],["006Pm00001MJc1EIAT",3,21,41,0,1,"HPCL-MITTAL ENERGY LIMITED",93,0,"Referral - VALUEWEAVER - VHPCL-Mittal Energy Limited (HMEL) P2P",0,0,1,"2027-02-18","2026-08-24",50000,50000,0,39,"of973709c1e"],["006Pm00001FG176IAD",4,22,2,1,2,"ISA Intercolombia",94,23,"Isa Corporativo | New | S2C (Ariba replacement)",0,0,3,"2027-06-18","2026-06-17",300000,300000,0,106,"oc533de8218"],["006Pm00001PvMOIIA3",4,22,2,1,2,"Metro de Santiago",94,0,"Metro de Santiago | Add-on | Expenses",2,2,3,"2026-12-11","2026-09-25",65000,65000,0,4,"o5b67be60fb"],["006Pm00001OfZoHIAV",4,23,2,1,4,"Raizen Energia S/A",95,0,"Raizen - Tonkean SWAP",2,1,2,"2026-11-30","2026-09-14",0,0,0,18,"odc7ec85600"],["006Pm00001It0uAIAR",4,22,2,1,4,"Empresa de Telecomunicaciones de Bogota",96,24,"ETB | S2P RFI | Reseller",0,0,4,"2026-11-11","2026-07-22",160000,160000,0,39,"o508f0df984"],["006Pm00001DpauHIAR",4,23,56,0,1,"CPFL Energia S/A",97,25,"CPFL - SCO + Direct Spend",0,0,3,"2027-06-18","2026-06-04",129364,680000,5,120,"o71bbae47bf"],["006Pm00001BmWtBIAV",4,23,56,0,4,"SALOBO METAIS S/A",98,26,"Salobo Metais (VBM) - UBP migration",2,2,3,"2026-10-30","2026-05-18",380482,2000000,5,74,"o2080ea5f29"],["006Pm00000mtXanIAE",4,23,56,0,4,"Vale S/A",98,26,"Vale - add-on: Compose, NAVI and Swap Cat.Planner | Cirtuo",2,1,3,"2027-01-29","2025-09-11",570723,3000000,5,150,"ofd3a1ef126"],["006Pm000019nqxTIAQ",4,22,32,0,5,"SOLCA",99,24,"SOLCA | S2O   Reseller PG",0,0,4,"2026-11-27","2026-04-29",76800,76800,0,8,"o856fb385a9"],["006Pm00001Mk40DIAR",4,23,57,0,2,"Associação das Pioneiras Sociais (APS) - REDE SARAH",100,27,"Associação das Pioneiras Sociais (APS) - REDE SARAH",0,0,1,"2027-02-26","2026-08-27",19024,100000,5,36,"of5e1e73296"],["006Pm00000mo377IAA",5,24,2,0,1,"Tokai University",101,0,"Reseller_Tokai University- S2P_NRI",0,0,0,"2027-09-30","2025-09-11",129245,20000000,6,321,"o02be0e8a09"],["006Pm00001Fe367IAB",5,24,2,1,1,"ADEKA Corporation",102,0,"ADEKA Corporation-Treasury Management Renewal-2029",1,0,2,"2029-08-31","2026-06-22",24003,3714304,6,102,"o480b2cff25"],["006Pm00000mo04RIAQ",5,24,2,0,1,"Waseda University",101,0,"Reseller_Waseda University- S2P_NRI",0,0,0,"2027-09-30","2025-09-11",129245,20000000,6,321,"oaca6dd7a7b"],["006Pm00000mo2kXIAQ",5,24,2,0,1,"Rissho University",101,0,"Reseller_Rissho University- S2P_NRI",0,0,0,"2027-09-30","2025-09-11",129245,20000000,6,321,"o904913790b"],["006Pm00000YdFLRIA3",5,24,2,2,2,"SAITAMA MEDICAL UNIVERSITY",101,0,"Reseller_Saitama Medical University- S2P_NRI",0,0,0,"2027-09-30","2025-03-27",129245,20000000,6,321,"of4e964fd4c"],["006Pm00000p8P3tIAE",5,24,42,0,2,"Lindt & Sprungli JAPAN",103,0,"Lindt & Sprungli JAPAN- S2P_ACN",0,0,1,"2027-10-22","2025-10-07",129245,20000000,6,291,"o78b7b5ac5f"],["006Pm00000mvlPxIAI",5,24,42,0,4,"JCOM株式会社",101,28,"JCOM株式会社- S2P",0,0,1,"2026-10-30","2025-09-12",310188,48000000,6,108,"o3f5e34755b"],["006Pm000016EywRIAS",5,24,58,0,3,"Hipus Co Ltd",104,29,"HIPUS Mid-Market BPO Model",0,0,1,"2027-04-23","2026-03-27",323112,50000000,6,165,"o56de880ae2"],["006Pm000017x8l0IAA",5,24,59,0,1,"Seiko Epson Corporation",105,0,"Seiko Epson Corporation",0,0,0,"2027-11-01","2026-04-12",300000,300000,0,172,"o4d0b0ec1e9"],["006Pm00001683lTIAQ",5,24,59,0,1,"Shibaura Institute of Technology",101,0,"Shibaura Institute of Technology",0,0,0,"2027-04-30","2026-03-27",0,0,0,189,"o28e1c9cef6"]]}};
+function boot(RAW) {
+'use strict';
+const DATA = (function decode(raw) {
+const d = Object.assign({}, raw); delete d.enc;
+const { cols, dicts, rows } = raw.enc;
+d.opps = rows.map((row) => {
+const o = {};
+cols.forEach((c, i) => { o[c] = dicts[c] ? dicts[c][row[i]] : row[i]; });
+o.stage = (raw.stages.find((s) => s.no === o.stageNo) || { label: '' }).label;
+o.url = raw.source && raw.source.instance ? `${raw.source.instance}/lightning/r/Opportunity/${o.id}/view` : '';
+return o;
+});
+d.external = !!raw.external;
+return d;
+})(RAW);
+const $ = (s) => document.querySelector(s);
+const el = (tag, cls, text) => {
+const e = document.createElement(tag);
+if (cls) e.className = cls;
+if (text !== undefined && text !== null) e.textContent = text;
+return e;
+};
+const clear = (node) => { while (node.firstChild) node.removeChild(node.firstChild); return node; };
+const uniq = (arr) => Array.from(new Set(arr));
+const byName = (a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' });
+const sum = (arr, f) => arr.reduce((t, x) => t + (f ? f(x) : x), 0);
+const nf0 = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
+const fmtFull = (n) => nf0.format(Math.round(n));
+const fmtUsd = (n) => '$' + fmtFull(n);
+const fmtCompact = (n) => {
+const a = Math.abs(n);
+if (a >= 1e6) return (n / 1e6).toFixed(a >= 1e7 ? 1 : 2).replace(/\.?0+$/, '') + 'M';
+if (a >= 1e3) return Math.round(n / 1e3) + 'K';
+return fmtFull(n);
+};
+const fmtUsdC = (n) => '$' + fmtCompact(n);
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const fmtDate = (iso) => {
+if (!iso || !/^\d{4}-\d{2}-\d{2}$/.test(iso)) return iso || '';
+const [y, m, d] = iso.split('-');
+return `${parseInt(d, 10)} ${MONTHS[parseInt(m, 10) - 1]} ${y}`;
+};
+const debounce = (fn, ms) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
+const nowStamp = () => new Date().toISOString();
+const fmtStamp = (iso) => {
+if (!iso) return '';
+const d = new Date(iso);
+if (isNaN(d)) return '';
+return d.toLocaleString('en-GB', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' });
+};
+const todayIso = () => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
+const addDays = (iso, n) => { const d = new Date(iso + 'T00:00:00'); d.setDate(d.getDate() + n); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; };
+const genId = (prefix) => prefix + Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+const STAGES = DATA.stages.slice().sort((a, b) => a.no - b.no);
+const STAGE_LABEL = Object.fromEntries(STAGES.map((s) => [s.no, s.label]));
+const stageShort = (no) => (STAGE_LABEL[no] || '').replace(/^\d+\.\s*/, '');
+const REGIONS = DATA.regions; // [{key,label}] in display order
+const REGION_LABEL = Object.fromEntries(REGIONS.map((r) => [r.key, r.label]));
+const REGION_ORDER = Object.fromEntries(REGIONS.map((r, i) => [r.key, i]));
+const regionLabel = (k) => REGION_LABEL[k] || k;
+const NO_PARTNER = '(No partner account)';
+const partnerLabel = (p) => p || NO_PARTNER;
+const AS_OF_ISO = (DATA.source.queriedAt || '').slice(0, 10);
+const STATUS = [['open', 'Open'], ['progress', 'In progress'], ['waiting', 'Waiting on partner'], ['done', 'Done']];
+const STATUS_LABEL = Object.fromEntries(STATUS);
+const PRIO = [['1', 'Prio 1'], ['2', 'Prio 2'], ['3', 'Prio 3'], ['4', 'Prio 4'], ['5', 'Prio 5'], ['later', 'Later']];
+const PRIO_LABEL = Object.fromEntries(PRIO);
+const PRIO_ORDER = { '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, later: 6, '': 7 };
+const HORIZON_DAYS = 90;
+const HORIZON_ISO = AS_OF_ISO ? addDays(AS_OF_ISO, HORIZON_DAYS) : '';
+const TIER_SIZE = 5;
+const WEIGHTS = { acv35: 35, n35: 20, n5: 15, soonAcv: 15, noSa: 15 };
+const isActiveItem = (it) => it.status !== 'done';
+const pkOf = (region, partner) => `${region}||${partner}`;
+const pkParts = (pk) => { const i = pk.indexOf('||'); return { region: pk.slice(0, i), partner: pk.slice(i + 2) }; };
+const pkOfOpp = (o) => pkOf(o.region, o.partner);
+function computeSuggestions() {
+const out = {};
+REGIONS.forEach((rg) => {
+const opps = DATA.opps.filter((o) => o.region === rg.key && o.partner);
+const partners = uniq(opps.map((o) => o.partner));
+const rows = partners.map((p) => {
+const all = opps.filter((o) => o.partner === p);
+const s35 = all.filter((o) => o.stageNo >= 3 && o.stageNo <= 5);
+const soon = s35.filter((o) => o.close && HORIZON_ISO && o.close <= HORIZON_ISO);
+return {
+pk: pkOf(rg.key, p), region: rg.key, partner: p, nAll: all.length, acvAll: sum(all, (o) => o.acv),
+n35: s35.length, acv35: sum(s35, (o) => o.acv),
+n5: s35.filter((o) => o.stageNo === 5).length, acv5: sum(s35.filter((o) => o.stageNo === 5), (o) => o.acv),
+soonN: soon.length, soonAcv: sum(soon, (o) => o.acv),
+noSa: s35.filter((o) => !o.sa).length,
+n6: all.filter((o) => o.stageNo === 6).length,
+};
+});
+const max = {}; Object.keys(WEIGHTS).forEach((k) => { max[k] = Math.max(1e-9, ...rows.map((r) => r[k])); });
+rows.forEach((r) => { r.score = Object.keys(WEIGHTS).reduce((t, k) => t + WEIGHTS[k] * r[k] / max[k], 0); });
+rows.sort((a, b) => b.score - a.score || b.acv35 - a.acv35 || byName(a.partner, b.partner));
+rows.forEach((r, i) => {
+r.rank = i + 1; r.regionSize = rows.length;
+r.tier = r.n35 > 0 && rg.key !== 'UNASSIGNED' ? String(Math.min(5, Math.floor(i / TIER_SIZE) + 1)) : 'later';
+const why = [];
+if (rg.key === 'UNASSIGNED') why.push('no Supra Segment on the opportunity in Salesforce – set the region first');
+if (r.n35) why.push(`${r.n35} opp${r.n35 === 1 ? '' : 's'} in stage 3–5 (${fmtUsdC(r.acv35)})`);
+else why.push(`no stage 3–5 opportunities (${r.nAll} early-stage${r.n6 ? ` / ${r.n6} in stage 6` : ''})`);
+if (r.n5) why.push(`${r.n5} in stage 5`);
+if (r.soonN) why.push(`${r.soonN} closing by ${fmtDate(HORIZON_ISO)} (${fmtUsdC(r.soonAcv)})`);
+if (r.noSa) why.push(`${r.noSa} without Primary SA`);
+r.why = why.join(' · ');
+out[r.pk] = r;
+});
+});
+return out;
+}
+const SUGGEST = computeSuggestions();
+const suggestedFor = (pk) => SUGGEST[pk] || Object.assign({ rank: 0, regionSize: 0, tier: 'later', score: 0, why: '', n35: 0, acv35: 0, n5: 0, soonN: 0, soonAcv: 0, noSa: 0, nAll: 0 }, pkParts(pk));
+function dateForTier(tier) {
+let d = addDays(todayIso(), 7);
+while (new Date(d + 'T00:00:00').getDay() !== 5) d = addDays(d, 1);
+const idx = tier === 'later' ? 7 : (parseInt(tier, 10) - 1);
+return addDays(d, idx * 7);
+}
+const STORE_KEY = 'coupa-partner-pipeline-notes-v2';
+const LEGACY_KEY = 'coupa-emea-partner-pipeline-notes-v1';
+let notes = loadNotes();
+function normalizeOpp(n) {
+if (!n || Array.isArray(n.items)) return n;
+const items = [];
+if (n.action && String(n.action).trim()) {
+items.push({ id: genId('i'), text: String(n.action).trim(), status: n.status || 'open', createdAt: n.updated || nowStamp(), updatedAt: n.updated || nowStamp(), doneAt: n.status === 'done' ? (n.updated || nowStamp()) : null });
+}
+n.items = items; delete n.action; delete n.status;
+return n;
+}
+function loadNotes() {
+let loaded = null;
+try {
+const raw = localStorage.getItem(STORE_KEY);
+if (raw) { const n = JSON.parse(raw); if (n && n.partners && n.opps) loaded = { partners: n.partners, opps: n.opps, deleted: n.deleted || {}, seedStamp: n.seedStamp || '' }; }
+} catch (e) { /* storage unavailable */ }
+if (!loaded) {
+loaded = { partners: {}, opps: {} };
+try {
+const raw = localStorage.getItem(LEGACY_KEY);
+if (raw) {
+const old = JSON.parse(raw);
+const legacyIndex = {}; DATA.opps.forEach((o) => { if (o.legacyId) legacyIndex[o.legacyId] = o.id; });
+Object.keys(old.partners || {}).forEach((p) => {
+const regionsOfP = uniq(DATA.opps.filter((o) => o.partner === p).map((o) => o.region));
+const region = regionsOfP.includes('EMEA') || !regionsOfP.length ? 'EMEA' : regionsOfP[0];
+const n = Object.assign({}, old.partners[p]); delete n.region; // region now comes from Salesforce
+loaded.partners[pkOf(region, p)] = n;
+});
+Object.keys(old.opps || {}).forEach((k) => {
+const newId = legacyIndex[k.replace(/-\d+$/, '')] || null;
+if (newId) loaded.opps[newId] = normalizeOpp(Object.assign({}, old.opps[k]));
+});
+loaded.migratedFrom = 'v1';
+}
+} catch (e) { /* ignore */ }
+}
+Object.keys(loaded.opps).forEach((id) => normalizeOpp(loaded.opps[id]));
+loaded.deleted = loaded.deleted || {};
+mergeSeed(loaded);
+return loaded;
+}
+function mergeSeed(target) {
+const seed = DATA.seedNotes;
+if (!seed || !seed.exported || (target.seedStamp && target.seedStamp >= seed.exported)) return;
+let added = 0;
+const legacyIndex = {}; DATA.opps.forEach((o) => { if (o.legacyId) legacyIndex[o.legacyId] = o.id; });
+Object.keys(seed.partners || {}).forEach((k) => {
+const key = k.includes('||') ? k : pkOf('EMEA', k);
+const s = Object.assign({}, seed.partners[k]); delete s.region;
+const cur = target.partners[key];
+if (!cur || !cur.updated || (s.updated && s.updated > cur.updated)) { target.partners[key] = Object.assign({}, cur || {}, s); added++; }
+});
+Object.keys(seed.opps || {}).forEach((k) => {
+const id = DATA.opps.some((o) => o.id === k) ? k : (legacyIndex[k.replace(/-\d+$/, '')] || k);
+const s = normalizeOpp(Object.assign({}, seed.opps[k]));
+const cur = target.opps[id] || { items: [] };
+const byId = {}; (cur.items || []).forEach((it) => { byId[it.id] = it; });
+(s.items || []).forEach((it) => {
+if (target.deleted[it.id]) return;
+const mine = byId[it.id];
+if (!mine || (it.updatedAt || '') > (mine.updatedAt || '')) { byId[it.id] = it; added++; }
+});
+target.opps[id] = Object.assign({}, cur, { items: Object.values(byId), ref: cur.ref || s.ref, updated: [cur.updated, s.updated].filter(Boolean).sort().pop() });
+});
+target.seedStamp = seed.exported;
+target.seedApplied = added;
+}
+function setSaveState(msg) { $('#saveState').textContent = msg; }
+function saveNow() {
+try {
+localStorage.setItem(STORE_KEY, JSON.stringify({ partners: notes.partners, opps: notes.opps, deleted: notes.deleted || {}, seedStamp: notes.seedStamp || '' }));
+setSaveState('Notes saved in this browser · ' + new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }));
+} catch (e) {
+setSaveState('Browser storage unavailable – use “Export notes” to keep your action items');
+}
+}
+const save = debounce(saveNow, 350);
+const hasNotesCount = () => Object.values(notes.opps).filter((n) => (n.items || []).length).length
++ Object.values(notes.partners).filter((n) => (n.actions || '').trim() || n.priority || n.contactDate).length;
+function partnerNotes(pk) { return notes.partners[pk] || {}; }
+function prioOf(pk) { const n = partnerNotes(pk); return PRIO_LABEL[n.priority] ? n.priority : ''; }
+function effectivePrio(pk) { return prioOf(pk) || suggestedFor(pk).tier; }
+function contactState(pk) {
+const n = partnerNotes(pk);
+if (n.contacted) return 'done';
+if (n.contactDate && n.contactDate < todayIso()) return 'overdue';
+return n.contactDate ? 'planned' : 'none';
+}
+function prioPill(pk) {
+const set = prioOf(pk); const eff = effectivePrio(pk); const s = suggestedFor(pk);
+const pill = el('span', 'pill pr' + (set ? '' : ' sug') + (eff === 'later' ? ' later' : ''), eff === 'later' ? 'Later' : 'P' + eff);
+pill.title = set ? `Your contact priority: ${PRIO_LABEL[set]}` : `Suggested: ${PRIO_LABEL[eff]} (rank ${s.rank} of ${s.regionSize} partners in ${regionLabel(s.region)}) – ${s.why}`;
+return pill;
+}
+function regionPill(region) { const p = el('span', 'pill rg', regionLabel(region)); p.title = 'Region (Opportunity Supra Segment in Salesforce)'; return p; }
+function oppNotes(id) { return notes.opps[id] || {}; }
+function setPartnerNote(pk, patch, quiet) {
+notes.partners[pk] = Object.assign({}, notes.partners[pk] || {}, patch, { updated: nowStamp() });
+if (!quiet) save();
+}
+function setOppNote(id, patch) {
+const o = DATA.opps.find((x) => x.id === id);
+const ref = o ? { partner: o.partner, region: o.region, name: o.name, account: o.account } : (notes.opps[id] || {}).ref;
+notes.opps[id] = Object.assign({}, notes.opps[id] || {}, patch, { ref, updated: nowStamp() });
+save();
+}
+function oppItems(id) { return oppNotes(id).items || []; }
+function addOppItem(id, text) {
+const t = (text || '').trim(); if (!t) return;
+const now = nowStamp();
+setOppNote(id, { items: oppItems(id).concat([{ id: genId('i'), text: t, status: 'open', createdAt: now, updatedAt: now, doneAt: null }]) });
+}
+function updateOppItem(oppId, itemId, patch) {
+const now = nowStamp();
+const items = oppItems(oppId).map((it) => {
+if (it.id !== itemId) return it;
+const next = Object.assign({}, it, patch, { updatedAt: now });
+if (patch.status) next.doneAt = patch.status === 'done' ? now : null;
+return next;
+});
+setOppNote(oppId, { items });
+}
+function deleteOppItem(oppId, itemId) {
+notes.deleted = notes.deleted || {}; notes.deleted[itemId] = nowStamp();
+setOppNote(oppId, { items: oppItems(oppId).filter((it) => it.id !== itemId) });
+}
+const state = {
+stages: new Set([3, 4, 5]),
+regions: new Set(REGIONS.map((r) => r.key)),
+partner: '', owner: '', sa: '', q: '', prio: '', type: '',
+mode: 'count', sort: 'acv', planSort: 'prio',
+sel: { pk: null, stage: null },
+tsort: { key: 'acv', dir: -1 },
+};
+function passesNonStage(o, opts) {
+if (!(opts && opts.ignoreRegion) && !state.regions.has(o.region)) return false;
+if (state.partner) { if (state.partner === '__none__' ? o.partner !== '' : o.partner !== state.partner) return false; }
+if (state.type && o.type !== state.type) return false;
+if (state.prio) {
+if (!o.partner) return false;
+const pk = pkOfOpp(o);
+if (state.prio === '__unset__' ? prioOf(pk) !== '' : effectivePrio(pk) !== state.prio) return false;
+}
+if (state.owner && o.owner !== state.owner) return false;
+if (state.sa === 'yes' && !o.sa) return false;
+if (state.sa === 'no' && o.sa) return false;
+if (state.q) {
+const q = state.q.toLowerCase();
+const hay = [o.account, o.name, o.owner, o.sa, o.partner, o.subSegment, regionLabel(o.region)].join(' ').toLowerCase();
+if (!hay.includes(q)) return false;
+}
+return true;
+}
+const nonStageOpps = () => DATA.opps.filter((o) => passesNonStage(o));
+const inView = () => nonStageOpps().filter((o) => state.stages.has(o.stageNo));
+function tableOpps() {
+let rows = inView();
+if (state.sel.pk) rows = rows.filter((o) => pkOfOpp(o) === state.sel.pk);
+if (state.sel.stage) rows = rows.filter((o) => o.stageNo === state.sel.stage);
+return rows;
+}
+const tip = $('#tip');
+function showTip(x, y, build) { clear(tip); build(tip); tip.classList.add('on'); moveTip(x, y); }
+function moveTip(x, y) {
+const pad = 14; const r = tip.getBoundingClientRect();
+let left = x + pad, top = y + pad;
+if (left + r.width > window.innerWidth - 8) left = x - r.width - pad;
+if (top + r.height > window.innerHeight - 8) top = y - r.height - pad;
+tip.style.left = Math.max(4, left) + 'px'; tip.style.top = Math.max(4, top) + 'px';
+}
+function hideTip() { tip.classList.remove('on'); }
+function attachTip(node, build) {
+node.addEventListener('pointerenter', (e) => showTip(e.clientX, e.clientY, build));
+node.addEventListener('pointermove', (e) => moveTip(e.clientX, e.clientY));
+node.addEventListener('pointerleave', hideTip);
+node.addEventListener('focus', () => { const r = node.getBoundingClientRect(); showTip(r.left + r.width / 2, r.top + r.height / 2, build); });
+node.addEventListener('blur', hideTip);
+}
+function renderMeta() {
+const m = clear($('#meta'));
+const q = DATA.source.queriedAt ? new Date(DATA.source.queriedAt) : null;
+const when = q && !isNaN(q) ? q.toLocaleString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Berlin' }) + ' CET' : 'n/a';
+m.appendChild(document.createTextNode(`Source: Salesforce, read-only query on ${when} · ${DATA.opps.length} open reseller opportunities · ${DATA.partners.length} partner accounts · ${REGIONS.filter((r) => r.key !== 'UNASSIGNED').length} regions · ACV in USD (Salesforce “ACV Converted”)` + (DATA.external ? ' · weekly data files loaded from this folder' : ' · data embedded in this file')));
+}
+function fillSelect(sel, options, current, allLabel) {
+clear(sel);
+const o0 = el('option', null, allLabel); o0.value = ''; sel.appendChild(o0);
+options.forEach(([val, label]) => { const o = el('option', null, label); o.value = val; sel.appendChild(o); });
+sel.value = options.some(([v]) => v === current) ? current : '';
+}
+function renderFilterOptions() {
+const partnerOpts = DATA.partners.map((p) => [p.name, p.name]);
+if (DATA.opps.some((o) => !o.partner)) partnerOpts.push(['__none__', NO_PARTNER]);
+fillSelect($('#fPartner'), partnerOpts, state.partner, 'All partners');
+fillSelect($('#fType'), uniq(DATA.opps.map((o) => o.type).filter(Boolean)).sort(byName).map((t) => [t, t]), state.type, 'All types');
+fillSelect($('#fOwner'), uniq(DATA.opps.map((o) => o.owner).filter(Boolean)).sort(byName).map((o) => [o, o]), state.owner, 'All owners');
+$('#fSa').value = state.sa; $('#fPrio').value = state.prio; $('#fQ').value = state.q;
+}
+function chip(label, count, pressed, title, onClick, sn) {
+const b = el('button', 'chip'); b.type = 'button';
+b.setAttribute('aria-pressed', pressed ? 'true' : 'false'); if (title) b.title = title;
+if (sn) b.appendChild(el('span', 'sn', sn));
+b.appendChild(el('span', null, label));
+b.appendChild(el('span', 'cnt', String(count)));
+b.addEventListener('click', onClick);
+return b;
+}
+function renderChips() {
+const sw = clear($('#stageChips'));
+const pool = nonStageOpps();
+STAGES.forEach((s) => {
+const n = pool.filter((o) => o.stageNo === s.no).length;
+sw.appendChild(chip(stageShort(s.no), n, state.stages.has(s.no), s.label, () => {
+if (state.stages.has(s.no)) { if (state.stages.size > 1) state.stages.delete(s.no); } else state.stages.add(s.no);
+if (state.sel.stage && !state.stages.has(state.sel.stage)) state.sel.stage = null;
+render();
+}, String(s.no)));
+});
+const rw = clear($('#regionChips'));
+const poolR = DATA.opps.filter((o) => state.stages.has(o.stageNo) && passesNonStage(o, { ignoreRegion: true }));
+REGIONS.forEach((rg) => {
+const n = poolR.filter((o) => o.region === rg.key).length;
+rw.appendChild(chip(rg.label, n, state.regions.has(rg.key), `${rg.label} – opportunities in the selected stages`, () => {
+if (state.regions.has(rg.key)) { if (state.regions.size > 1) state.regions.delete(rg.key); } else state.regions.add(rg.key);
+if (state.sel.pk && !state.regions.has(pkParts(state.sel.pk).region)) state.sel = { pk: null, stage: null };
+render();
+}));
+});
+}
+function tile(label, value, sub, hero) {
+const t = el('div', 'tile' + (hero ? ' hero' : ''));
+t.appendChild(el('div', 'label', label)); t.appendChild(el('div', 'value', value));
+if (sub) t.appendChild(el('div', 'sub', sub));
+return t;
+}
+function renderKPIs() {
+const k = clear($('#kpis'));
+const v = inView();
+const acv = sum(v, (o) => o.acv);
+const partners = uniq(v.map((o) => o.partner).filter(Boolean)).length;
+const regions = uniq(v.map((o) => o.region)).filter((k) => k !== 'UNASSIGNED').length;
+const withSa = v.filter((o) => o.sa).length;
+const pct = v.length ? Math.round(withSa / v.length * 100) : 0;
+const noPartner = v.filter((o) => !o.partner).length;
+const stageTxt = Array.from(state.stages).sort((a, b) => a - b).join(', ');
+k.appendChild(tile('Opportunities in view', fmtFull(v.length), `Stage${state.stages.size > 1 ? 's' : ''} ${stageTxt} · ${regions} region${regions === 1 ? '' : 's'}`, true));
+k.appendChild(tile('ACV in view (USD)', fmtUsdC(acv), `${fmtUsd(acv)} · converted by Salesforce`));
+k.appendChild(tile('Partner accounts in view', fmtFull(partners), noPartner ? `${noPartner} opportunit${noPartner === 1 ? 'y has' : 'ies have'} no partner account` : `of ${DATA.partners.length} partner accounts`));
+k.appendChild(tile('With Primary SA attached', fmtFull(withSa), `${pct}% of opportunities in view`));
+k.appendChild(tile('Without Primary SA', fmtFull(v.length - withSa), fmtUsdC(sum(v.filter((o) => !o.sa), (o) => o.acv)) + ' ACV uncovered'));
+}
+function aggregate(opps) {
+const map = new Map();
+opps.forEach((o) => {
+const pk = pkOfOpp(o);
+if (!map.has(pk)) map.set(pk, { pk, partner: o.partner, region: o.region, count: 0, acv: 0, by: {} });
+const p = map.get(pk);
+p.count++; p.acv += o.acv;
+if (!p.by[o.stageNo]) p.by[o.stageNo] = { count: 0, acv: 0, opps: [] };
+p.by[o.stageNo].count++; p.by[o.stageNo].acv += o.acv; p.by[o.stageNo].opps.push(o);
+});
+return Array.from(map.values());
+}
+function binFor(v, max) { if (v <= 0 || max <= 0) return 0; return Math.min(4, Math.max(1, Math.ceil(v / max * 4))); }
+function renderHeat() {
+const wrap = clear($('#heat'));
+const view = inView();
+const rows = aggregate(view);
+const cols = STAGES.filter((s) => state.stages.has(s.no));
+const noP = (r) => (r.partner ? 0 : 1);
+if (state.sort === 'acv') rows.sort((a, b) => noP(a) - noP(b) || b.acv - a.acv || b.count - a.count || byName(a.partner, b.partner));
+else if (state.sort === 'count') rows.sort((a, b) => noP(a) - noP(b) || b.count - a.count || b.acv - a.acv || byName(a.partner, b.partner));
+else rows.sort((a, b) => noP(a) - noP(b) || byName(a.partner, b.partner) || REGION_ORDER[a.region] - REGION_ORDER[b.region]);
+$('#heatSub').textContent = `${rows.length} partner row${rows.length === 1 ? '' : 's'} (partner × region) · cells show ${state.mode === 'count' ? 'number of opportunities' : 'ACV in USD'} · totals show count and ACV`;
+if (!rows.length) { wrap.appendChild(el('div', 'empty', 'No opportunities match the current filters.')); clear($('#legend')); return; }
+const vals = [];
+rows.forEach((r) => cols.forEach((c) => { const cell = r.by[c.no]; if (cell) vals.push(state.mode === 'count' ? cell.count : cell.acv); }));
+const max = Math.max(0, ...vals);
+const t = el('table', 'heat');
+const thead = el('thead'); const hr = el('tr');
+hr.appendChild(el('th', null, 'Partner · region'));
+cols.forEach((c) => { const th = el('th', 'stg'); th.appendChild(el('span', 'no', String(c.no))); th.appendChild(document.createTextNode(stageShort(c.no))); hr.appendChild(th); });
+hr.appendChild(el('th', 'tot', 'Total in view'));
+thead.appendChild(hr); t.appendChild(thead);
+const tb = el('tbody');
+rows.forEach((r) => {
+const tr = el('tr');
+if (state.sel.pk === r.pk) tr.classList.add('selrow');
+const tdn = el('td', 'pname');
+const nb = el('button'); nb.type = 'button'; nb.title = `${partnerLabel(r.partner)} – open details`;
+if (r.partner) nb.appendChild(prioPill(r.pk));
+nb.appendChild(el('span', 'p', partnerLabel(r.partner)));
+nb.appendChild(regionPill(r.region));
+const pnn = partnerNotes(r.pk);
+if ((pnn.actions || '').trim()) nb.appendChild(el('span', 'note', 'actions'));
+const cs = contactState(r.pk);
+const sub = [];
+if (r.partner) { if (cs === 'done') sub.push('contacted'); else if (pnn.contactDate) sub.push((cs === 'overdue' ? 'contact overdue · ' : 'contact by ') + fmtDate(pnn.contactDate)); }
+else sub.push('Reseller opportunities without a Partner Account in Salesforce');
+if (sub.length) nb.appendChild(el('span', 'r', sub.join(' · ')));
+nb.addEventListener('click', () => selectRow(r.pk, null));
+tdn.appendChild(nb); tr.appendChild(tdn);
+cols.forEach((c) => {
+const td = el('td');
+const cell = r.by[c.no];
+const v = cell ? (state.mode === 'count' ? cell.count : cell.acv) : 0;
+const b = el('button', 'cell'); b.type = 'button';
+if (!cell) { b.classList.add('z'); b.textContent = '·'; b.tabIndex = -1; b.setAttribute('aria-label', `${partnerLabel(r.partner)}, ${regionLabel(r.region)}, stage ${c.no}: no opportunities`); }
+else {
+b.classList.add('b' + binFor(v, max));
+b.textContent = state.mode === 'count' ? String(cell.count) : fmtUsdC(cell.acv);
+if (state.sel.pk === r.pk && state.sel.stage === c.no) b.classList.add('sel');
+b.setAttribute('aria-label', `${partnerLabel(r.partner)}, ${regionLabel(r.region)}, stage ${c.no}: ${cell.count} opportunities, ACV ${fmtUsd(cell.acv)}`);
+attachTip(b, (box) => {
+box.appendChild(el('div', 't', `${partnerLabel(r.partner)} · ${regionLabel(r.region)}`));
+box.appendChild(el('div', 'k', `${c.no}. ${stageShort(c.no)}`));
+box.appendChild(el('div', 'v', `${cell.count} opportunit${cell.count === 1 ? 'y' : 'ies'} · ${fmtUsdC(cell.acv)} ACV`));
+const owners = uniq(cell.opps.map((o) => o.owner).filter(Boolean));
+const sas = uniq(cell.opps.map((o) => o.sa).filter(Boolean));
+box.appendChild(el('div', 'ln k', `Owner${owners.length > 1 ? 's' : ''}: ${owners.join(', ') || '–'}`));
+box.appendChild(el('div', 'k', `Primary SA: ${sas.length ? sas.join(', ') : 'none attached'}`));
+box.appendChild(el('div', 'k', 'Click to list these opportunities'));
+});
+b.addEventListener('click', () => selectRow(r.pk, c.no));
+}
+td.appendChild(b); tr.appendChild(td);
+});
+const tdt = el('td', 'tot');
+tdt.appendChild(el('span', 'c num', `${r.count}`));
+tdt.appendChild(el('span', 'a num', `${fmtUsdC(r.acv)} ACV`));
+tr.appendChild(tdt);
+tb.appendChild(tr);
+});
+const trt = el('tr');
+const tdl = el('td', 'pname'); tdl.appendChild(el('span', 'p', 'All rows in view')); trt.appendChild(tdl);
+cols.forEach((c) => {
+const os = view.filter((o) => o.stageNo === c.no);
+const td = el('td', 'tot'); td.style.textAlign = 'center';
+td.appendChild(el('span', 'c num', String(os.length)));
+td.appendChild(el('span', 'a num', fmtUsdC(sum(os, (o) => o.acv))));
+trt.appendChild(td);
+});
+const tdT = el('td', 'tot');
+tdT.appendChild(el('span', 'c num', String(view.length)));
+tdT.appendChild(el('span', 'a num', `${fmtUsdC(sum(view, (o) => o.acv))} ACV`));
+trt.appendChild(tdT);
+tb.appendChild(trt);
+t.appendChild(tb); wrap.appendChild(t);
+renderLegend(vals, max);
+}
+function renderLegend(vals, max) {
+const lg = clear($('#legend'));
+lg.appendChild(el('span', null, state.mode === 'count' ? 'Opportunities per cell:' : 'ACV per cell:'));
+const z = el('span'); z.appendChild(el('i', 'sw z')); z.appendChild(document.createTextNode('none')); lg.appendChild(z);
+for (let b = 1; b <= 4; b++) {
+const inBin = vals.filter((v) => binFor(v, max) === b);
+if (!inBin.length) continue;
+const lo = Math.min(...inBin), hi = Math.max(...inBin);
+const f = state.mode === 'count' ? String : fmtUsdC;
+const s = el('span'); const sw = el('i', 'sw b' + b); sw.style.background = `var(--heat-${b})`; s.appendChild(sw);
+s.appendChild(document.createTextNode(lo === hi ? f(lo) : `${f(lo)} – ${f(hi)}`));
+lg.appendChild(s);
+}
+lg.appendChild(el('span', null, '· darker = more, scaled to the largest cell in view'));
+}
+function renderBars() {
+const wrap = clear($('#stageBars'));
+const pool = nonStageOpps();
+const rows = STAGES.map((s) => { const os = pool.filter((o) => o.stageNo === s.no); return { s, count: os.length, acv: sum(os, (o) => o.acv), os }; });
+const max = Math.max(1, ...rows.map((r) => r.acv));
+rows.forEach((r) => {
+const on = state.stages.has(r.s.no);
+const lab = el('div', 'lab' + (on ? '' : ' off'));
+lab.appendChild(el('span', 'no', `${r.s.no}. `)); lab.appendChild(document.createTextNode(stageShort(r.s.no)));
+lab.appendChild(el('span', 'c', `${r.count} opportunit${r.count === 1 ? 'y' : 'ies'}`));
+const track = el('div', 'track' + (on ? '' : ' off')); track.tabIndex = 0;
+track.setAttribute('role', 'img'); track.setAttribute('aria-label', `Stage ${r.s.no}: ${r.count} opportunities, ACV ${fmtUsd(r.acv)}`);
+const pct = r.acv / max * 100;
+const inner = el('div', 'inner');
+const bar = el('div', 'bar'); bar.style.width = pct.toFixed(2) + '%';
+const val = el('div', 'val num', fmtUsdC(r.acv)); val.style.left = pct.toFixed(2) + '%';
+inner.appendChild(bar); inner.appendChild(val); track.appendChild(inner);
+attachTip(track, (box) => {
+box.appendChild(el('div', 't', `${r.s.no}. ${stageShort(r.s.no)}`));
+box.appendChild(el('div', 'v', `${fmtUsd(r.acv)} ACV`));
+box.appendChild(el('div', 'k', `${r.count} opportunities · ${uniq(r.os.map((o) => o.partner).filter(Boolean)).length} partners · ${r.os.filter((o) => o.sa).length} with Primary SA`));
+if (!on) box.appendChild(el('div', 'ln k', 'Stage not selected in the filter'));
+});
+track.addEventListener('click', () => { if (!on) { state.stages.add(r.s.no); render(); } });
+wrap.appendChild(lab); wrap.appendChild(track);
+});
+const v = inView();
+const withSa = v.filter((o) => o.sa).length;
+const pct = v.length ? withSa / v.length * 100 : 0;
+const meter = clear($('#saMeter'));
+const fill = el('div', 'fill'); fill.style.width = pct.toFixed(1) + '%'; meter.appendChild(fill);
+meter.setAttribute('aria-label', `${withSa} of ${v.length} opportunities in view have a Primary SA attached`);
+const lab = clear($('#saMeterLab'));
+const a = el('span'); a.appendChild(el('b', null, `${withSa} with SA`)); a.appendChild(document.createTextNode(` (${Math.round(pct)}%)`));
+const b = el('span'); b.appendChild(el('b', null, `${v.length - withSa} without`));
+lab.appendChild(a); lab.appendChild(b);
+}
+function renderPeople() {
+const v = inView();
+const agg = (key) => { const m = {}; v.forEach((o) => { const k = o[key]; if (!k) return; m[k] = m[k] || { n: 0, acv: 0 }; m[k].n++; m[k].acv += o.acv; }); return Object.entries(m).sort((a, b) => b[1].acv - a[1].acv || b[1].n - a[1].n || byName(a[0], b[0])); };
+const ownerWrap = clear($('#ownerList'));
+const owners = agg('owner'); const LIMIT = 10;
+if (!owners.length) ownerWrap.appendChild(el('div', 'more', 'No opportunities in view.'));
+owners.slice(0, LIMIT).forEach(([name, s]) => {
+const b = el('button', 'n', name); b.type = 'button'; b.setAttribute('aria-pressed', state.owner === name ? 'true' : 'false');
+b.title = state.owner === name ? 'Clear owner filter' : `Filter to ${name}`;
+b.addEventListener('click', () => { state.owner = state.owner === name ? '' : name; $('#fOwner').value = state.owner; render(); });
+ownerWrap.appendChild(b); ownerWrap.appendChild(el('span', 'c', `${s.n} opp${s.n === 1 ? '' : 's'}`)); ownerWrap.appendChild(el('span', 'a', fmtUsdC(s.acv)));
+});
+if (owners.length > LIMIT) ownerWrap.appendChild(el('div', 'more', `+ ${owners.length - LIMIT} more owner${owners.length - LIMIT === 1 ? '' : 's'} – use the Owner filter above`));
+const saWrap = clear($('#saList'));
+const sas = agg('sa');
+if (!sas.length) saWrap.appendChild(el('div', 'more', 'No Primary SA attached to any opportunity in view.'));
+sas.slice(0, LIMIT).forEach(([name, s]) => { saWrap.appendChild(el('span', 'n', name)); saWrap.appendChild(el('span', 'c', `${s.n} opp${s.n === 1 ? '' : 's'}`)); saWrap.appendChild(el('span', 'a', fmtUsdC(s.acv))); });
+if (sas.length > LIMIT) saWrap.appendChild(el('div', 'more', `+ ${sas.length - LIMIT} more`));
+}
+function selectRow(pk, stage) {
+if (state.sel.pk === pk && state.sel.stage === stage) state.sel = { pk: null, stage: null };
+else if (state.sel.pk === pk && stage === null && state.sel.stage !== null) state.sel.stage = null;
+else state.sel = { pk, stage };
+render();
+if (state.sel.pk) { const pp = $('#partnerPanel'); if (pp && !pp.hidden) pp.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+}
+function prioSelect(pk, id) {
+const sel = el('select'); if (id) sel.id = id;
+const s = suggestedFor(pk);
+sel.setAttribute('aria-label', `Contact priority for ${s.partner} in ${regionLabel(s.region)}`);
+const o0 = el('option', null, `Not set – suggested ${s.tier === 'later' ? 'Later' : 'P' + s.tier}`); o0.value = ''; sel.appendChild(o0);
+PRIO.forEach(([k, l]) => { const o = el('option', null, l); o.value = k; sel.appendChild(o); });
+sel.value = prioOf(pk);
+sel.addEventListener('change', () => { setPartnerNote(pk, { priority: sel.value }); render(); });
+return sel;
+}
+function dateInput(pk, id) {
+const inp = el('input'); inp.type = 'date'; if (id) inp.id = id;
+inp.setAttribute('aria-label', `Contact by date for ${pkParts(pk).partner}`);
+inp.value = partnerNotes(pk).contactDate || '';
+inp.addEventListener('change', () => { setPartnerNote(pk, { contactDate: inp.value }); render(); });
+return inp;
+}
+function contactedBox(pk) {
+const lab = el('label', 'chk');
+const cb = el('input'); cb.type = 'checkbox'; cb.checked = !!partnerNotes(pk).contacted;
+cb.setAttribute('aria-label', `${pkParts(pk).partner} contacted`);
+cb.addEventListener('change', () => { setPartnerNote(pk, { contacted: cb.checked, contactedOn: cb.checked ? todayIso() : '' }); render(); });
+lab.appendChild(cb); lab.appendChild(document.createTextNode('Contacted'));
+return lab;
+}
+function planningBlock(pk) {
+const s = suggestedFor(pk); const pn = partnerNotes(pk);
+const box = el('div', 'planning');
+box.appendChild(el('h3', null, `Contact planning · ${regionLabel(s.region)}`));
+const row = el('div', 'row');
+const l1 = el('label', null, 'Contact priority'); l1.appendChild(prioSelect(pk, 'prioSelect')); row.appendChild(l1);
+const l2 = el('label', null, 'Contact by'); l2.appendChild(dateInput(pk, 'contactDate')); row.appendChild(l2);
+const l3 = el('label'); const cb = el('input'); cb.type = 'checkbox'; cb.checked = !!pn.contacted;
+cb.addEventListener('change', () => { setPartnerNote(pk, { contacted: cb.checked, contactedOn: cb.checked ? todayIso() : '' }); render(); });
+l3.appendChild(cb); l3.appendChild(document.createTextNode('Contacted' + (pn.contacted && pn.contactedOn ? ` on ${fmtDate(pn.contactedOn)}` : ''))); row.appendChild(l3);
+const useBtn = el('button', 'btn-light small', `Use suggestion (${PRIO_LABEL[s.tier]}, by ${fmtDate(dateForTier(s.tier))})`); useBtn.type = 'button';
+useBtn.addEventListener('click', () => { setPartnerNote(pk, { priority: s.tier, contactDate: pn.contactDate || dateForTier(s.tier) }); render(); });
+row.appendChild(useBtn);
+box.appendChild(row);
+const line = el('div', 'sugline');
+line.appendChild(el('span', 'pill pr sug' + (s.tier === 'later' ? ' later' : ''), s.tier === 'later' ? 'Later' : 'P' + s.tier));
+line.appendChild(document.createTextNode(`Suggested ${PRIO_LABEL[s.tier]} – rank ${s.rank} of ${s.regionSize} partners in ${regionLabel(s.region)} (score ${Math.round(s.score)}/100): ${s.why}.`));
+box.appendChild(line);
+return box;
+}
+function renderPartnerPanel() {
+const pp = $('#partnerPanel');
+const pk = state.sel.pk;
+clear(pp);
+if (!pk) { pp.hidden = true; return; }
+pp.hidden = false;
+const { region, partner } = pkParts(pk);
+const allP = DATA.opps.filter((o) => pkOfOpp(o) === pk);
+const viewP = inView().filter((o) => pkOfOpp(o) === pk);
+const pn = partnerNotes(pk);
+const otherRegions = partner ? uniq(DATA.opps.filter((o) => o.partner === partner && o.region !== region).map((o) => o.region)) : [];
+const head = el('div', 'card-head');
+const left = el('div');
+left.appendChild(el('div', 'eyebrow', 'Partner · ' + regionLabel(region)));
+const h = el('h2'); h.appendChild(document.createTextNode(partnerLabel(partner) + ' ')); h.appendChild(regionPill(region)); left.appendChild(h);
+if (otherRegions.length) left.appendChild(el('div', 'hint', `This partner also has reseller opportunities in ${otherRegions.map(regionLabel).join(', ')} – planned separately per region.`));
+head.appendChild(left);
+const right = el('div', 'toolbar');
+const clr = el('button', 'btn-light small', 'Clear selection'); clr.type = 'button';
+clr.addEventListener('click', () => { state.sel = { pk: null, stage: null }; render(); });
+right.appendChild(clr); head.appendChild(right);
+pp.appendChild(head);
+if (partner) pp.appendChild(planningBlock(pk));
+const grid = el('div', 'pgrid');
+const facts = el('div');
+const kv = el('dl', 'kv');
+const add = (k, node) => { kv.appendChild(el('dt', null, k)); const dd = el('dd'); if (typeof node === 'string') dd.textContent = node; else dd.appendChild(node); kv.appendChild(dd); };
+const stageTxt = Array.from(state.stages).sort((a, b) => a - b).join(', ');
+const s1 = el('span'); s1.appendChild(el('span', 'num', `${viewP.length}`)); s1.appendChild(document.createTextNode(' opportunities · ')); s1.appendChild(el('span', 'num', fmtUsd(sum(viewP, (o) => o.acv)))); s1.appendChild(document.createTextNode(' ACV'));
+add(`In view (stage ${stageTxt})`, s1);
+const perStage = STAGES.map((s) => { const n = allP.filter((o) => o.stageNo === s.no).length; return n ? `${s.no}: ${n}` : null; }).filter(Boolean).join(' · ');
+add(`All open in ${regionLabel(region)}`, `${allP.length} opportunities · ${fmtUsd(sum(allP, (o) => o.acv))} ACV · ${perStage}`);
+const owners = {}; viewP.forEach((o) => { if (o.owner) owners[o.owner] = (owners[o.owner] || 0) + 1; });
+add('Opportunity owners (in view)', Object.keys(owners).sort(byName).map((k) => `${k} (${owners[k]})`).join(', ') || '–');
+const sas = {}; viewP.forEach((o) => { if (o.sa) sas[o.sa] = (sas[o.sa] || 0) + 1; });
+const saNode = el('span');
+if (Object.keys(sas).length) saNode.textContent = Object.keys(sas).sort(byName).map((k) => `${k} (${sas[k]})`).join(', ');
+else saNode.appendChild(el('span', 'pill nosa', 'No Primary SA on any opportunity in view'));
+const noSa = viewP.filter((o) => !o.sa).length;
+if (Object.keys(sas).length && noSa) { saNode.appendChild(document.createTextNode(' · ')); saNode.appendChild(el('span', 'pill nosa', `${noSa} without SA`)); }
+add('Primary SAs (in view)', saNode);
+const segs = uniq(viewP.map((o) => o.subSegment || o.segment).filter(Boolean)).sort(byName);
+add('Sub-segments (in view)', segs.join(', ') || '–');
+const types = {}; viewP.forEach((o) => { types[o.type || '–'] = (types[o.type || '–'] || 0) + 1; });
+add('Opportunity types (in view)', Object.keys(types).sort(byName).map((k) => `${k} (${types[k]})`).join(', '));
+const closes = viewP.map((o) => o.close).filter(Boolean).sort();
+if (closes.length) add('Close dates (in view)', closes.length > 1 ? `${fmtDate(closes[0])} – ${fmtDate(closes[closes.length - 1])}` : fmtDate(closes[0]));
+const openItems = sum(viewP, (o) => oppItems(o.id).filter(isActiveItem).length);
+if (openItems) add('Open opportunity action items', `${openItems} across ${viewP.filter((o) => oppItems(o.id).some(isActiveItem)).length} opportunities in view`);
+facts.appendChild(kv);
+grid.appendChild(facts);
+if (partner) {
+const notesBox = el('div');
+const nl = el('label', null, 'Partner action items'); nl.htmlFor = 'partnerActions'; nl.style.fontWeight = '600'; nl.style.color = 'var(--navy)'; nl.style.fontSize = '13px';
+const ta = el('textarea', 'actions'); ta.id = 'partnerActions';
+ta.placeholder = 'e.g. Schedule pipeline review with partner lead; align on SA support for stage 4 deals; clarify close dates…';
+ta.value = pn.actions || '';
+ta.addEventListener('input', () => { setPartnerNote(pk, { actions: ta.value }); });
+ta.addEventListener('blur', () => { renderHeat(); renderPlan(); });
+notesBox.appendChild(nl); notesBox.appendChild(ta);
+notesBox.appendChild(el('div', 'hint', (pn.updated ? `Last edited ${fmtStamp(pn.updated)} · ` : '') + 'Saved automatically in this browser. Use “Export notes” to keep a copy or share.'));
+grid.appendChild(notesBox);
+}
+pp.appendChild(grid);
+}
+function renderPlan() {
+const table = $('#planTable');
+const thead = clear(table.querySelector('thead'));
+const tbody = clear(table.querySelector('tbody'));
+const pool = nonStageOpps().filter((o) => o.partner);
+const pks = uniq(pool.map(pkOfOpp));
+const rows = pks.map((pk) => ({ pk, s: suggestedFor(pk), n: partnerNotes(pk) }));
+const cmpPrio = (a, b) => (PRIO_ORDER[effectivePrio(a.pk)] - PRIO_ORDER[effectivePrio(b.pk)]) || (a.s.rank - b.s.rank);
+const cmpDate = (a, b) => ((a.n.contactDate || '9999') < (b.n.contactDate || '9999') ? -1 : (a.n.contactDate || '9999') > (b.n.contactDate || '9999') ? 1 : 0) || (a.s.rank - b.s.rank);
+const cmpRank = (a, b) => a.s.rank - b.s.rank;
+const cmp = state.planSort === 'prio' ? cmpPrio : state.planSort === 'date' ? cmpDate : cmpRank;
+rows.sort((a, b) => (REGION_ORDER[a.s.region] - REGION_ORDER[b.s.region]) || cmp(a, b));
+const setCount = rows.filter((r) => prioOf(r.pk)).length;
+const doneCount = rows.filter((r) => r.n.contacted).length;
+const overdue = rows.filter((r) => contactState(r.pk) === 'overdue').length;
+const regionsInPlan = uniq(rows.map((r) => r.s.region));
+$('#planSub').textContent = `${rows.length} partner rows across ${regionsInPlan.length} region${regionsInPlan.length === 1 ? '' : 's'} · ${setCount} with your priority set · ${doneCount} contacted${overdue ? ` · ${overdue} overdue` : ''} · ranked within each region on stage 3–5 pipeline`;
+const hr = el('tr');
+[['#', 'r'], ['Partner', null], ['Suggested', null], ['Your priority', null], ['Contact by', null], ['Stage 3–5 opps · ACV', 'r'], ['Stage 5', 'r'], [`Closing by ${fmtDate(HORIZON_ISO)}`, 'r'], ['Without SA', 'r'], ['Partner action items', null]].forEach(([l, c]) => hr.appendChild(el('th', c, l)));
+thead.appendChild(hr);
+if (!rows.length) { const tr = el('tr'); const td = el('td', 'empty', 'No partners match the current filters.'); td.colSpan = 10; tr.appendChild(td); tbody.appendChild(tr); return; }
+let lastRegion = null;
+rows.forEach(({ pk, s, n }) => {
+if (s.region !== lastRegion) {
+lastRegion = s.region;
+const inRegion = rows.filter((r) => r.s.region === s.region);
+const tiers = {}; inRegion.forEach((r) => { const t = effectivePrio(r.pk); tiers[t] = (tiers[t] || 0) + 1; });
+const tr = el('tr', 'grp'); const td = el('td'); td.colSpan = 10;
+td.appendChild(document.createTextNode(regionLabel(s.region)));
+td.appendChild(el('span', 'sub', `${inRegion.length} partner${inRegion.length === 1 ? '' : 's'} · ` + PRIO.map(([k, l]) => tiers[k] ? `${l}: ${tiers[k]}` : null).filter(Boolean).join(' · ')));
+tr.appendChild(td); tbody.appendChild(tr);
+}
+const tr = el('tr', 'tier-' + effectivePrio(pk));
+tr.appendChild(el('td', 'rk num', String(s.rank)));
+const tdp = el('td', 'pn');
+const b = el('button', null, s.partner); b.type = 'button'; b.title = 'Open partner details and action items';
+b.addEventListener('click', () => selectRow(pk, null));
+tdp.appendChild(b);
+tdp.appendChild(el('span', 'sm', `${regionLabel(s.region)} · ${s.nAll} open opp${s.nAll === 1 ? '' : 's'}`));
+tr.appendChild(tdp);
+const tds = el('td', 'sug');
+tds.appendChild(el('span', 'pill pr sug' + (s.tier === 'later' ? ' later' : ''), s.tier === 'later' ? 'Later' : 'P' + s.tier));
+tds.appendChild(document.createTextNode(` score ${Math.round(s.score)}`));
+tds.appendChild(el('span', 'why', s.why));
+tr.appendChild(tds);
+const tdy = el('td'); tdy.appendChild(prioSelect(pk)); tr.appendChild(tdy);
+const tdd = el('td', 'dt'); const l1 = el('div'); l1.appendChild(dateInput(pk)); l1.appendChild(contactedBox(pk)); tdd.appendChild(l1);
+const cs = contactState(pk);
+if (cs === 'overdue') { const l2 = el('div'); l2.style.marginTop = '4px'; l2.appendChild(el('span', 'pill due', `overdue since ${fmtDate(n.contactDate)}`)); tdd.appendChild(l2); }
+if (cs === 'done') { const l2 = el('div'); l2.style.marginTop = '4px'; l2.appendChild(el('span', 'pill ok', n.contactedOn ? `contacted ${fmtDate(n.contactedOn)}` : 'contacted')); tdd.appendChild(l2); }
+tr.appendChild(tdd);
+tr.appendChild(el('td', 'r num', s.n35 ? `${s.n35} · ${fmtUsdC(s.acv35)}` : '–'));
+tr.appendChild(el('td', 'r num', s.n5 ? String(s.n5) : '–'));
+tr.appendChild(el('td', 'r num', s.soonN ? `${s.soonN} · ${fmtUsdC(s.soonAcv)}` : '–'));
+tr.appendChild(el('td', 'r num', s.noSa ? String(s.noSa) : '–'));
+const tda = el('td', 'acts');
+const txt = (n.actions || '').trim();
+if (txt) { tda.textContent = txt.length > 110 ? txt.slice(0, 108) + '…' : txt; tda.title = txt; }
+else { const ab = el('button', 'none', 'Add in partner panel'); ab.type = 'button'; ab.style.all = 'unset'; ab.style.cursor = 'pointer'; ab.style.color = 'var(--crossline)'; ab.addEventListener('click', () => selectRow(pk, null)); tda.appendChild(ab); }
+tr.appendChild(tda);
+tbody.appendChild(tr);
+});
+$('#planHint').textContent = `Suggested priority is computed within each region: ${WEIGHTS.acv35}% stage 3–5 ACV, ${WEIGHTS.n35}% number of stage 3–5 opportunities, ${WEIGHTS.n5}% stage-5 deals, ${WEIGHTS.soonAcv}% ACV closing within ${HORIZON_DAYS} days of the query date, ${WEIGHTS.noSa}% opportunities without a Primary SA – each relative to the top partner of that region. Tiers of ${TIER_SIZE}: ranks 1–5 = Prio 1, 6–10 = Prio 2, and so on; partners without stage 3–5 pipeline = Later. A partner active in several regions gets one row per region. Your own choice always wins over the suggestion.`;
+$('#planSortPrio').setAttribute('aria-pressed', state.planSort === 'prio'); $('#planSortDate').setAttribute('aria-pressed', state.planSort === 'date'); $('#planSortRank').setAttribute('aria-pressed', state.planSort === 'rank');
+}
+function applySuggestions() {
+let np = 0, nd = 0;
+Object.keys(SUGGEST).forEach((pk) => {
+const cur = partnerNotes(pk); const patch = {};
+if (!prioOf(pk)) { patch.priority = SUGGEST[pk].tier; np++; }
+const tier = patch.priority || prioOf(pk);
+if (!cur.contactDate && !cur.contacted) { patch.contactDate = dateForTier(tier); nd++; }
+if (Object.keys(patch).length) setPartnerNote(pk, patch, true);
+});
+saveNow(); render();
+setSaveState(np || nd ? `Set ${np} suggested priorit${np === 1 ? 'y' : 'ies'} and ${nd} contact date${nd === 1 ? '' : 's'} (all regions)` : 'All partners already have a priority and date – nothing changed');
+}
+let clearArmed = false;
+function clearPriorities() {
+const btn = $('#btnClearPrio');
+if (!clearArmed) { clearArmed = true; btn.textContent = 'Click again to confirm clearing'; setTimeout(() => { clearArmed = false; btn.textContent = 'Clear priorities & dates'; }, 4000); return; }
+clearArmed = false; btn.textContent = 'Clear priorities & dates';
+Object.keys(notes.partners).forEach((pk) => { const n = notes.partners[pk]; delete n.priority; delete n.contactDate; delete n.contacted; delete n.contactedOn; });
+saveNow(); render(); setSaveState('Priorities, dates and contacted marks cleared');
+}
+const COLS = [
+{ key: 'partner', label: 'Partner' },
+{ key: 'stageNo', label: 'Stage' },
+{ key: 'account', label: 'Account · Opportunity' },
+{ key: 'owner', label: 'Opportunity owner' },
+{ key: 'sa', label: 'Primary SA' },
+{ key: 'region', label: 'Region · Segment' },
+{ key: 'close', label: 'Close date · Type' },
+{ key: 'acv', label: 'ACV (USD)', right: true },
+{ key: 'items', label: 'Action items' },
+];
+function sortVal(o, key) {
+if (key === 'region') return `${REGION_ORDER[o.region]} ${o.subSegment}`;
+if (key === 'partner') return o.partner || '￿';
+if (key === 'items') { const items = oppItems(o.id); return items.filter(isActiveItem).length * 1000 + items.length; }
+return o[key] == null ? '' : o[key];
+}
+function renderTable() {
+const table = $('#oppTable');
+const thead = clear(table.querySelector('thead'));
+const tbody = clear(table.querySelector('tbody'));
+const hr = el('tr');
+COLS.forEach((c) => {
+const th = el('th', c.right ? 'r' : null);
+const b = el('button'); b.type = 'button';
+b.appendChild(document.createTextNode(c.label));
+if (state.tsort.key === c.key) b.appendChild(el('span', 'dir', state.tsort.dir > 0 ? '▲' : '▼'));
+b.addEventListener('click', () => {
+if (state.tsort.key === c.key) state.tsort.dir *= -1;
+else state.tsort = { key: c.key, dir: (c.key === 'acv' || c.key === 'stageNo' || c.key === 'items') ? -1 : 1 };
+renderTable();
+});
+th.appendChild(b); hr.appendChild(th);
+});
+thead.appendChild(hr);
+const rows = tableOpps().slice();
+const { key, dir } = state.tsort;
+rows.sort((a, b) => {
+const va = sortVal(a, key), vb = sortVal(b, key);
+let c = (typeof va === 'number' && typeof vb === 'number') ? va - vb : String(va).localeCompare(String(vb), 'en', { sensitivity: 'base', numeric: true });
+if (c === 0) c = b.acv - a.acv;
+return c * dir;
+});
+$('#rowcount').textContent = `${rows.length} opportunit${rows.length === 1 ? 'y' : 'ies'} · ${fmtUsd(sum(rows, (o) => o.acv))} ACV`;
+if (!rows.length) { const tr = el('tr'); const td = el('td', 'empty', 'No opportunities match the current filters and selection.'); td.colSpan = COLS.length; tr.appendChild(td); tbody.appendChild(tr); return; }
+rows.forEach((o) => {
+const tr = el('tr');
+const tdP = el('td'); tdP.appendChild(el('span', 'p', partnerLabel(o.partner)));
+if (o.partnerRole && o.partnerRole !== 'Reseller') tdP.appendChild(el('span', 'sm', `Partner role: ${o.partnerRole}`));
+tr.appendChild(tdP);
+const tdS = el('td', 'stage'); tdS.appendChild(el('span', 'no', String(o.stageNo))); tdS.appendChild(el('span', 'sl', stageShort(o.stageNo))); tr.appendChild(tdS);
+const tdA = el('td'); tdA.appendChild(el('span', 'p', o.account || '–'));
+const nm = el('span', 'sm'); nm.appendChild(document.createTextNode(o.name + ' '));
+if (o.url) { const a = el('a', 'sf', 'Open in Salesforce ↗'); a.href = o.url; a.target = '_blank'; a.rel = 'noopener'; nm.appendChild(a); }
+tdA.appendChild(nm); tr.appendChild(tdA);
+tr.appendChild(el('td', null, o.owner || '–'));
+const tdSa = el('td'); if (o.sa) tdSa.textContent = o.sa; else tdSa.appendChild(el('span', 'pill nosa', 'No SA attached')); tr.appendChild(tdSa);
+const tdR = el('td'); tdR.appendChild(document.createTextNode(regionLabel(o.region))); if (o.subSegment) tdR.appendChild(el('span', 'sm', o.subSegment)); tr.appendChild(tdR);
+const tdC = el('td'); tdC.appendChild(document.createTextNode(fmtDate(o.close)));
+if (AS_OF_ISO && o.close && o.close < AS_OF_ISO) tdC.appendChild(el('span', 'sm', 'before query date'));
+tdC.appendChild(el('span', 'sm', [o.type || 'No type', o.typeDetail].filter(Boolean).join(' · ') + (o.daysInStage ? ` · ${o.daysInStage}d in stage` : '')));
+tdC.title = [o.type, o.typeDetail, o.source].filter(Boolean).join(' · ');
+tr.appendChild(tdC);
+const tdV = el('td', 'r num', fmtUsd(o.acv));
+if (o.currency && o.currency !== 'USD') tdV.appendChild(el('span', 'loc', `${o.currency} ${fmtFull(o.acvLocal)}`));
+tr.appendChild(tdV);
+const tdN = el('td', 'act'); tdN.appendChild(renderActionItems(o.id, `action items for ${o.name}`)); tr.appendChild(tdN);
+tbody.appendChild(tr);
+});
+}
+function renderActionItems(oppId, ariaCtx) {
+const wrap = el('div', 'act-wrap');
+const items = oppItems(oppId);
+const active = items.filter(isActiveItem);
+const done = items.filter((it) => !isActiveItem(it));
+const list = el('div', 'act-list');
+active.forEach((it) => {
+const row = el('div', 'act-item');
+const ta = el('textarea'); ta.rows = 1; ta.value = it.text; ta.setAttribute('aria-label', `Action item text, ${ariaCtx}`);
+const autosize = () => { ta.style.height = 'auto'; ta.style.height = Math.min(160, ta.scrollHeight + 2) + 'px'; };
+const sel = el('select'); sel.setAttribute('aria-label', `Status, ${ariaCtx}`);
+STATUS.forEach(([k, l]) => { const op = el('option', null, l); op.value = k; sel.appendChild(op); });
+sel.value = it.status;
+const del = el('button', 'del', '×'); del.type = 'button'; del.title = 'Remove this action item'; del.setAttribute('aria-label', `Remove action item, ${ariaCtx}`);
+ta.addEventListener('input', () => { autosize(); updateOppItem(oppId, it.id, { text: ta.value }); });
+ta.addEventListener('blur', () => { if (!ta.value.trim()) { deleteOppItem(oppId, it.id); renderTable(); } });
+sel.addEventListener('change', () => { updateOppItem(oppId, it.id, { status: sel.value }); renderTable(); });
+del.addEventListener('click', () => { deleteOppItem(oppId, it.id); renderTable(); });
+row.appendChild(ta); row.appendChild(sel); row.appendChild(del);
+list.appendChild(row);
+requestAnimationFrame(autosize);
+});
+wrap.appendChild(list);
+const add = el('div', 'act-add');
+const inp = el('input'); inp.type = 'text'; inp.placeholder = 'Add action item…'; inp.setAttribute('aria-label', `Add action item, ${ariaCtx}`);
+const btn = el('button', null, 'Add'); btn.type = 'button';
+const commit = () => { if (inp.value.trim()) { addOppItem(oppId, inp.value); inp.value = ''; renderTable(); } };
+inp.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); commit(); } });
+btn.addEventListener('click', commit);
+add.appendChild(inp); add.appendChild(btn);
+wrap.appendChild(add);
+if (done.length) {
+const det = el('details', 'act-hist');
+det.appendChild(el('summary', null, `History (${done.length} done)`));
+const ul = el('ul');
+done.slice().sort((a, b) => (b.doneAt || '').localeCompare(a.doneAt || '')).forEach((it) => {
+const li = el('li');
+li.appendChild(el('span', 'ht', it.text));
+li.appendChild(el('span', 'hm', it.doneAt ? `Done ${fmtStamp(it.doneAt)}` : 'Done'));
+const reopen = el('button', 'reopen', 'Reopen'); reopen.type = 'button'; reopen.title = 'Set back to open';
+reopen.addEventListener('click', () => { updateOppItem(oppId, it.id, { status: 'open' }); renderTable(); });
+li.appendChild(reopen); ul.appendChild(li);
+});
+det.appendChild(ul); wrap.appendChild(det);
+}
+return wrap;
+}
+function renderSelbar() {
+const sb = clear($('#selbar'));
+if (!state.sel.pk) { sb.appendChild(el('span', 'muted', 'All partners in view · click a heatmap cell or partner to narrow this list')); return; }
+const { region, partner } = pkParts(state.sel.pk);
+sb.appendChild(el('span', 'muted', 'Showing'));
+sb.appendChild(el('span', 'tag', `${partnerLabel(partner)} · ${regionLabel(region)}`));
+if (state.sel.stage) sb.appendChild(el('span', 'tag', `Stage ${state.sel.stage} · ${stageShort(state.sel.stage)}`));
+const b = el('button', 'btn-light small', 'Show all in view'); b.type = 'button';
+b.addEventListener('click', () => { state.sel = { pk: null, stage: null }; render(); });
+sb.appendChild(b);
+}
+function renderNotes() {
+const n = clear($('#dataNotes'));
+n.appendChild(el('h3', null, 'About this data'));
+const noPartner = DATA.opps.filter((o) => !o.partner).length;
+const noRegion = DATA.opps.filter((o) => o.region === 'UNASSIGNED').length;
+const roles = {}; DATA.opps.forEach((o) => { roles[o.partnerRole || 'blank'] = (roles[o.partnerRole || 'blank'] || 0) + 1; });
+const ps = [
+`Source: ${DATA.source.system}, queried ${DATA.source.queriedAt ? new Date(DATA.source.queriedAt).toLocaleString('en-GB', { timeZone: 'Europe/Berlin' }) + ' CET' : ''}. Filters: ${DATA.source.filters.join('; ')}. Nothing was written to Salesforce. ${DATA.opps.length} opportunities, ${DATA.partners.length} partner accounts. Each opportunity links to its Salesforce record.`,
+`Region = the opportunity’s Supra Segment in Salesforce (${REGIONS.filter((r) => r.key !== 'UNASSIGNED').map((r) => r.label).join(', ')}); the sub-segment (e.g. “EMEA EU C Dach”) is shown with each opportunity. ${noRegion ? `${noRegion} opportunit${noRegion === 1 ? 'y has' : 'ies have'} no supra segment and appear under “No region set”.` : ''}`,
+`ACV: all amounts are Salesforce’s “ACV Converted” in USD, so totals can be compared across regions; the original currency amount is shown underneath where it differs from USD.`,
+`Partner: the Partner Account on the opportunity. ${noPartner} opportunit${noPartner === 1 ? 'y has' : 'ies have'} Business Type = Reseller but no Partner Account – they are shown as “${NO_PARTNER}” so totals match Salesforce, but they cannot be planned with a partner. Partner role on these opportunities: ${Object.keys(roles).sort().map((k) => `${k} ${roles[k]}`).join(', ')}.`,
+`Contact priority: suggested per region (see the note under the contact plan). Your own priority, contact date and “contacted” mark are stored with your notes and override the suggestion everywhere – filters, badges, exports.`,
+`Action items: everything you type (partner action items, opportunity action items, priorities, contact dates) is saved in this browser and survives weekly data refreshes, because opportunities are matched by their Salesforce Id and the storage is never cleared by a new file. To share entries with colleagues – and to be safe against clearing the browser – click “Export notes” and save the file as partner-pipeline-notes.json in the shared Drive folder (overwrite the previous one): the weekly refresh bakes it into the next version for everyone, and anyone can also load it with “Import notes”. “Export view (CSV)” downloads the opportunity list currently shown; “Export plan (CSV)” downloads the contact plan for all regions.`,
+];
+ps.forEach((t) => { if (t.trim()) n.appendChild(el('p', null, t)); });
+const d = el('details'); d.appendChild(el('summary', null, 'SOQL query used'));
+const code = el('code', null, DATA.source.soql); const pre = el('p'); pre.appendChild(code); d.appendChild(pre); n.appendChild(d);
+if (notes.migratedFrom) n.appendChild(el('p', null, 'Your notes from the earlier EMEA-only version of this dashboard were carried over automatically (partner notes into the EMEA rows, opportunity notes matched by partner, opportunity name, account and created date).'));
+if (DATA.seedNotes && DATA.seedNotes.exported) n.appendChild(el('p', null, `This file was built with shared notes exported ${fmtStamp(DATA.seedNotes.exported)} from the folder’s partner-pipeline-notes.json; entries that are newer in this browser were kept.`));
+const ids = new Set(DATA.opps.map((o) => o.id));
+const orphans = Object.keys(notes.opps).filter((id) => !ids.has(id) && (notes.opps[id].items || []).length);
+if (orphans.length) {
+const d2 = el('details'); d2.appendChild(el('summary', null, `Action items on ${orphans.length} opportunit${orphans.length === 1 ? 'y that is' : 'ies that are'} no longer in the query (closed, re-typed or re-assigned since) – kept, not deleted`));
+const ul = el('ul');
+orphans.forEach((id) => {
+const nn = notes.opps[id]; const ref = nn.ref || {};
+const li = el('li');
+li.appendChild(el('strong', null, ref.name ? `${ref.account || ''} – ${ref.name}` : id));
+li.appendChild(document.createTextNode(` (${[ref.partner, regionLabel(ref.region || '')].filter(Boolean).join(' · ') || 'opportunity ' + id}): ` + (nn.items || []).map((it) => `[${STATUS_LABEL[it.status] || it.status}] ${it.text}`).join(' | ')));
+ul.appendChild(li);
+});
+d2.appendChild(ul); n.appendChild(d2);
+}
+}
+function download(name, text, type) {
+const blob = new Blob([text], { type });
+const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name;
+document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+}
+const today = () => todayIso();
+function exportNotes() {
+const index = {};
+DATA.opps.forEach((o) => { if (notes.opps[o.id]) index[o.id] = { partner: o.partner, region: o.region, opportunity: o.name, account: o.account }; });
+const out = { version: 2, exported: nowStamp(), source: DATA.source.queriedAt, partners: notes.partners, opps: notes.opps, deleted: notes.deleted || {}, oppIndex: index };
+download('partner-pipeline-notes.json', JSON.stringify(out, null, 2), 'application/json');
+}
+function importNotes(file) {
+const rd = new FileReader();
+rd.onload = () => {
+try {
+const j = JSON.parse(String(rd.result));
+if (!j || typeof j !== 'object' || !j.partners || !j.opps) throw new Error('shape');
+let np = 0, no = 0;
+Object.keys(j.partners).forEach((k) => {
+if (!j.partners[k] || typeof j.partners[k] !== 'object') return;
+const key = k.includes('||') ? k : pkOf('EMEA', k); // v1 files were keyed by partner name (EMEA only)
+const n = Object.assign({}, j.partners[k]); delete n.region;
+notes.partners[key] = Object.assign({}, notes.partners[key] || {}, n); np++;
+});
+const legacyIndex = {}; DATA.opps.forEach((o) => { if (o.legacyId) legacyIndex[o.legacyId] = o.id; });
+Object.keys(j.opps).forEach((k) => {
+if (!j.opps[k] || typeof j.opps[k] !== 'object') return;
+const known = Boolean(notes.opps[k]) || DATA.opps.some((o) => o.id === k);
+const id = known ? k : legacyIndex[k.replace(/-\d+$/, '')];
+if (!id) return;
+notes.opps[id] = normalizeOpp(Object.assign({}, notes.opps[id] || {}, j.opps[k])); no++;
+});
+saveNow(); renderFilterOptions(); render();
+setSaveState(`Imported notes for ${np} partner rows and ${no} opportunities`);
+} catch (e) { setSaveState('Import failed – not a notes file from this dashboard'); }
+};
+rd.readAsText(file);
+}
+function csvCell(v) { const s = v == null ? '' : String(v); return /[";\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; }
+function exportCsv() {
+const rows = tableOpps();
+const head = ['Region', 'Sub-segment', 'Partner', 'Partner role', 'Partner contact priority', 'Suggested priority', 'Contact by', 'Contacted', 'Stage', 'Account', 'Opportunity', 'Opportunity Owner', 'Primary SA', 'Type', 'Type detail', 'Lead Source', 'Close Date', 'Created Date', 'Days in stage', 'ACV USD (converted)', 'Currency', 'Amount (opportunity currency)', 'Open action items', 'Resolved action items', 'Partner action items', 'Salesforce link'];
+const lines = [head.map(csvCell).join(';')];
+const joinItems = (items) => items.map((it) => `[${STATUS_LABEL[it.status]}] ${it.text}`).join(' | ');
+const joinDone = (items) => items.map((it) => `${it.text} (done ${fmtDate((it.doneAt || '').slice(0, 10))})`).join(' | ');
+rows.forEach((o) => {
+const items = oppItems(o.id); const pk = pkOfOpp(o); const pn = o.partner ? partnerNotes(pk) : {};
+const active = items.filter(isActiveItem); const done = items.filter((it) => !isActiveItem(it));
+lines.push([regionLabel(o.region), o.subSegment, o.partner, o.partnerRole, o.partner && prioOf(pk) ? PRIO_LABEL[prioOf(pk)] : '', o.partner ? PRIO_LABEL[suggestedFor(pk).tier] : '', pn.contactDate || '', pn.contacted ? 'yes' : '', o.stage, o.account, o.name, o.owner, o.sa, o.type, o.typeDetail, o.source, o.close, o.created, o.daysInStage, o.acv, o.currency, o.acvLocal, joinItems(active), joinDone(done), pn.actions || '', o.url].map(csvCell).join(';'));
+});
+download(`partner-opportunities-${today()}.csv`, '﻿' + lines.join('\r\n'), 'text/csv;charset=utf-8');
+}
+function exportPlanCsv() {
+const head = ['Region', 'Rank in region', 'Partner', 'Suggested priority', 'Score', 'Why', 'Your priority', 'Contact by', 'Contacted', 'Contacted on', 'Stage 3-5 opps', 'Stage 3-5 ACV USD', 'Stage 5 opps', `Closing by ${HORIZON_ISO} (opps)`, `Closing by ${HORIZON_ISO} (ACV USD)`, 'Without Primary SA', 'All open opps in region', 'Partner action items'];
+const rows = Object.keys(SUGGEST).map((pk) => ({ pk, s: SUGGEST[pk], n: partnerNotes(pk) })).sort((a, b) => (REGION_ORDER[a.s.region] - REGION_ORDER[b.s.region]) || (PRIO_ORDER[effectivePrio(a.pk)] - PRIO_ORDER[effectivePrio(b.pk)]) || (a.s.rank - b.s.rank));
+const lines = [head.map(csvCell).join(';')];
+rows.forEach(({ pk, s, n }) => lines.push([regionLabel(s.region), s.rank, s.partner, PRIO_LABEL[s.tier], Math.round(s.score), s.why, prioOf(pk) ? PRIO_LABEL[prioOf(pk)] : '', n.contactDate || '', n.contacted ? 'yes' : '', n.contactedOn || '', s.n35, s.acv35, s.n5, s.soonN, s.soonAcv, s.noSa, s.nAll, n.actions || ''].map(csvCell).join(';')));
+download(`partner-contact-plan-${today()}.csv`, '﻿' + lines.join('\r\n'), 'text/csv;charset=utf-8');
+}
+function render() {
+renderChips(); renderKPIs(); renderHeat(); renderBars(); renderPeople(); renderPlan(); renderPartnerPanel(); renderSelbar(); renderTable();
+$('#modeCount').setAttribute('aria-pressed', state.mode === 'count'); $('#modeAcv').setAttribute('aria-pressed', state.mode === 'acv');
+$('#sortAcv').setAttribute('aria-pressed', state.sort === 'acv'); $('#sortCount').setAttribute('aria-pressed', state.sort === 'count'); $('#sortName').setAttribute('aria-pressed', state.sort === 'name');
+}
+function resetFilters() {
+Object.assign(state, { stages: new Set([3, 4, 5]), regions: new Set(REGIONS.map((r) => r.key)), partner: '', owner: '', sa: '', q: '', prio: '', type: '', sel: { pk: null, stage: null } });
+renderFilterOptions(); render();
+}
+function bind() {
+$('#preset35').addEventListener('click', () => { state.stages = new Set([3, 4, 5]); if (state.sel.stage && !state.stages.has(state.sel.stage)) state.sel.stage = null; render(); });
+$('#presetAll').addEventListener('click', () => { state.stages = new Set(STAGES.map((s) => s.no)); render(); });
+$('#presetRegionsAll').addEventListener('click', () => { state.regions = new Set(REGIONS.map((r) => r.key)); render(); });
+$('#fPartner').addEventListener('change', (e) => { state.partner = e.target.value; if (state.partner && state.sel.pk && pkParts(state.sel.pk).partner !== (state.partner === '__none__' ? '' : state.partner)) state.sel = { pk: null, stage: null }; render(); });
+$('#fType').addEventListener('change', (e) => { state.type = e.target.value; render(); });
+$('#fOwner').addEventListener('change', (e) => { state.owner = e.target.value; render(); });
+$('#fSa').addEventListener('change', (e) => { state.sa = e.target.value; render(); });
+$('#fPrio').addEventListener('change', (e) => { state.prio = e.target.value; render(); });
+$('#fQ').addEventListener('input', debounce((e) => { state.q = e.target.value.trim(); render(); }, 200));
+$('#btnReset').addEventListener('click', resetFilters);
+$('#modeCount').addEventListener('click', () => { state.mode = 'count'; render(); });
+$('#modeAcv').addEventListener('click', () => { state.mode = 'acv'; render(); });
+$('#sortAcv').addEventListener('click', () => { state.sort = 'acv'; render(); });
+$('#sortCount').addEventListener('click', () => { state.sort = 'count'; render(); });
+$('#sortName').addEventListener('click', () => { state.sort = 'name'; render(); });
+$('#planSortPrio').addEventListener('click', () => { state.planSort = 'prio'; renderPlan(); });
+$('#planSortDate').addEventListener('click', () => { state.planSort = 'date'; renderPlan(); });
+$('#planSortRank').addEventListener('click', () => { state.planSort = 'rank'; renderPlan(); });
+$('#btnApplySuggest').addEventListener('click', applySuggestions);
+$('#btnClearPrio').addEventListener('click', clearPriorities);
+$('#btnExportPlan').addEventListener('click', exportPlanCsv);
+$('#btnExportNotes').addEventListener('click', exportNotes);
+$('#btnImportNotes').addEventListener('click', () => $('#fileImport').click());
+$('#fileImport').addEventListener('change', (e) => { const f = e.target.files && e.target.files[0]; if (f) importNotes(f); e.target.value = ''; });
+$('#btnExportCsv').addEventListener('click', exportCsv);
+window.addEventListener('scroll', hideTip, { passive: true });
+}
+renderMeta(); renderFilterOptions(); renderNotes(); bind(); render();
+if (notes.migratedFrom || notes.seedApplied) saveNow();
+const c = hasNotesCount();
+setSaveState(c ? `${c} saved note${c === 1 ? '' : 's'} loaded${notes.seedApplied ? ` · ${notes.seedApplied} shared entr${notes.seedApplied === 1 ? 'y' : 'ies'} merged from the folder` : ''}${notes.migratedFrom ? ' (carried over from the EMEA version)' : ''}` : 'Notes are saved in this browser as you type');
+}
+(function start() {
+let booted = false;
+const go = (raw) => { if (!booted) { booted = true; boot(raw); } };
+const fallback = () => go(RAW);
+if (!/^(file|https?):$/.test(location.protocol)) return fallback();
+const manifest = document.createElement('script');
+manifest.src = 'partner-pipeline-data.js?v=' + Date.now();
+manifest.onerror = fallback;
+manifest.onload = () => {
+const m = window.PPD;
+if (!m || !m.meta || !m.shards) return fallback();
+m.parts = m.parts || {};
+let loaded = 0;
+for (let i = 1; i <= m.shards; i++) {
+const s = document.createElement('script');
+s.src = `partner-pipeline-data-${i}.js?v=${Date.now()}`;
+s.onerror = fallback;
+s.onload = () => {
+if (++loaded !== m.shards) return;
+const rows = [];
+for (let k = 1; k <= m.shards; k++) { if (!m.parts[k]) return fallback(); rows.push(...m.parts[k]); }
+if (rows.length !== m.rowsTotal) return fallback();
+const raw = m.meta; raw.enc.rows = rows; raw.external = true;
+go(raw);
+};
+document.head.appendChild(s);
+}
+};
+document.head.appendChild(manifest);
+setTimeout(fallback, 4000); // never leave the page blank
+})();
+</script>
+</body>
+</html>
